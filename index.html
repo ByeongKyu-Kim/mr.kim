@@ -1,33 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="css/colorbox.css">
-        <link rel="stylesheet" href="css/swiper.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="js/swiper.min.js"></script>
-        <script src="js/jquery.colorbox-min.js"></script>
-        <link rel="stylesheet" href="css/section1.css">
-        <link rel="stylesheet" href="css/section2.css">
-        <link rel="stylesheet" href="css/section3.css">
-        <link rel="stylesheet" href="css/section4.css">
-        <link rel="stylesheet" href="css/section5.css">
-        <link rel="stylesheet" href="css/section6.css">
-        <link rel="stylesheet" href="css/section7.css">
-        <link rel="stylesheet" href="css/section8.css">
-        <link rel="stylesheet" href="css/section9.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/colorbox.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/section1.css" />
+    <link rel="stylesheet" href="css/section2.css" />
+    <link rel="stylesheet" href="css/section3.css" />
+    <link rel="stylesheet" href="css/section4.css" />
+    <link rel="stylesheet" href="css/section5.css" />
+    <link rel="stylesheet" href="css/section6.css" />
+    <link rel="stylesheet" href="css/section7.css" />
+    <link rel="stylesheet" href="css/section8.css" />
+    <link rel="stylesheet" href="css/section9.css" />
 
     <style>
-        @import "/css/reset.css";
-        * {box-sizing: border-box;}
+      @import "css/reset.css";
+      * {
+        box-sizing: border-box;
+      }
+      .swiper-container-horizontal > .swiper-pagination-bullets {
+        bottom: 20px;
+        left: 500px;
+        width: 100%;
+      }
+
+      .swiper-pagination-bullet {
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        border-radius: 100%;
+        background: #fff;
+        opacity: 1;
+      }
+      .swiper-pagination-bullet-active {
+        background: #c7a776;
+      }
     </style>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!--            header               -->
 
     <header></header>
@@ -35,54 +53,53 @@
     <!--          section 1             -->
 
     <section class="sect1">
-        <h1></h1>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
+      <h1></h1>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg1"></div>
+          <div class="swiper-slide bg2"></div>
+          <div class="swiper-slide bg3"></div>
+          <div class="swiper-slide bg4"></div>
+          <div class="swiper-slide bg5"></div>
         </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
 
-     <!--          section 2             -->
+    <!--          section 2             -->
     <section></section>
 
     <section class="sect3_wrap">
       <article class="arti3_max1200">
-         <div class="sect3_top">
-            <div>
-              <h2>김밥</h2>
-              <p>김밥 메뉴판 한눈에 보기</p>
-            </div>
-            <div>
-              <h2>덮밥</h2>
-              <p>덮밥 메뉴판 한눈에 보기</p>
-            </div>
-            <div>
-              <h2>면</h2>
-              <p>면 메뉴판 한눈에 보기</p>
-            </div>
-         </div>
+        <div class="sect3_top">
+          <div>
+            <h2>김밥</h2>
+            <p>김밥 메뉴판 한눈에 보기</p>
+          </div>
+          <div>
+            <h2>덮밥</h2>
+            <p>덮밥 메뉴판 한눈에 보기</p>
+          </div>
+          <div>
+            <h2>면</h2>
+            <p>면 메뉴판 한눈에 보기</p>
+          </div>
+        </div>
 
-
-         <div class="swiper-container sect3_bottom">
+        <div class="swiper-container sect3_bottom">
           <div class="swiper-wrapper">
-            <div class="swiper-slide sect3_swiper"><a href="#">돈가스 김밥</a> <img src="img/20180724892057.jpg" alt=""></div>
-            <div class="swiper-slide sect3_swiper"><a href="#">매운 제육 쌈 김밥</a> <img src="img/20180724943317.jpg" alt=""></div>
-            <div class="swiper-slide sect3_swiper"><a href="#">매운 멸추 김밥</a> <img src="img/20180816955495.png" alt=""></div>
-            <div class="swiper-slide sect3_swiper"><a href="#">랍스터 김밥</a> <img src="img/20180816731861.png" alt=""></div>
-            <div class="swiper-slide sect3_swiper"><a href="#">새우튀김 김밥</a> <img src="img/20180724469443.jpg" alt=""></div>
-            <div class="swiper-slide sect3_swiper"><a href="#">크림치즈 호두 김밥</a> <img src="img/20180724414090.jpg" alt=""></div>
-            <div class="swiper-slide sect3_swiper"><a href="#">불고기 김밥</a> <img src="img/20180724610350.jpg" alt=""></div>
-            <div class="swiper-slide sect3_swiper"><a href="#">참치 김밥</a> <img src="img/20180724506374.jpg" alt=""></div>
-            <div class="swiper-slide sect3_swiper"><a href="#">바른 김밥</a> <img src="img/20180724195350.png" alt=""></div>
-            <div class="swiper-slide sect3_swiper"><a href="#">매콤 장아찌 김밥</a> <img src="img/20180724522738.png" alt=""></div>
-            <div class="swiper-slide sect3_swiper"><a href="#">어린이 아몬드 김밥</a> <img src="img/20180724675747.png" alt=""></div>
+            <div class="swiper-slide sect3_swiper"><a href="#">돈가스 김밥</a> <img src="img/20180724892057.jpg" alt="" /></div>
+            <div class="swiper-slide sect3_swiper"><a href="#">매운 제육 쌈 김밥</a> <img src="img/20180724943317.jpg" alt="" /></div>
+            <div class="swiper-slide sect3_swiper"><a href="#">매운 멸추 김밥</a> <img src="img/20180816955495.png" alt="" /></div>
+            <div class="swiper-slide sect3_swiper"><a href="#">랍스터 김밥</a> <img src="img/20180816731861.png" alt="" /></div>
+            <div class="swiper-slide sect3_swiper"><a href="#">새우튀김 김밥</a> <img src="img/20180724469443.jpg" alt="" /></div>
+            <div class="swiper-slide sect3_swiper"><a href="#">크림치즈 호두 김밥</a> <img src="img/20180724414090.jpg" alt="" /></div>
+            <div class="swiper-slide sect3_swiper"><a href="#">불고기 김밥</a> <img src="img/20180724610350.jpg" alt="" /></div>
+            <div class="swiper-slide sect3_swiper"><a href="#">참치 김밥</a> <img src="img/20180724506374.jpg" alt="" /></div>
+            <div class="swiper-slide sect3_swiper"><a href="#">바른 김밥</a> <img src="img/20180724195350.png" alt="" /></div>
+            <div class="swiper-slide sect3_swiper"><a href="#">매콤 장아찌 김밥</a> <img src="img/20180724522738.png" alt="" /></div>
+            <div class="swiper-slide sect3_swiper"><a href="#">어린이 아몬드 김밥</a> <img src="img/20180724675747.png" alt="" /></div>
           </div>
           <!-- Add Pagination -->
           <div class="swiper-pagination"></div>
@@ -90,38 +107,36 @@
       </article>
     </section>
 
-     <!--          section 3             -->
+    <!--          section 3             -->
 
     <section></section>
 
-     <!--          section 4             -->
+    <!--          section 4             -->
 
     <section></section>
 
-     <!--          section 5             -->
+    <!--          section 5             -->
 
     <section></section>
 
-     <!--          section 6             -->
+    <!--          section 6             -->
 
     <section></section>
 
-     <!--          section 7             -->
+    <!--          section 7             -->
 
     <section></section>
 
-     <!--          section 8             -->
+    <!--          section 8             -->
 
     <section></section>
 
-     <!--          section 9             -->
+    <!--          section 9             -->
 
     <section></section>
 
-     <!--            footer               -->
+    <!--            footer               -->
 
     <footer></footer>
-</body>
-
+  </body>
 </html>
-
