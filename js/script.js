@@ -7,3 +7,14 @@ $(function () {
         },
     });
 })
+
+
+
+var swiper = new Swiper('.sect3_wrap .swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: '.sect3_wrap .swiper-pagination',
+      clickable: true,
+    },
+  });
