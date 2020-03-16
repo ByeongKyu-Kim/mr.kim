@@ -106,22 +106,22 @@ header .hd_nav2 li:nth-child(3) a {
   background-size: 1200px;
   background-repeat: no-repeat;
 }
-.sect1 .swiper-slide:nth-child(1) {
+.sect1 .bg1 {
   background-image: url(/img/sect1_img_1.jpg);
 }
-.sect1 .swiper-slide:nth-child(2) {
+.sect1 .bg2 {
   background-image: url(/img/sect1_img_2.jpg);
   background-position: 0, -10%;
 }
-.sect1 .swiper-slide:nth-child(3) {
+.sect1 .bg3 {
   background-image: url(/img/sect1_img_3.jpg);
   background-position: 0, -20%;
 }
-.sect1 .swiper-slide:nth-child(4) {
+.sect1 .bg4 {
   background-image: url(/img/sect1_img_4.jpg);
   background-position: 0, -20%;
 }
-.sect1 .swiper-slide:nth-child(5) {
+.sect1 .bg5 {
   background-image: url(/img/sect1_img_5.jpg);
   background-position: 0, -20%;
 }
