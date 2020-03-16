@@ -6,6 +6,57 @@ header {
   background-color: #f7f3e9;
 }
 
+header .inner {
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header ul {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+header ul li a {
+  text-indent: -99999px;
+  display: block;
+  width: 135px;
+  height: 100px;
+}
+header .hd_nav1 {
+  float: left;
+}
+
+header .hd_nav1 li:nth-child(1) a {
+  background-image: url(/img/hd_menu_1.png);
+
+  background-size: 140px;
+}
+header .hd_nav1 li:nth-child(2) a {
+  background-image: url(/img/hd_menu_1.png);
+  background-size: 140px;
+}
+header .hd_nav1 li:nth-child(3) a {
+  background-image: url(/img/hd_menu_1.png);
+  background-size: 140px;
+}
+header .hd_nav2 {
+  float: right;
+}
+header .hd_nav2 li:nth-child(1) a {
+  background-image: url(/img/hd_menu_1.png);
+  background-size: 140px;
+}
+header .hd_nav2 li:nth-child(2) a {
+  background-image: url(/img/hd_menu_1.png);
+  background-size: 140px;
+}
+header .hd_nav2 li:nth-child(3) a {
+  background-image: url(/img/hd_menu_1.png);
+  background-size: 140px;
+}
+
 /* section1 */
 
 .sect1 {
