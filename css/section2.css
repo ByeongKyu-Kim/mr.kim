@@ -13,3 +13,11 @@
 .sect2_txt{
     text-align: center;
 }
+.sect2_btn{
+    display: flex;
+}
+.sect2_btn li{
+    width: 16.66%;
+    height: 150px;
+    background-image: url(img/secret_food_list.png);
+}
