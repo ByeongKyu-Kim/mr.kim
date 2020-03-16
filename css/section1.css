@@ -30,8 +30,8 @@
     height: 100%;
 }
 .sect1 .swiper-slide{
-background-size: 1200px;
-background-repeat: no-repeat;
+    background-size: 1200px;
+    background-repeat: no-repeat;
 
 }
 .sect1 .swiper-slide:nth-child(1){
@@ -40,25 +40,21 @@ background-repeat: no-repeat;
 }
 .sect1 .swiper-slide:nth-child(2){
     background-image: url(/img/sect1_img_2.jpg);
-
     background-position: 0, -10%;
 
 }
 .sect1 .swiper-slide:nth-child(3){
     background-image: url(/img/sect1_img_3.jpg);
- 
-        background-position: 0, -20%;
+    background-position: 0, -20%;
 
 }
 .sect1 .swiper-slide:nth-child(4){
     background-image: url(/img/sect1_img_4.jpg);
-  
-        background-position: 0, -20%;
+    background-position: 0, -20%;
 
 }
 .sect1 .swiper-slide:nth-child(5){
     background-image: url(/img/sect1_img_5.jpg);
-
-        background-position: 0, -20%;
+    background-position: 0, -20%;
 
 }
