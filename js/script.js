@@ -5,9 +5,9 @@ $(function () {
     
 // section 1
 
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.sect1 .swiper-container', {
         pagination: {
-            el: '.swiper-pagination',
+            el: '.sect1 .swiper-pagination',
         },
     });
 
