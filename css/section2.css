@@ -1,5 +1,15 @@
 *{box-sizing: border-box;}
 
 .sect2{
-    background-image: url(img/)
+    width: 100%; height: 500px;
+    background-color: #0ff;
+}
+
+.sect2 article{
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+.sect2_txt{
+    text-align: center;
 }
