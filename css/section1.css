@@ -38,12 +38,12 @@ header .hd_nav1 {
 }
 
 header .hd_nav1 li:nth-child(1) a {
-  background-image: url(/img/hd_menu_1.png);
+  background-image: url(/img/hd_menu_3.png);
 
   background-size: 140px;
 }
 header .hd_nav1 li:nth-child(2) a {
-  background-image: url(/img/hd_menu_1.png);
+  background-image: url(/img/hd_menu_2.png);
   background-size: 140px;
 }
 header .hd_nav1 li:nth-child(3) a {
@@ -54,7 +54,7 @@ header .hd_nav2 {
   float: right;
 }
 header .hd_nav2 li:nth-child(1) a {
-  background-image: url(/img/hd_menu_1.png);
+  background-image: url(/img/hd_menu_4.png);
   background-size: 140px;
 }
 header .hd_nav2 li:nth-child(2) a {
