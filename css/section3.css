@@ -31,7 +31,7 @@
   font-weight: bold;
   margin-top: 3%;
 }
-
+.sect3_menu {position: relative;}
 .sect3_menu1 {
   background-color: #e4e4e4;
   cursor: pointer;
@@ -79,27 +79,26 @@
   height: 5px;
   left: 0;
   top: 0;
-  border: 10px solid #000;
+  opacity: 0;
 }
 .sect3_span2 {
   width: 5px;
   height: 0px;
   top: 0;
   right: 0;
+  opacity: 0;
 }
-.sect3_span3 {
-  width: 0px;
-  height: 5px;
-  right: 0;
-  bottom: 0;
-}
+
 .sect3_span4 {
   width: 5px;
   height: 0px;
   left: 0;
   bottom: 0;
+  opacity: 0;
 }
-
+.sect3_border {
+    opacity: 1;
+}
 .sect3_swiper {
   padding: 6% 2%;
 }
