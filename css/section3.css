@@ -31,7 +31,7 @@
   font-weight: bold;
   margin-top: 3%;
 }
-
+.sect3_menu {position: relative;}
 .sect3_menu1 {
   background-color: #e4e4e4;
   cursor: pointer;
@@ -74,7 +74,6 @@
   position: absolute;
   display: inline-block;
 }
-
 .sect3_swiper {
   padding: 6% 2%;
 }
