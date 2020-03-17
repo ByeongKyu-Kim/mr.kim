@@ -55,7 +55,7 @@
          <div class="sect3_top">
            
            
-          <div class="sect3_menu1 sect3_menu">
+          <div class="sect3_menu1 sect3_menu sect3_on">
             <span class="sect3_span1"></span>
             <span class="sect3_span2"></span>
             <span class="sect3_span3"></span>
@@ -89,7 +89,7 @@
          </div>
 
 
-         <div class="swiper-container sect3_bottom sect3_kimbab" id="sect3_on">
+         <div style="z-index:9;" class="swiper-container sect3_bottom sect3_kimbab">
           <div class="swiper-wrapper">
             <div class="swiper-slide sect3_swiper"><a href="#">돈가스 김밥</a> <img src="img/20180724892057.jpg" alt=""></div>
             <div class="swiper-slide sect3_swiper"><a href="#">매운 제육 쌈 김밥</a> <img src="img/20180724943317.jpg" alt=""></div>
@@ -128,7 +128,7 @@
 
 
 
-        <div class="swiper-container sect3_bottom sect3_noodle">
+        <div class="swiper-container sect3_bottom sect3_noodle" >
           <div class="swiper-wrapper">
             <div class="swiper-slide sect3_swiper"><a href="#">순메밀 회냉면</a> <img src="img/20190527406146.png" alt=""></div>
             <div class="swiper-slide sect3_swiper"><a href="#">김선생 비빔면</a> <img src="img/20180724458601.png" alt=""></div>
@@ -190,7 +190,7 @@ var swiper = new Swiper('.sect3_wrap .swiper-container', {
     $(this).addClass("sect3_on")
 
     $(".sect3_bottom").fadeOut()
-    $(".sect3_dupbab").css("top","63px").fadeIn()
+    $(".sect3_dupbab").css("top","0px").fadeIn()
   })
 
 
@@ -202,24 +202,24 @@ var swiper = new Swiper('.sect3_wrap .swiper-container', {
     $(this).addClass("sect3_on")
 
     $(".sect3_bottom").fadeOut()
-    $(".sect3_noodle").css("top","126px").fadeIn()
+    $(".sect3_noodle").css("top","0px").fadeIn()
   })
 
 
 
 
 
-  // $(".sect3_menu1").click(function(){
-  //   $(".sect3_span1").stop().animate({"width":"100%"},50,function(){
-  //     $(".sect3_span2").stop().animate({"height":"100%"},50,function(){
-  //       $(".sect3_span3").stop().animate({"width":"100%"},50,function(){
-  //         $(".sect3_span4").stop().animate({"height":"100%"},50,function(){
+  $(".sect3_menu1").click(function(){
+    $(".sect3_span1").stop().animate({"width":"100%"},50,function(){
+      $(".sect3_span2").stop().animate({"height":"100%"},50,function(){
+        $(".sect3_span3").stop().animate({"width":"100%"},50,function(){
+          $(".sect3_span4").stop().animate({"height":"100%"},50,function(){
 
-  //         })
-  //       })
-  //     })
-  //   })
-  // })
+          })
+        })
+      })
+    })
+  })
 
 
 
