@@ -31,7 +31,9 @@
   font-weight: bold;
   margin-top: 3%;
 }
-.sect3_menu {position: relative;}
+.sect3_menu {
+  position: relative;
+}
 .sect3_menu1 {
   background-color: #e4e4e4;
   cursor: pointer;
@@ -74,7 +76,8 @@
   position: absolute;
   display: inline-block;
 }
-.sect3_span1 {
+
+/* .sect3_span1 {
   width: 0;
   height: 5px;
   left: 0;
@@ -98,7 +101,8 @@
 }
 .sect3_border {
     opacity: 1;
-}
+} */
+
 .sect3_swiper {
   padding: 6% 2%;
 }
@@ -111,6 +115,9 @@
   text-align: center;
   display: block;
   font-family: "Song Myung", serif;
+}
+.sect3_form {
+  transform: scale(1.15);
 }
 
 .sect3 .swiper-container {

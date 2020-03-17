@@ -53,28 +53,28 @@
       <article class="arti3_max1200">
         <div class="sect3_top">
           <div class="sect3_menu1 sect3_menu sect3_on">
-            <span class="sect3_span1"></span>
+            <!-- <span class="sect3_span1"></span>
             <span class="sect3_span2"></span>
             <span class="sect3_span3"></span>
-            <span class="sect3_span4"></span>
+            <span class="sect3_span4"></span> -->
             <h2>김밥</h2>
             <p>김밥 메뉴판 한눈에 보기</p>
           </div>
 
           <div class="sect3_menu2 sect3_menu">
-            <span class="sect3_span5"></span>
+            <!-- <span class="sect3_span5"></span>
             <span class="sect3_span6"></span>
             <span class="sect3_span7"></span>
-            <span class="sect3_span8"></span>
+            <span class="sect3_span8"></span> -->
             <h2>덮밥</h2>
             <p>덮밥 메뉴판 한눈에 보기</p>
           </div>
 
           <div class="sect3_menu3 sect3_menu">
-            <span class="sect3_span9"></span>
+            <!-- <span class="sect3_span9"></span>
             <span class="sect3_span10"></span>
             <span class="sect3_span11"></span>
-            <span class="sect3_span12"></span>
+            <span class="sect3_span12"></span> -->
             <h2>면</h2>
             <p>면 메뉴판 한눈에 보기</p>
           </div>
@@ -245,25 +245,11 @@
 
 
 
+$(".sect3_swiper").mouseenter(function(){
+  $(".sect3_swiper").removeClass("sect3_form")
+  $(this).addClass("sect3_form")
+})
 
-
-        $(".sect3_menu1").click(function(){
-          $(".sect3_menu > span").removeClass("sect3_border")
-          $(this).find("span").addClass("sect3_border")
-          $(".sect3_span1").stop().animate({"width":"100%"},300,function(){
-            $(".sect3_span2").stop().animate({"height":"100%"},600,function(){
-                $(".sect3_span4").stop().animate({"height":"100%"},900,function(){
-              })
-            })
-          })
-        })
-
-        $(".sect3_menu1").mouseleave(function(){
-          $(".sect3_menu > span").removeClass("sect3_border")
-          $(this).find("span").addClass("sect3_border")
-          $(".sect3_span1").stop().animate({"width":"100%"},300,function(){
-            $(".sect3_span2").stop().animate({"height":"100%"},600,function(){
-                $(".sect3_span4").stop().animate({"height":"100%"},900,function(){
 
 
 
