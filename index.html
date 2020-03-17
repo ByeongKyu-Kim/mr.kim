@@ -4,9 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <<<<<<< HEAD
     <link rel="stylesheet" href="css/colorbox.css" />
     <link rel="stylesheet" href="css/swiper.css" />
     <link rel="stylesheet" href="css/section1.css" />
+    =======
+    <link rel="stylesheet" href="css/colorbox.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="/css/swiper.css" />
+    <link rel="stylesheet" href="/css" />
+    <link rel="stylesheet" href="/css/section2.css" />
+    >>>>>>> master
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/jquery.colorbox-min.js"></script>
@@ -49,6 +57,7 @@
       </div>
     </section>
     <section></section>
+
     <section class="sect3_wrap">
       <article class="arti3_max1200">
         <div class="sect3_top">
@@ -58,7 +67,7 @@
             <span class="sect3_span3"></span>
             <span class="sect3_span4"></span> -->
             <h2>김밥</h2>
-            <p>김밥 메뉴판 한눈에 보기</p>
+            <p>메뉴판 한눈에 보기</p>
           </div>
 
           <div class="sect3_menu2 sect3_menu">
@@ -67,7 +76,7 @@
             <span class="sect3_span7"></span>
             <span class="sect3_span8"></span> -->
             <h2>덮밥</h2>
-            <p>덮밥 메뉴판 한눈에 보기</p>
+            <p>메뉴판 한눈에 보기</p>
           </div>
 
           <div class="sect3_menu3 sect3_menu">
@@ -76,12 +85,20 @@
             <span class="sect3_span11"></span>
             <span class="sect3_span12"></span> -->
             <h2>면</h2>
-            <p>면 메뉴판 한눈에 보기</p>
+            <p>메뉴판 한눈에 보기</p>
           </div>
         </div>
 
-        <div style="z-index:9;" class="swiper-container sect3_bottom sect3_kimbab">
-          <div class="swiper-wrapper">
+        <div class="sect3_next">
+          <img src="img/icon-2423347_640.png" alt="" />
+        </div>
+
+        <div class="sect3_prev">
+          <img src="img/icon-2423347_640 11.png" alt="" />
+        </div>
+
+        <div style="z-index:9;" class="swiper-container sect3_bottom sect3_kimbab sect3_ko">
+          <div class="swiper-wrapper sect3_scroll">
             <div class="swiper-slide sect3_swiper">
               <a href="#">돈가스 김밥</a> <img src="img/20180724892057.jpg" alt="" />
             </div>
@@ -121,7 +138,7 @@
         </div>
 
         <div class="swiper-container sect3_bottom sect3_dupbab">
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper sect3_scroll">
             <div class="swiper-slide sect3_swiper">
               <a href="#">무나물 꼬막 비빔밥</a> <img src="img/20190527533854.png" alt="" />
             </div>
@@ -155,7 +172,7 @@
         </div>
 
         <div class="swiper-container sect3_bottom sect3_noodle">
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper sect3_scroll">
             <div class="swiper-slide sect3_swiper">
               <a href="#">순메밀 회냉면</a> <img src="img/20190527406146.png" alt="" />
             </div>
@@ -200,84 +217,104 @@
     <footer></footer>
 
     <script>
+      var swiper = new Swiper(".sect3_wrap .swiper-container", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".sect3_wrap .swiper-pagination",
+          clickable: true
+        }
+      })
 
-      var swiper = new Swiper('.sect3_wrap .swiper-container', {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          pagination: {
-            el: '.sect3_wrap .swiper-pagination',
-            clickable: true,
-          },
-        });
+      // 김밥 메뉴 페이드인, 페이드 아웃
+      $(".sect3_menu1").click(function() {
+        $(".sect3_menu").removeClass("sect3_on")
+        $(this).addClass("sect3_on")
 
+        $(".sect3_dupbab, .sect3_noodle").removeClass("sect3_ko")
+        $(".sect3_kimbab").addClass("sect3_ko")
 
-        $(".sect3_menu1").click(function(){
+        $(".sect3_bottom").fadeOut()
+        $(".sect3_kimbab").fadeIn()
+      }) /
+        // 덮밥 메뉴 페이드인, 페이드 아웃
+        $(".sect3_menu2").click(function() {
           $(".sect3_menu").removeClass("sect3_on")
           $(this).addClass("sect3_on")
 
-          $(".sect3_bottom").fadeOut()
-          $(".sect3_kimbab").fadeIn()
-        })
-
-
-
-
-
-        $(".sect3_menu2").click(function(){
-          $(".sect3_menu").removeClass("sect3_on")
-          $(this).addClass("sect3_on")
+          $(".sect3_kimbab, .sect3_noodle").removeClass("sect3_ko")
+          $(".sect3_dupbab").addClass("sect3_ko")
 
           $(".sect3_bottom").fadeOut()
-          $(".sect3_dupbab").css("top","0px").fadeIn()
+          $(".sect3_dupbab").fadeIn()
         })
 
+      // 면 메뉴 페이드인, 페이드 아웃
+      $(".sect3_menu3").click(function() {
+        $(".sect3_menu").removeClass("sect3_on")
+        $(this).addClass("sect3_on")
 
+        $(".sect3_kimbab, .sect3_dupbab").removeClass("sect3_ko")
+        $(".sect3_noodle").addClass("sect3_ko")
 
+        $(".sect3_bottom").fadeOut()
+        $(".sect3_noodle").fadeIn()
+      })
 
+      // 음식 이미지 클릭하면 1.15배로 확대
 
-        $(".sect3_menu3").click(function(){
-          $(".sect3_menu").removeClass("sect3_on")
-          $(this).addClass("sect3_on")
+      $(".sect3_swiper").mouseenter(function() {
+        $(".sect3_swiper").removeClass("sect3_form")
+        $(this).addClass("sect3_form")
+      })
 
-          $(".sect3_bottom").fadeOut()
-          $(".sect3_noodle").css("top","0px").fadeIn()
-        })
+      var s3q
+      s3q = 0
 
+      $(".sect3_next").click(function() {
+        s3q++
+        if (s3q < 9) {
+          alert(s3q)
+          $(".sect3_scroll").animate({ "margin-left": "-=410px" })
+        } else {
+          alert(s3q)
+          s3q = 8
+          $(".sect3_scroll").animate({ "margin-left": "-=0px" })
+        }
+      })
 
+      $(".sect3_prev").click(function() {
+        s3q--
 
-$(".sect3_swiper").mouseenter(function(){
-  $(".sect3_swiper").removeClass("sect3_form")
-  $(this).addClass("sect3_form")
-})
+        if (s3q > -1) {
+          alert(s3q)
+          $(".sect3_scroll").animate({ "margin-left": "+=410px" })
+        } else {
+          alert(s3q)
+          s3q = 0
+          $(".sect3_scroll").animate({ "margin-left": "+=0px" })
+        }
+      })
 
+      // $(".sect3_menu2").click(function(){
+      //   $(".sect3_span5").stop().animate({"width":"100%"},50,function(){
+      //     $(".sect3_span6").stop().animate({"height":"100%"},50,function(){
+      //       $(".sect3_span7").stop().animate({"width":"100%"},50,function(){
+      //         $(".sect3_span8").stop().animate({"height":"100%"},50
+      //       )})
+      //     })
+      //   })
+      // })
 
-
-
-
-
-        // $(".sect3_menu2").click(function(){
-        //   $(".sect3_span5").stop().animate({"width":"100%"},50,function(){
-        //     $(".sect3_span6").stop().animate({"height":"100%"},50,function(){
-        //       $(".sect3_span7").stop().animate({"width":"100%"},50,function(){
-        //         $(".sect3_span8").stop().animate({"height":"100%"},50
-        //       )})
-        //     })
-        //   })
-        // })
-
-
-
-
-
-        // $(".sect3_menu3").click(function(){
-        //   $(".sect3_span9").stop().animate({"width":"100%"},50,function(){
-        //     $(".sect3_span10").stop().animate({"height":"100%"},50,function(){
-        //       $(".sect3_span11").stop().animate({"width":"100%"},50,function(){
-        //         $(".sect3_span12").stop().animate({"height":"100%"},50
-        //       )})
-        //     })
-        //   })
-        // })
+      // $(".sect3_menu3").click(function(){
+      //   $(".sect3_span9").stop().animate({"width":"100%"},50,function(){
+      //     $(".sect3_span10").stop().animate({"height":"100%"},50,function(){
+      //       $(".sect3_span11").stop().animate({"width":"100%"},50,function(){
+      //         $(".sect3_span12").stop().animate({"height":"100%"},50
+      //       )})
+      //     })
+      //   })
+      // })
     </script>
   </body>
 </html>
