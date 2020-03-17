@@ -16,12 +16,11 @@ header h1 {
   background-image: url(/img/logo3.png);
   background-size: 150px;
   background-repeat: no-repeat;
-  position: fixed;
+  position: absolute;
   width: 150px;
   height: 500px;
   top: -100px;
   left: 100px;
-  z-index: 99999;
 }
 header ul {
   width: 40%;
