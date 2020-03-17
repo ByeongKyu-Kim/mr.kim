@@ -26,9 +26,6 @@ $(function() {
 
 
 
-
-
-
   $(".sect3_menu1").click(function(){
     $(".sect3_menu").removeClass("sect3_on")
     $(this).addClass("sect3_on")

@@ -1,8 +1,8 @@
 .sect3_wrap {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: antiquewhite;
-  padding: 2%;
+  padding: 2% 0;
   font-family: "Song Myung", serif;
 }
 .arti3_max1200 {
