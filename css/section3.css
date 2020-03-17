@@ -74,31 +74,6 @@
   position: absolute;
   display: inline-block;
 }
-.sect3_span1 {
-  width: 0;
-  height: 5px;
-  left: 0;
-  top: 0;
-  border: 10px solid #000;
-}
-.sect3_span2 {
-  width: 5px;
-  height: 0px;
-  top: 0;
-  right: 0;
-}
-.sect3_span3 {
-  width: 0px;
-  height: 5px;
-  right: 0;
-  bottom: 0;
-}
-.sect3_span4 {
-  width: 5px;
-  height: 0px;
-  left: 0;
-  bottom: 0;
-}
 
 .sect3_swiper {
   padding: 6% 2%;
