@@ -202,9 +202,35 @@
           <div class="swiper-pagination"></div>
         </div>
       </article>
+  </div>      
     </section>
 
-    <section></section>
+    <section class="sect4">
+      <div class="sect4_wrap">
+        <div id="flag_right">
+
+          <div id="flag_left">
+            <div class="comic">
+             <p class="bike_left"> <img src="img/AbE87Sez0BJ3vsBuqRvQxWF6fuc222.png" alt=""></p>
+             <p class="bike_right"> <img src="img/AbE87Sez0BJ3vsBuqRvQxWF6fuc222.png" alt=""></p>
+
+             
+                 
+                   <div class="sect4_effact sect4_effact1"></div>
+                   <div class="sect4_effact sect4_effact2"></div>
+                   <div class="sect4_effact sect4_effact3"></div>
+              </div>
+            </div>
+          
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
     <section></section>
     <section></section>
     <section></section>
@@ -293,24 +319,32 @@
         }
       })
 
-      // $(".sect3_menu2").click(function(){
-      //   $(".sect3_span5").stop().animate({"width":"100%"},50,function(){
-      //     $(".sect3_span6").stop().animate({"height":"100%"},50,function(){
-      //       $(".sect3_span7").stop().animate({"width":"100%"},50,function(){
-      //         $(".sect3_span8").stop().animate({"height":"100%"},50
-      //       )})
-      //     })
-      //   })
-      // })
 
-      // $(".sect3_menu3").click(function(){
-      //   $(".sect3_span9").stop().animate({"width":"100%"},50,function(){
-      //     $(".sect3_span10").stop().animate({"height":"100%"},50,function(){
-      //       $(".sect3_span11").stop().animate({"width":"100%"},50,function(){
-      //         $(".sect3_span12").stop().animate({"height":"100%"},50
-      //       )})
-      //     })
-      //   })
+
+
+      // 섹트4의 오토바이 그림위 배달안내 스크립트
+     
+      $(document).scroll(function() {
+        var scrT = $(this).scrollTop()
+
+        if (scrT >= 900) {
+          $(".sect4_effact1").fadeIn(600)
+            $(".sect4_effact2").fadeIn(2000)
+              $(".sect4_effact3").fadeIn(3200)
+       
+      } else {
+          $(".sect4_effact").fadeOut(100)
+        }
+      })
+
+      // $(document).scroll(function() {
+      //   var scrT = $(this).scrollTop()
+
+      //   if (scrT >= 400) {
+      //     $("").addClass("scroll_header")
+      //   } else {
+      //     $("").removeClass("scroll_header")
+      //   }
       // })
     </script>
   </body>
