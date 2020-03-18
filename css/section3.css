@@ -11,6 +11,7 @@
   height: 70vh;
   background-color: white;
   margin: 0 auto;
+  position: relative;
 }
 .sect3_top {
   width: 100%;
