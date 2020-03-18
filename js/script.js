@@ -13,20 +13,20 @@ $(function() {
 
   // sect2
 
-  // $(".sect2_btn li").mouseenter(function() {
-  //   $(".sect2_btn li").removeClass("on")
-  //   $(this).addClass("on")
+   $(".sect2_btn li").mouseenter(function() {
+     $(".sect2_btn li").removeClass("on")
+     $(this).addClass("on")
 
-  //   var idx = $(this).index()
+     var idx = $(this).index()
 
-  //   $(".sect2_box li")
-  //     .stop()
-  //     .fadeOut(300)
-  //   $(".sect2_box li")
-  //     .eq(idx)
-  //     .stop()
-  //     .fadeIn(300)
-  // })
+     $(".sect2_box li")
+       .stop()
+       .fadeOut(300)
+     $(".sect2_box li")
+       .eq(idx)
+       .stop()
+       .fadeIn(300)
+   })
 
   // sect3
   var swiper3 = new Swiper(".sect3_wrap .swiper-container", {
