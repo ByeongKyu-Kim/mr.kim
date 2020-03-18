@@ -5,16 +5,18 @@
   padding: 2% 0;
   font-family: "Song Myung", serif;
 }
+
 .arti3_max1200 {
   max-width: 1200px;
-  width: 1200px;
-  height: 90vh;
+  height: 70vh;
   background-color: white;
   margin: 0 auto;
+  position: relative;
 }
 .sect3_top {
   width: 100%;
-  height: 30vh;
+  height:30vh;
+  min-height: 150px;
   display: flex;
 }
 .sect3_top div {
@@ -23,18 +25,27 @@
   padding-top: 8%;
 }
 .sect3_top h2 {
-  font-size: 24px;
+  font-size: 1.8rem;
   font-weight: bold;
+ 
 }
 .sect3_top p {
-  font-size: 14px;
+  font-size: 0.8rem;
   font-weight: bold;
-  margin-top: 3%;
+  margin-top: 10%;
+  background-color: #FAEBD7;
+  width: 40%;
+  height: 30%;
+  margin: auto;
+  padding-top: 4.5%;
 }
 .sect3_menu {
   position: relative;
 }
-.sect3_menu1 {
+
+
+.sect3_menu1 
+{
   background-color: #e4e4e4;
   cursor: pointer;
 }
@@ -52,42 +63,82 @@
 
 .sect3_kimbab {
   position: absolute;
-  top: 0%;
+  top: 0;
   left: 0;
   background-color: white;
+  opacity: 0;
 }
 .sect3_dupbab {
   position: absolute;
-  top: -63%;
+  top:0;
   left: 0;
   background-color: white;
+  opacity: 0;
+ 
 }
 .sect3_noodle {
+    
   position: absolute;
-  top: -119%;
+  top: 0;
   left: 0;
   background-color: white;
+  opacity: 0;
 }
 .sect3_on {
   background-color: white !important;
+}
+.sect3_ko {
+    opacity: 1;
 }
 .sect3_menu > span {
   background-color: lightgrey;
   position: absolute;
   display: inline-block;
 }
+
+/* .sect3_span1 {
+  width: 0;
+  height: 5px;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.sect3_span2 {
+  width: 5px;
+  height: 0px;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.sect3_span4 {
+  width: 5px;
+  height: 0px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+}
+.sect3_border {
+    opacity: 1;
+} */
+
 .sect3_swiper {
-  padding: 6% 2%;
+  padding: 6% 4%;
+  
 }
 .sect3_swiper img {
-  width: 330px;
+  width: 100%;
+  
 }
 .sect3_swiper a {
-  font-size: 16px;
+  font-size: 0.8rem;
   font-weight: bold;
   text-align: center;
   display: block;
   font-family: "Song Myung", serif;
+}
+.sect3_form {
+  transform: scale(1.15);
 }
 
 .sect3 .swiper-container {
@@ -97,6 +148,14 @@
 
 .sect3 .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size:1em;
   background: #fff;
 }
+
+
+.sect3_next {width:5%; height: 10%; position: absolute; top:110%; right:16%; z-index: 9999; opacity:.6;}
+.sect3_prev {width:5%; height: 10%; position: absolute; top: 110%; left: 16%;z-index: 9999; opacity: .6;}
+
+.sect3_prev img,
+.sect3_next img { width: 100%;  height: 100%;cursor: pointer; border: 2px solid transparent; border-radius: 50%;  box-shadow: 2px 2px 4px 1px ;}
+
