@@ -4,17 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/colorbox.css" />
-    <link rel="stylesheet" href="css/swiper.css" />
+    <!--스타일 css-->
     <link rel="stylesheet" href="css/section1.css" />
-    <link rel="stylesheet" href="css/colorbox.css" />
-    <link rel="stylesheet" href="css/swiper.css" />
-    <link rel="stylesheet" href="/css/swiper.css" />
-    <link rel="stylesheet" href="/css" />
-    <link rel="stylesheet" href="/css/section2.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/swiper.js"></script>
-    <script src="js/jquery.colorbox-min.js"></script>
     <link rel="stylesheet" href="css/section1.css" />
     <link rel="stylesheet" href="css/section2.css" />
     <link rel="stylesheet" href="css/section3.css" />
@@ -24,36 +15,159 @@
     <link rel="stylesheet" href="css/section7.css" />
     <link rel="stylesheet" href="css/section8.css" />
     <link rel="stylesheet" href="css/section9.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/swiper.css" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/colorbox.css" />
+     <!--colorbox css-->
+     <link rel="stylesheet" href="css/colorbox.css" />
+     <!--swiper css-->
+     <link rel="stylesheet" href="css/swiper.css" />
+    <!--제이쿼리 js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--swiper js-->
+    <script src="js/swiper.min.js"></script>
+    <!--colorbox js-->
+    <script src="js/jquery.colorbox-min.js"></script>
+    <!--제이쿼리-->
+    <script src="js/script.js"></script>
+    
 
     <style>
       @import "css/reset.css";
-      * {
-        box-sizing: border-box;
+      *{box-sizing: border-box;}
+      /* section1 */
+      .clearfix{
+        overflow: hidden;
       }
+      .fl{
+        float: left;
+      }
+      .fr{
+        float: right;
+      }
+      .swiper-pagination-bullet {
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        border-radius: 100%;
+        background: #f7f3e9;
+        opacity: 1;
+      }
+      .swiper-pagination-bullet-active {
+        background: #c7a776;
+      }
+      .swiper-container-horizontal > .swiper-pagination-bullets {
+        bottom: 30px;
+        left: 500px;
+        width: 100%;
+      }
+      /* section2 */
+      /* section3 */
+      /* section4 */
+      /* section5 */
+      /* section6 */
+      /* section7 */
+      /* section8 */
+      /* section9 */
     </style>
   </head>
 
   <body>
-    <header></header>
-    <section class="sect1">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
-        </div>
+    <header>
+      <div class="inner">
+        <h1></h1>
+        <ul class="hd_nav1">
+          <li><a href=".sect2">메뉴소개</a></li>
+          <li><a href=".sect3">메뉴소개</a></li>
+          <li><a href=".sect4">메뉴소개</a></li>
+        </ul>
+        <ul class="hd_nav2">
+          <li><a href=".sect5">메뉴소개</a></li>
+          <li><a href=".sect6">메뉴소개</a></li>
+          <li><a href=".sect7">메뉴소개</a></li>
+        </ul>
+      </div>
+    </header>
 
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+    <!--          section 1             -->
+
+    <section class="sect1">
+      <div class="inner">
+        <h1></h1>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bg1"></div>
+                <div class="swiper-slide bg2"></div>
+                <div class="swiper-slide bg3"></div>
+                <div class="swiper-slide bg4"></div>
+                <div class="swiper-slide bg5"></div>
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
       </div>
     </section>
-    <section></section>
+
+    <!--          section 2             -->
+
+    <section class="sect2">
+      <article>
+        <div class="sect2_txt">
+          <p>
+            바르다 김선생의<br/>
+            가장 중요한 가치는 음식을 만드는 식재료입니다
+            </p>
+          <p>
+            청정지역 김, 식품첨가물을 전혀 넣지 않거나 최소로 사용한 단무지, 햄과 당근볶음,<br/>
+            전통방식의 제조법으로 짠 참기름 등 좋은 재료로 정성껏 만듭니다.
+          </p>
+        </div>
+        <ul class="sect2_btn">
+          <li class="on"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <ul class="sect2_box">
+          <li class="on">
+            <div><h3>5無단무지</h3>
+            <p>HACCP 인증 받은 5無 단무지<br/>
+            (사카린나트륨, L-글루탐산나트륨,<br/>
+            합성보존료, 표백제, 빙초산)</p></div>
+          </li>
+          <li>
+            <div class="fr"><h3>청정해역 김</h3>
+            <p>남해 청정해역에서 자란<br/>
+            원초만을 사용하여 두 번 구운 김</p></div>
+          </li>
+          <li>
+            <div><h3>바른 쌀</h3>
+            <p>보성 간척지에서<br/>
+            수확한 도정 15일 이내의 쌀</p></div>
+          </li>
+          <li>
+            <div class="fr"><h3>항생제란</h3>
+            <p>HACCP 인증을 받은<br/>
+            전용농장에서 생산된<br/>
+            無항생제란</p></div>
+          </li>
+          <li>
+            <div><h3>바른 참기름</h3>
+            <p>100% 통참깨를<br/>
+            저온 압착방식으로 추출한<br/>
+            소소원 참기름</p></div>
+          </li>
+          <li>
+            <div class="fr"><h3>바른 햄</h3>
+            <p>합성아질산나트륨을<br/>
+            첨가하지 않은 국내산<br/>
+            돼지고기로 만든 햄</p></div>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <!--          section 3             -->
 
     <section class="sect3_wrap">
       <article class="arti3_max1200">
@@ -130,8 +244,8 @@
               <a href="#">어린이 아몬드 김밥</a> <img src="img/20180724675747.png" alt="" />
             </div>
           </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
+          
+
         </div>
 
         <div class="swiper-container sect3_bottom sect3_dupbab">
@@ -164,8 +278,7 @@
               <a href="#">달래향 간장 비빔밥</a> <img src="img/20180724271184.png" alt="" />
             </div>
           </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
+          
         </div>
 
         <div class="swiper-container sect3_bottom sect3_noodle">
@@ -198,12 +311,13 @@
               <a href="#">튀김 어묵 우동</a> <img src="img/20180724472021.png" alt="" />
             </div>
           </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
+          
         </div>
-      </article>
-  </div>      
+      </div>
     </section>
+
+
+    <!--          section 4             -->
 
     <section class="sect4">
       <div class="sect4_wrap">
@@ -225,123 +339,50 @@
         </div>
     </section>
 
+    <!--          section 5             -->
 
+    <section class="sect5"></section>
 
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <footer></footer>
+    <!--          section 6             -->
 
-    <script>
-      var swiper = new Swiper(".sect3_wrap .swiper-container", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-          el: ".sect3_wrap .swiper-pagination",
-          clickable: true
-        }
-      })
+    <section class="sect6"></section>
 
-      // 김밥 메뉴 페이드인, 페이드 아웃
-      $(".sect3_menu1").click(function() {
-        $(".sect3_menu").removeClass("sect3_on")
-        $(this).addClass("sect3_on")
+    <!--          section 7             -->
 
-        $(".sect3_dupbab, .sect3_noodle").removeClass("sect3_ko")
-        $(".sect3_kimbab").addClass("sect3_ko")
+    <section class="sect7"></section>
 
-        $(".sect3_bottom").fadeOut()
-        $(".sect3_kimbab").fadeIn()
-      }) /
-        // 덮밥 메뉴 페이드인, 페이드 아웃
-        $(".sect3_menu2").click(function() {
-          $(".sect3_menu").removeClass("sect3_on")
-          $(this).addClass("sect3_on")
+    <!--          section 8             -->
 
-          $(".sect3_kimbab, .sect3_noodle").removeClass("sect3_ko")
-          $(".sect3_dupbab").addClass("sect3_ko")
+    <section class="sect8"></section>
 
-          $(".sect3_bottom").fadeOut()
-          $(".sect3_dupbab").fadeIn()
-        })
+    <!--          section 9             -->
 
-      // 면 메뉴 페이드인, 페이드 아웃
-      $(".sect3_menu3").click(function() {
-        $(".sect3_menu").removeClass("sect3_on")
-        $(this).addClass("sect3_on")
-
-        $(".sect3_kimbab, .sect3_dupbab").removeClass("sect3_ko")
-        $(".sect3_noodle").addClass("sect3_ko")
-
-        $(".sect3_bottom").fadeOut()
-        $(".sect3_noodle").fadeIn()
-      })
-
-      // 음식 이미지 클릭하면 1.15배로 확대
-
-      $(".sect3_swiper").mouseenter(function() {
-        $(".sect3_swiper").removeClass("sect3_form")
-        $(this).addClass("sect3_form")
-      })
-
-      var s3q
-      s3q = 0
-
-      $(".sect3_next").click(function() {
-        s3q++
-        if (s3q < 9) {
-          alert(s3q)
-          $(".sect3_scroll").animate({ "margin-left": "-=410px" })
-        } else {
-          alert(s3q)
-          s3q = 8
-          $(".sect3_scroll").animate({ "margin-left": "-=0px" })
-        }
-      })
-
-      $(".sect3_prev").click(function() {
-        s3q--
-
-        if (s3q > -1) {
-          alert(s3q)
-          $(".sect3_scroll").animate({ "margin-left": "+=410px" })
-        } else {
-          alert(s3q)
-          s3q = 0
-          $(".sect3_scroll").animate({ "margin-left": "+=0px" })
-        }
-      })
-
-
-
-
-      // 섹트4의 오토바이 그림위 배달안내 스크립트
-     
-      $(document).scroll(function() {
-        var scrT = $(this).scrollTop()
-
-        if (scrT >= 900) {
-          $(".sect4_effact1").fadeIn(600)
-            $(".sect4_effact2").fadeIn(2000)
-              $(".sect4_effact3").fadeIn(3200)
-       
-      } else {
-          $(".sect4_effact").fadeOut(100)
-        }
-      })
-
-      // $(document).scroll(function() {
-      //   var scrT = $(this).scrollTop()
-
-      //   if (scrT >= 400) {
-      //     $("").addClass("scroll_header")
-      //   } else {
-      //     $("").removeClass("scroll_header")
-      //   }
-      // })
-    </script>
+    <section class="sect9">
+      <div class="inner"><p>바르다 김선생의 마음 가짐 <br>
+        음식을 다루는 이에게 가장 중요한 마음가짐은 <br>
+        화려한 경력도 뛰어난 스킬도 아닌 사명감과 도덕성입니다. <br>
+        저희 바르다 김선생은 ‘외식기업은 신뢰가 전부다’라는 마음으로 <br>
+        절대로 재료만은 타협하지 않습니다.</p></div>
+    </section>
+    <footer>
+      <div class="inner">
+        <ul class="ft_1">
+          <li><a href="#">  개인정보취급방침</a></li>
+          <li>·</li>
+          <li><a href="#">  이용약관</a></li>
+          <li>·</li>
+          <li><a href="#"> 바른프랜차이즈</a> </li>
+          <li>·</li>
+          <li><a href="#"> 가맹상담신청</a> </li>
+          <li>·</li>
+          <li><a href="#"> 사이트맵</a> </li>
+        </ul>
+        <ul class="ft_2">
+          <li>대표 : 나상균 / 서울시 강남구 영동대로 82길 7</li>
+          <li>T. 1800.1525 / F. 02.927.1526</li>
+        </ul>
+        <p>Copyright (C)TeacherKim ALL RIGHTS RESERVED.</p>
+      </div>
+    </footer>
   </body>
 </html>

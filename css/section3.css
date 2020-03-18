@@ -2,7 +2,7 @@
   width: 100%;
   height: 100vh;
   background-color: antiquewhite;
-  padding: 2%;
+  padding: 2% 0;
   font-family: "Song Myung", serif;
 }
 
@@ -11,6 +11,7 @@
   height: 70vh;
   background-color: white;
   margin: 0 auto;
+  position: relative;
 }
 .sect3_top {
   width: 100%;
