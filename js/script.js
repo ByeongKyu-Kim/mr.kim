@@ -15,7 +15,7 @@ $(function() {
 
    $(".sect2_btn li").mouseenter(function() {
      $(".sect2_btn li").removeClass("on")
-     $(this).addClass("on")
+     
 
      var idx = $(this).index()
 
@@ -26,6 +26,7 @@ $(function() {
        .eq(idx)
        .stop()
        .fadeIn(300)
+
    })
 
   // sect3
