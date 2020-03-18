@@ -16,12 +16,11 @@ header h1 {
   background-image: url(img/logo3.png);
   background-size: 150px;
   background-repeat: no-repeat;
-  position: fixed;
+  position: absolute;
   width: 150px;
   height: 500px;
   top: -100px;
   left: 100px;
-  z-index: 99999;
 }
 header ul {
   width: 40%;
@@ -39,12 +38,12 @@ header .hd_nav1 {
 }
 
 header .hd_nav1 li:nth-child(1) a {
-  background-image: url(/img/hd_menu_1.png);
+  background-image: url(/img/hd_menu_3.png);
 
   background-size: 140px;
 }
 header .hd_nav1 li:nth-child(2) a {
-  background-image: url(/img/hd_menu_1.png);
+  background-image: url(/img/hd_menu_2.png);
   background-size: 140px;
 }
 header .hd_nav1 li:nth-child(3) a {
@@ -55,7 +54,7 @@ header .hd_nav2 {
   float: right;
 }
 header .hd_nav2 li:nth-child(1) a {
-  background-image: url(/img/hd_menu_1.png);
+  background-image: url(/img/hd_menu_4.png);
   background-size: 140px;
 }
 header .hd_nav2 li:nth-child(2) a {
