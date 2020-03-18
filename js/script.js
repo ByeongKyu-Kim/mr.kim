@@ -1,6 +1,5 @@
 $(function() {
-  // section1
-
+  // sect1
   var swiper1 = new Swiper(".sect1 .swiper-container", {
     pagination: {
       el: ".sect1 .swiper-pagination",
@@ -12,9 +11,19 @@ $(function() {
     loop: true,
   })
 
-  // section2
+  // sect2
 
-  // section3
+  $(".sect2_btn li").mouseenter(function() {
+    $(".sect2_btn li").removeClass("on")
+    $(this).addClass("on")
+
+    var idx = $(this).index()
+
+    $(".sect2_box li").stop().fadeOut()
+    $(".sect2_box li").eq(idx).stop().fadeIn()
+  })
+
+  // sect3
   var swiper3 = new Swiper(".sect3_wrap .swiper-container", {
     slidesPerView: 3,
     spaceBetween: 30,
@@ -52,11 +61,10 @@ $(function() {
       .fadeIn()
   })
 
-  // section3
-  // section4
-  // section5
-  // section6
-  // section7
-  // section8
-  // section9
+  //sect4
+  //sect5
+  //sect6
+  //sect7
+  //sect8
+  //sect9
 })
