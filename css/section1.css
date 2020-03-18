@@ -13,7 +13,7 @@ header .inner {
   overflow: hidden;
 }
 header h1 {
-  background-image: url(img/logo3.png);
+  background-image: url(../img/logo3.png);
   background-size: 150px;
   background-repeat: no-repeat;
   position: absolute;
@@ -38,38 +38,38 @@ header .hd_nav1 {
 }
 
 header .hd_nav1 li:nth-child(1) a {
-  background-image: url(/img/hd_menu_3.png);
+  background-image: url(../img/hd_menu_3.png);
 
   background-size: 140px;
 }
 header .hd_nav1 li:nth-child(2) a {
-  background-image: url(/img/hd_menu_2.png);
+  background-image: url(../img/hd_menu_2.png);
   background-size: 140px;
 }
 header .hd_nav1 li:nth-child(3) a {
-  background-image: url(/img/hd_menu_1.png);
+  background-image: url(../img/hd_menu_1.png);
   background-size: 140px;
 }
 header .hd_nav2 {
   float: right;
 }
 header .hd_nav2 li:nth-child(1) a {
-  background-image: url(/img/hd_menu_4.png);
+  background-image: url(../img/hd_menu_4.png);
   background-size: 140px;
 }
 header .hd_nav2 li:nth-child(2) a {
-  background-image: url(/img/hd_menu_1.png);
+  background-image: url(../img/hd_menu_1.png);
   background-size: 140px;
 }
 header .hd_nav2 li:nth-child(3) a {
-  background-image: url(/img/hd_menu_1.png);
+  background-image: url(../img/hd_menu_1.png);
   background-size: 140px;
 }
 
 /* section1 */
 
 .sect1 {
-  background-image: url(/img/bg.gif);
+  background-image: url(../img/bg.gif);
   width: 100%;
   height: 600px;
 }
@@ -79,7 +79,7 @@ header .hd_nav2 li:nth-child(3) a {
   margin: 0 auto;
 }
 .sect1 h1 {
-  background: url(/img/sect1_logo.png);
+  background: url(../img/sect1_logo.png);
   background-size: cover;
   width: 200px;
   height: 335px;
@@ -106,21 +106,21 @@ header .hd_nav2 li:nth-child(3) a {
   background-repeat: no-repeat;
 }
 .sect1 .bg1 {
-  background-image: url(/img/sect1_img_1.jpg);
+  background-image: url(../img/sect1_img_1.jpg);
 }
 .sect1 .bg2 {
-  background-image: url(/img/sect1_img_2.jpg);
+  background-image: url(../img/sect1_img_2.jpg);
   background-position: 0, -10%;
 }
 .sect1 .bg3 {
-  background-image: url(/img/sect1_img_3.jpg);
+  background-image: url(../img/sect1_img_3.jpg);
   background-position: 0, -20%;
 }
 .sect1 .bg4 {
-  background-image: url(/img/sect1_img_4.jpg);
+  background-image: url(../img/sect1_img_4.jpg);
   background-position: 0, -20%;
 }
 .sect1 .bg5 {
-  background-image: url(/img/sect1_img_5.jpg);
+  background-image: url(../img/sect1_img_5.jpg);
   background-position: 0, -20%;
 }

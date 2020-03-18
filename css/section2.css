@@ -1,6 +1,6 @@
 .sect2{
     padding: 200px 0;
-    background-image: url(/img/bg_section4.png);
+    background-image: url(../img/bg_section4.png);
 }
 .sect2 article{
     max-width: 1200px;
@@ -10,7 +10,7 @@
     text-align: center;
     color: #fff;
     padding: 50px 0;
-    background: url(/img/brand_info_bg1.png) no-repeat;
+    background: url(../img/brand_info_bg1.png) no-repeat;
     background-size: cover;
 }
 .sect2_txt p:nth-child(1){
@@ -23,7 +23,7 @@
 .sect2_btn li{
     cursor: pointer;
     width: 130px; height: 150px;
-    background: url(/img/secret_food_list.png) no-repeat 10px;
+    background: url(../img/secret_food_list.png) no-repeat 10px;
     background-color: #C7A776;
 }
 .sect2_btn li.on{
@@ -61,22 +61,22 @@
     display: block;
 }
 .sect2_box li:nth-child(1){
-    background: url(/img/food_info1_bg.jpg) -700px 0;
+    background: url(../img/food_info1_bg.jpg) -700px 0;
 }
 .sect2_box li:nth-child(2){
-    background: url(/img/food_info2_bg.jpg) -700px 0;
+    background: url(../img/food_info2_bg.jpg) -700px 0;
 }
 .sect2_box li:nth-child(3){
-    background: url(/img/food_info3_bg.jpg) -700px 0;
+    background: url(../img/food_info3_bg.jpg) -700px 0;
 }
 .sect2_box li:nth-child(4){
-    background: url(/img/food_info4_bg.jpg) -700px 0;
+    background: url(../img/food_info4_bg.jpg) -700px 0;
 }
 .sect2_box li:nth-child(5){
-    background: url(/img/food_info5_bg.jpg) -700px 0;
+    background: url(../img/food_info5_bg.jpg) -700px 0;
 }
 .sect2_box li:nth-child(6){
-    background: url(/img/food_info6_bg.jpg) -700px 0;
+    background: url(../img/food_info6_bg.jpg) -700px 0;
 }
 .sect2 h3{
     display: inline-block;
