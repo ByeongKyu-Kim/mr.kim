@@ -1,0 +1,92 @@
+.sect2{
+    padding: 200px 0;
+    background-image: url(/img/bg_section4.png);
+}
+.sect2 article{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.sect2_txt{
+    text-align: center;
+    color: #fff;
+    padding: 50px 0;
+    background: url(/img/brand_info_bg1.png) no-repeat;
+    background-size: cover;
+}
+.sect2_txt p:nth-child(1){
+    margin-bottom: 40px;
+}
+.sect2_btn{
+    display: flex;
+    background-color: #C7A776;
+}
+.sect2_btn li{
+    cursor: pointer;
+    width: 130px; height: 150px;
+    background: url(/img/secret_food_list.png) no-repeat 10px;
+    background-color: #C7A776;
+}
+.sect2_btn li.on{
+    background-color: #795620;
+}
+.sect2_btn li:nth-child(1){
+    margin-left: 200px;
+}
+.sect2_btn li:nth-child(2){
+    background-position: -130px 10px;
+}
+.sect2_btn li:nth-child(3){
+    background-position: -255px 10px; 
+}
+.sect2_btn li:nth-child(4){
+    background-position: -385px 10px;
+}
+.sect2_btn li:nth-child(5){
+    background-position: -520px 10px;
+}
+.sect2_btn li:nth-child(6){
+    background-position: -660px 10px;
+}
+.sect2_box{
+    height: 320px;
+    position: relative;
+}
+.sect2_box li{
+    width: 100%; height: 100%;
+    padding: 50px 100px;
+    position: absolute;
+    display: none;
+}
+.sect2_box li.on{
+    display: block;
+}
+.sect2_box li:nth-child(1){
+    background: url(/img/food_info1_bg.jpg) -700px 0;
+}
+.sect2_box li:nth-child(2){
+    background: url(/img/food_info2_bg.jpg) -700px 0;
+}
+.sect2_box li:nth-child(3){
+    background: url(/img/food_info3_bg.jpg) -700px 0;
+}
+.sect2_box li:nth-child(4){
+    background: url(/img/food_info4_bg.jpg) -700px 0;
+}
+.sect2_box li:nth-child(5){
+    background: url(/img/food_info5_bg.jpg) -700px 0;
+}
+.sect2_box li:nth-child(6){
+    background: url(/img/food_info6_bg.jpg) -700px 0;
+}
+.sect2 h3{
+    display: inline-block;
+    color: #3e3a39;
+    font-size: 45px;
+    border-bottom: 1px solid #777;
+    padding-bottom: 8px;
+}
+.sect2_box p{
+    color: #777;
+    font-size: 20px;
+    margin-top: 20px;
+}
