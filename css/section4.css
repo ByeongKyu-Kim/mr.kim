@@ -4,7 +4,9 @@
   box-sizing: content-box;
   padding-top: 15px;
   position: relative;
-  background: url(../img/sea-4562924_960_720.png); 
+  background: url(../img/road.jpg), url(../img/asdf.png);
+  background-position:  0px 440px,0px 0px;
+
   background-repeat: no-repeat;
   color: white;
   font-size: 11px;
@@ -15,16 +17,17 @@
 .sect4 #flag_right:after {
   content: "";
   position: absolute;
-  right: -25%;
+  z-index: 9999;
+  right:0;
   top: 0;
   bottom: 0;
   width: 0;
   height: 0;
 
-  border-left: 188px solid transparent;
-  border-right: 150px solid white;
-  border-top: 672px solid white;
-  border-bottom: 150px solid white;
+  border-left: 50px solid transparent;
+  border-right: 50px solid white;
+  border-top: 326px solid white;
+  border-bottom: 326px solid transparent;
 }
 
 .sect4 #flag_left {
@@ -46,6 +49,7 @@
 .sect4 #flag_left:after {
   content: "";
   position: absolute;
+
   left: -60px;
   top: 0;
   bottom: 0;
@@ -57,9 +61,12 @@
   border-top: 335px solid white;
   border-bottom: 336px solid white;
 }
-.sect4 {
+
+.sect4 { overflow: hidden;
+    padding-top: 140px;
   width: 100%;
   height: 100vh;
+  display: flex;
 }
 
 .sect4_wrap {
@@ -74,12 +81,12 @@
   height: 70px;
 }
 .bike_left {
-  margin-top: 305px;
-  animation: bike 7s linear 1s infinite;
+  margin-top: 405px;
+  animation: bike 5s linear 1s infinite;
 }
 .bike_right {
-  margin-top: 17px;
-  animation: bike2 12s linear 1s infinite;
+  margin-top: 58px;
+  animation: bike2 7.5s linear 1s infinite;
 }
 
 @keyframes bike {
@@ -115,12 +122,12 @@
   }
 
   49% {
-    margin-left: 750px;
+    margin-left: 950px;
     transform: rotatey(0deg);
   }
 
   50% {
-    margin-left: 750px;
+    margin-left: 950px;
     transform: rotatey(180deg);
   }
 
@@ -134,4 +141,22 @@
   }
 }
 
-
+.sect4_wrap {display: flex; position: relative;}
+.sect4_road {width: 600px; height: 652px; border: 1px solid #000;}
+.sect4_road iframe {position: absolute; top: 0; right: 0;}
+#flag_road:after {
+    content: "";
+    position: absolute;
+    z-index: 9999;
+    left:50%;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+  
+    border-left: 50px solid white;
+    border-right: 50px solid transparent;
+    border-top: 326px solid transparent;
+    border-bottom: 326px solid white;
+  }
+  
