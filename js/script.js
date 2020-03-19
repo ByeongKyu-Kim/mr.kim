@@ -14,7 +14,7 @@ $(function() {
 
   // sect2
 
-  $(".sect2_btn li").mouseenter(function() {
+  $(".sect2_btn li").click(function() {
     $(".sect2_btn li").removeClass("on")
     $(this).addClass("on")
 
