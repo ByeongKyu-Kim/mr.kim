@@ -68,16 +68,9 @@ $(function() {
       .fadeIn()
   })
 
-  //sect4
+  //////////////////////////////////// sect4 ///////////////////////////////
 
-  var swiper = new Swiper(".sect3_wrap .swiper-container", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    pagination: {
-      el: ".sect3_wrap .swiper-pagination",
-      clickable: true,
-    },
-  })
+ 
 
   // 김밥 메뉴 페이드인, 페이드 아웃
   $(".sect3_menu1").click(function() {
@@ -178,21 +171,43 @@ $(function() {
 
   ////////////////////////////////////sect5////////////////////////////////////////
 
-  
-var swiper = new Swiper('.sect5_wrap .swiper-container', {
-  slidesPerView: 4,
-  spaceBetween: 30,
-  centeredSlides: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-});
 
+  var swiper5 = new Swiper('.sect5_wrap .swiper-container', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    centeredSlides: true,
+    pagination: {
+      el: '.sect5_wrap .swiper-pagination',
+      clickable: true,
+    },
+  });
 
 
 
   ////////////////////////////////////sect6////////////////////////////////////
+  var swiper = new Swiper('.sect6 .swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    // init: false,
+    pagination: {
+      el: '.sect6 .swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 50,
+      },
+    }
+  });
   ////////////////////////////////////sect7////////////////////////////////////
   ////////////////////////////////////sect8////////////////////////////////////
   ////////////////////////////////////sect9////////////////////////////////////

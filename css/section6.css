@@ -1,0 +1,13 @@
+.sect6 {width: 100%; height: 100vh; background-image: url(../img/bg_section4.png); background-repeat: no-repeat;}
+.sect6_wrap {width: 1200px; max-width: 1200px; height: 70vh; margin: auto;}
+.sect6 .swiper-container {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid rgb(252, 24, 24);
+  }
+  .sect6 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border: 1px solid #000;
+  }
