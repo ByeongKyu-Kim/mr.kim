@@ -223,6 +223,7 @@ $(function() {
 
   $(".sect8_menu li a").click(function(e) {
     e.preventDefault()
+    
     $(".sect8_menu li a").removeClass("on")
     $(this).addClass("on")
 
