@@ -1,0 +1,138 @@
+/* section8 */
+.sect8 {
+  overflow: hidden;
+}
+.sect8 .inner {
+  max-width: 1200px;
+  margin: auto;
+}
+.sect8_content {
+  width: 100%;
+  height: 75vh;
+  margin-bottom: 10000px;
+  position: relative;
+}
+.sect8_content a {
+  display: block;
+  text-decoration: none;
+}
+.sect8_menu {
+  height: 100%;
+  display: flex;
+  flex-flow: wrap column;
+  /* flex-wrap: wrap;
+  flex-direction: column; */
+  align-content: space-between;
+}
+.sect8_menu li {
+  width: 10%;
+  height: 25vh;
+}
+.sect8_menu li a {
+  width: 100%;
+  height: 100%;
+  background-color: #f7f3e9;
+  border-bottom: 1px solid #c7a776;
+  text-align: center;
+  font-size: 25px;
+  padding: 75% 0;
+}
+.sect8_con {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  /* position: relative;
+  top: -667px;
+  overflow: hidden; */
+  border: 1px solid #000;
+}
+.sect8_con li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+}
+.sect8_txt {
+  width: 50%;
+  background-color: #fff;
+  padding: 40px 40px 0 40px;
+}
+.sect8_txt p:nth-child(1) {
+  padding: 7px 0 0;
+  border-top: 1px solid #c9a978;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  color: #c9a978;
+}
+.sect8_txt p:nth-child(2) {
+  margin: 50px 0 0;
+  font-weight: 300;
+  font-size: 46px;
+  line-height: 55px;
+  color: #3e3a39;
+}
+.sect8_txt p:nth-child(3) {
+  margin: 20px 0 0;
+  font-size: 20px;
+  line-height: 28px;
+  color: #3e3a39;
+}
+.sect8_txt p:nth-child(4) {
+  padding: 48px 0 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777777;
+}
+.sect8_txt p:nth-child(4) span {
+  display: block;
+  width: 100px;
+  height: 1px;
+  border-top: 1px solid #e2e2e2;
+  margin: 55px 0 40px;
+}
+.sect8_img {
+  width: 50%;
+  height: 100%;
+}
+.sect8_img img {
+  width: 100%;
+}
+
+.sect8_.img2 {
+  width: 100%;
+}
+.sect8_.img2 img {
+  width: 100%;
+  height: ;
+}
+
+.sect8_con > li:nth-child(4) {
+  background-image: url(img/advantage_bg1.jpg);
+}
+.sect8_con > li:nth-child(5) {
+  background-image: url(img/advantage_bg2.jpg);
+}
+.sect8_con > li:nth-child(6) {
+  background-image: url(img/advantage_bg3.jpg);
+}
+.sect8_.txt2 {
+  position: absolute;
+  width: 370px;
+  height: 400px;
+  background-color: #fff;
+}
+.sect8_.txt2 p:nth-child(1) {
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 24px;
+  color: #c9a978;
+}
+.sect8_.txt2 p:nth-child(2) {
+}
+.sect8_.txt2 p:nth-child(3) {
+}
+.sect8_.txt2 p:nth-child(3) span {
+}

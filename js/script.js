@@ -166,8 +166,8 @@ $(function() {
 
   //sect5
 
-  var swiper5 = new Swiper(".sect5 .swiper-container", {
-    slidesPerView: 1,
+  var swiper5 = new Swiper('.sect5 .swiper-container', {
+    slidesPerView: 2,
     spaceBetween: 30,
     loop: true,
     pagination: {
