@@ -220,5 +220,19 @@ $(function() {
   })
 
   //sect8
+
+  $(".sect8_menu li a").click(function(e) {
+    e.preventDefault()
+    $(".sect8_menu li a").removeClass("on")
+    $(this).addClass("on")
+
+    var idx = $(this).index()
+
+    $(".sect8_con li").fadeOut()
+    $(".sect8_con li")
+      .eq(idx)
+      .fadeIn()
+  })
+
   //sect9
 })
