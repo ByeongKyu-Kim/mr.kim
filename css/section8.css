@@ -108,6 +108,7 @@
 }
 .sect8_img img {
   width: 100%;
+  vertical-align: top;
 }
 
 .sect8_img2 {
