@@ -1,7 +1,5 @@
 /* section8 */
-.sect8 {
-  overflow: hidden;
-}
+
 .sect8 .inner {
   max-width: 1200px;
   margin: auto;
