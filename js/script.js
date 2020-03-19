@@ -29,7 +29,7 @@ $(function() {
       .fadeIn()
   })
 
-  // sect3
+  //////////////////////////////////// sect3 /////////////////////////////////
 
   var swiper3 = new Swiper(".sect3_wrap .swiper-container", {
     slidesPerView: 3,
@@ -152,7 +152,7 @@ $(function() {
     }
   })
 
-  // 섹트4의 오토바이 그림위 배달안내 스크립트
+  // 섹트4의 오토바이 그림위 배달안내 스크립트 / 아직 css하지 않은 상황. 수정 중에 있음 /
 
   $(document).scroll(function() {
     var scrT = $(this).scrollTop()
@@ -165,7 +165,7 @@ $(function() {
       $(".sect4_effact").fadeOut(100)
     }
   })
-
+})
   // $(document).scroll(function() {
   //   var scrT = $(this).scrollTop()
 
@@ -176,9 +176,23 @@ $(function() {
   //   }
   // })
 
-  //sect5
-  //sect6
-  //sect7
-  //sect8
-  //sect9
-})
+  ////////////////////////////////////sect5////////////////////////////////////////
+
+  
+var swiper = new Swiper('.sect5_wrap .swiper-container', {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  centeredSlides: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
+
+
+
+  ////////////////////////////////////sect6////////////////////////////////////
+  ////////////////////////////////////sect7////////////////////////////////////
+  ////////////////////////////////////sect8////////////////////////////////////
+  ////////////////////////////////////sect9////////////////////////////////////
