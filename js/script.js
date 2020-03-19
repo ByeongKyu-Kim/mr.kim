@@ -169,45 +169,61 @@ $(function() {
   //   }
   // })
 
-  ////////////////////////////////////sect5////////////////////////////////////////
+  //sect5
 
-
-  var swiper5 = new Swiper('.sect5_wrap .swiper-container', {
-    slidesPerView: 4,
-    spaceBetween: 30,
-    centeredSlides: true,
-    pagination: {
-      el: '.sect5_wrap .swiper-pagination',
-      clickable: true,
-    },
-  });
-
-
-
-  ////////////////////////////////////sect6////////////////////////////////////
-  var swiper = new Swiper('.sect6 .swiper-container', {
+  var swiper5 = new Swiper('.sect5 .swiper-container', {
     slidesPerView: 1,
-    spaceBetween: 10,
-    // init: false,
+    spaceBetween: 30,
+    loop: true,
     pagination: {
-      el: '.sect6 .swiper-pagination',
+      el: '.swiper-pagination',
       clickable: true,
     },
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 4,
-        spaceBetween: 40,
-      },
-      1024: {
-        slidesPerView: 5,
-        spaceBetween: 50,
-      },
-    }
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   });
-  ////////////////////////////////////sect7////////////////////////////////////
-  ////////////////////////////////////sect8////////////////////////////////////
-  ////////////////////////////////////sect9////////////////////////////////////
+
+  //sect6
+
+  var swiper6 = new Swiper('.sect6 .swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+
+  //sect7
+
+  var galleryThumbs = new Swiper('.sect7_thumbs', {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    loop: true,
+    freeMode: true,
+    loopedSlides: 5, //looped slides should be the same
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+  });
+  var galleryTop = new Swiper('.sect7_top', {
+    spaceBetween: 10,
+    loop:true,
+    loopedSlides: 5, //looped slides should be the same
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+      swiper: galleryThumbs,
+    },
+  });
+
+  //sect8
+  //sect9
+})
