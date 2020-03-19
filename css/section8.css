@@ -35,23 +35,24 @@
   border-bottom: 1px solid #c7a776;
   text-align: center;
   font-size: 25px;
-  padding: 60% 0;
+  padding: 75% 0;
 }
 .sect8_con {
   width: 80%;
   height: 100%;
   margin: auto;
-  position: relative;
+  /* position: relative;
   top: -667px;
-  overflow: hidden;
+  overflow: hidden; */
+  border: 1px solid #000;
 }
 .sect8_con li {
   width: 100%;
   display: flex;
   justify-content: center;
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
 }
 .sect8_txt {
   width: 50%;
@@ -98,4 +99,25 @@
 }
 .sect8_img img {
   width: 100%;
+}
+
+.sect8_.img2 {
+  width: 100%;
+}
+.sect8_.txt2 {
+  position: absolute;
+  width: 370px;
+  height: 400px;
+}
+.sect8_.txt2 p:nth-child(1) {
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 24px;
+  color: #c9a978;
+}
+.sect8_.txt2 p:nth-child(2) {
+}
+.sect8_.txt2 p:nth-child(3) {
+}
+.sect8_.txt2 p:nth-child(3) span {
 }
