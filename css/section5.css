@@ -1,0 +1,21 @@
+.sect5{
+    margin: 200px 0;
+}
+.sect5 article{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.sect5 .box{
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    background-color: #F7F3E9;
+    border: 1px solid #C7A776;
+    margin-bottom: 60px;
+}
+.sect5 .box h3{
+    margin: 20px 0;
+}
+.sect5 .box p{
+    text-align: right;
+}

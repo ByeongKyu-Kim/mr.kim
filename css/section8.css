@@ -47,14 +47,13 @@
   height: 100%;
   margin: auto;
   position: relative;
-  top: -667px;
+  top: -695px;
   overflow: hidden;
-  border: 1px solid #000;
+  border: 1px solid #c7a776;
 }
 .sect8_con li {
   width: 100%;
   height: 100%;
-
   justify-content: center;
   position: absolute;
   top: 0;
