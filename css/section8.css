@@ -47,7 +47,7 @@
   height: 100%;
   margin: auto;
   position: relative;
-  top: -695px;
+  top: -703px;
   overflow: hidden;
   border: 1px solid #c7a776;
 }
@@ -61,12 +61,13 @@
   display: none;
 }
 .sect8_con li.on {
-  display: flex;
+  display: block;
 }
 .sect8_txt {
   width: 50%;
+  height: 100%;
   background-color: #fff;
-  padding: 40px 40px 0 40px;
+  padding: 40px 40px 80px 40px;
 }
 .sect8_txt p:nth-child(1) {
   padding: 7px 0 0;
@@ -107,7 +108,7 @@
   height: 100%;
 }
 .sect8_img img {
-  width: 100%;
+  height: 100%;
   vertical-align: top;
 }
 
@@ -119,13 +120,16 @@
 }
 
 .sect8_con > li:nth-child(4) {
-  background-image: url(../img/advantage_bg1.jpg) no-repeat -400px;
+  background: url(../img/advantage_bg1.jpg) no-repeat -400px;
+  background-size: cover;
 }
 .sect8_con > li:nth-child(5) {
-  background-image: url(../img/advantage_bg2.jpg) no-repeat -400px;
+  background: url(../img/advantage_bg2.jpg) no-repeat -400px;
+  background-size: cover;
 }
 .sect8_con > li:nth-child(6) {
   background: url(../img/advantage_bg4.jpg) no-repeat -400px;
+  background-size: cover;
 }
 .sect8_txt2 {
   position: absolute;

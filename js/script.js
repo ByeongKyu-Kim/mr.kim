@@ -3,13 +3,13 @@ $(function() {
 
   var swiper1 = new Swiper(".sect1 .swiper-container", {
     pagination: {
-      el: ".sect1 .swiper-pagination"
+      el: ".sect1 .swiper-pagination",
     },
     autoplay: {
       delay: 3000,
-      disableOnInteraction: false
+      disableOnInteraction: false,
     },
-    loop: true
+    loop: true,
   })
 
   // sect2
@@ -36,8 +36,8 @@ $(function() {
     spaceBetween: 30,
     pagination: {
       el: ".sect3_wrap .swiper-pagination",
-      clickable: true
-    }
+      clickable: true,
+    },
   })
 
   $(".sect3_menu1").click(function() {
@@ -166,18 +166,18 @@ $(function() {
 
   //sect5
 
-  var swiper5 = new Swiper('.sect5 .swiper-container', {
+  var swiper5 = new Swiper(".sect5 .swiper-container", {
     slidesPerView: 2,
     spaceBetween: 30,
     loop: true,
     pagination: {
       el: ".swiper-pagination",
-      clickable: true
+      clickable: true,
     },
     navigation: {
       nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    }
+      prevEl: ".swiper-button-prev",
+    },
   })
 
   //sect6
@@ -187,12 +187,12 @@ $(function() {
     spaceBetween: 30,
     autoplay: {
       delay: 2500,
-      disableOnInteraction: false
+      disableOnInteraction: false,
     },
     pagination: {
       el: ".swiper-pagination",
-      clickable: true
-    }
+      clickable: true,
+    },
   })
 
   //sect7
@@ -204,7 +204,7 @@ $(function() {
     freeMode: true,
     loopedSlides: 5, //looped slides should be the same
     watchSlidesVisibility: true,
-    watchSlidesProgress: true
+    watchSlidesProgress: true,
   })
   var galleryTop = new Swiper(".sect7_top", {
     spaceBetween: 10,
@@ -212,18 +212,18 @@ $(function() {
     loopedSlides: 5, //looped slides should be the same
     navigation: {
       nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      prevEl: ".swiper-button-prev",
     },
     thumbs: {
-      swiper: galleryThumbs
-    }
+      swiper: galleryThumbs,
+    },
   })
 
   //sect8
 
   $(".sect8_menu li a").click(function(e) {
     e.preventDefault()
-    
+
     $(".sect8_menu li a").removeClass("on")
     $(this).addClass("on")
 
