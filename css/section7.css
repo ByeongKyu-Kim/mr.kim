@@ -1,0 +1,11 @@
+.sect7 article{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.sect7_top{
+    width: 960px;
+    margin: 0 auto 50px;
+}
+.sect7_thumbs{
+    margin-bottom: 100px;
+}
