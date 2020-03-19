@@ -3,13 +3,13 @@ $(function() {
 
   var swiper1 = new Swiper(".sect1 .swiper-container", {
     pagination: {
-      el: ".sect1 .swiper-pagination",
+      el: ".sect1 .swiper-pagination"
     },
     autoplay: {
       delay: 3000,
-      disableOnInteraction: false,
+      disableOnInteraction: false
     },
-    loop: true,
+    loop: true
   })
 
   // sect2
@@ -36,8 +36,8 @@ $(function() {
     spaceBetween: 30,
     pagination: {
       el: ".sect3_wrap .swiper-pagination",
-      clickable: true,
-    },
+      clickable: true
+    }
   })
 
   $(".sect3_menu1").click(function() {
@@ -70,8 +70,6 @@ $(function() {
 
   //////////////////////////////////// sect4 ///////////////////////////////
 
- 
-
   // 김밥 메뉴 페이드인, 페이드 아웃
   $(".sect3_menu1").click(function() {
     $(".sect3_menu").removeClass("sect3_on")
@@ -82,18 +80,18 @@ $(function() {
 
     $(".sect3_bottom").fadeOut()
     $(".sect3_kimbab").fadeIn()
-  }) /
-    // 덮밥 메뉴 페이드인, 페이드 아웃
-    $(".sect3_menu2").click(function() {
-      $(".sect3_menu").removeClass("sect3_on")
-      $(this).addClass("sect3_on")
+  })
+  // 덮밥 메뉴 페이드인, 페이드 아웃
+  $(".sect3_menu2").click(function() {
+    $(".sect3_menu").removeClass("sect3_on")
+    $(this).addClass("sect3_on")
 
-      $(".sect3_kimbab, .sect3_noodle").removeClass("sect3_ko")
-      $(".sect3_dupbab").addClass("sect3_ko")
+    $(".sect3_kimbab, .sect3_noodle").removeClass("sect3_ko")
+    $(".sect3_dupbab").addClass("sect3_ko")
 
-      $(".sect3_bottom").fadeOut()
-      $(".sect3_dupbab").fadeIn()
-    })
+    $(".sect3_bottom").fadeOut()
+    $(".sect3_dupbab").fadeIn()
+  })
 
   // 면 메뉴 페이드인, 페이드 아웃
   $(".sect3_menu3").click(function() {
@@ -106,9 +104,6 @@ $(function() {
     $(".sect3_bottom").fadeOut()
     $(".sect3_noodle").fadeIn()
   })
-
-
-
 
   // 음식 이미지 클릭하면 1.15배로 확대
 
@@ -158,7 +153,7 @@ $(function() {
       $(".sect4_effact").fadeOut(100)
     }
   })
-})
+
   // $(document).scroll(function() {
   //   var scrT = $(this).scrollTop()
 
@@ -171,58 +166,58 @@ $(function() {
 
   //sect5
 
-  var swiper5 = new Swiper('.sect5 .swiper-container', {
+  var swiper5 = new Swiper(".sect5 .swiper-container", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
     pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+      el: ".swiper-pagination",
+      clickable: true
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  })
 
   //sect6
 
-  var swiper6 = new Swiper('.sect6 .swiper-container', {
+  var swiper6 = new Swiper(".sect6 .swiper-container", {
     slidesPerView: 3,
     spaceBetween: 30,
     autoplay: {
       delay: 2500,
-      disableOnInteraction: false,
+      disableOnInteraction: false
     },
     pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
+      el: ".swiper-pagination",
+      clickable: true
+    }
+  })
 
   //sect7
 
-  var galleryThumbs = new Swiper('.sect7_thumbs', {
+  var galleryThumbs = new Swiper(".sect7_thumbs", {
     spaceBetween: 10,
     slidesPerView: 4,
     loop: true,
     freeMode: true,
     loopedSlides: 5, //looped slides should be the same
     watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-  });
-  var galleryTop = new Swiper('.sect7_top', {
+    watchSlidesProgress: true
+  })
+  var galleryTop = new Swiper(".sect7_top", {
     spaceBetween: 10,
-    loop:true,
+    loop: true,
     loopedSlides: 5, //looped slides should be the same
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
     },
     thumbs: {
-      swiper: galleryThumbs,
-    },
-  });
+      swiper: galleryThumbs
+    }
+  })
 
   //sect8
   //sect9
