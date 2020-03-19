@@ -177,7 +177,36 @@ $(function() {
   // })
 
   //sect5
+
+  var swiper5 = new Swiper('.sect5 .swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
   //sect6
+
+  var swiper6 = new Swiper('.sect6 .swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+
   //sect7
 
   var galleryThumbs = new Swiper('.sect7_thumbs', {
