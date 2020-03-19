@@ -28,6 +28,7 @@
   width: 10%;
   height: 25vh;
 }
+
 .sect8_menu li a {
   width: 100%;
   height: 100%;
@@ -37,22 +38,29 @@
   font-size: 25px;
   padding: 75% 0;
 }
+.sect8_menu li a.on {
+}
 .sect8_con {
   width: 80%;
   height: 100%;
   margin: auto;
-  /* position: relative;
+  position: relative;
   top: -667px;
-  overflow: hidden; */
+  overflow: hidden;
   border: 1px solid #000;
 }
 .sect8_con li {
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
-  /* position: absolute;
+  position: absolute;
   top: 0;
-  left: 0; */
+  left: 0;
+  display: none;
+}
+.sect8_con li.on {
+  display: block;
 }
 .sect8_txt {
   width: 50%;
@@ -101,38 +109,56 @@
   width: 100%;
 }
 
-.sect8_.img2 {
+.sect8_img2 {
   width: 100%;
 }
-.sect8_.img2 img {
+.sect8_img2 img {
   width: 100%;
-  height: ;
 }
 
 .sect8_con > li:nth-child(4) {
-  background-image: url(img/advantage_bg1.jpg);
+  background-image: url(../img/advantage_bg1.jpg) no-repeat -400px;
 }
 .sect8_con > li:nth-child(5) {
-  background-image: url(img/advantage_bg2.jpg);
+  background-image: url(../img/advantage_bg2.jpg) no-repeat -400px;
 }
 .sect8_con > li:nth-child(6) {
-  background-image: url(img/advantage_bg3.jpg);
+  background: url(../img/advantage_bg4.jpg) no-repeat -400px;
 }
-.sect8_.txt2 {
+.sect8_txt2 {
   position: absolute;
-  width: 370px;
-  height: 400px;
+  top: 60px;
+  left: 60px;
+  width: 300px;
+  height: 324px;
   background-color: #fff;
+  padding: 20px;
 }
-.sect8_.txt2 p:nth-child(1) {
+.sect8_txt2 p:nth-child(1) {
   font-weight: 800;
   font-size: 15px;
   line-height: 24px;
   color: #c9a978;
 }
-.sect8_.txt2 p:nth-child(2) {
+.sect8_txt2 p:nth-child(2) {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+  color: #3e3a39;
+  letter-spacing: -0.05em;
+  margin-top: 20px;
 }
-.sect8_.txt2 p:nth-child(3) {
+.sect8_txt2 p:nth-child(3) {
+  margin: 21px 0 0;
+  padding: 28px 0 0;
+  font-size: 16px;
+  line-height: 26px;
+  color: #3e3a39;
 }
-.sect8_.txt2 p:nth-child(3) span {
+.sect8_txt2 p:nth-child(3) span {
+  display: block;
+  width: 100px;
+  height: 1px;
+  border-top: 1px solid #e2e2e2;
+  margin: 0px;
 }

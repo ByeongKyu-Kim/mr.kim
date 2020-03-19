@@ -177,5 +177,10 @@ $(function() {
   //sect6
   //sect7
   //sect8
+
+  $('.sect8_menu li a').click(function(){
+    
+  })
+  
   //sect9
 })
