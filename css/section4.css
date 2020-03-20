@@ -171,43 +171,55 @@
   border-right: 50px solid transparent;
   border-top: 326px solid transparent;
   border-bottom: 326px solid white;
-} 
+}
 
+.sect4_people img {
+  width: 120%;
+  height: 80%;
+  position: absolute;
+  bottom: 28.5%;
+  left: 0;
+}
+.sect4_people_on {
+  transform: scale(0.1);
+  transition: ease 1.2s 0.5s;
+  margin-left: -230px;
+  margin-bottom: -101px;
+  bottom: 6%;
+  left: 0;
+}
 
-
-.sect4_people img {width: 120%; height: 80%; position: absolute; bottom: 26.7%; left: 0;}  
-.sect4_people_on {transform: scale(0.1);	transition: ease 1.2s 0.5s; margin-left: -230px; margin-bottom: -101px; bottom: 5%; left: 0;}
-
-
-
-
-.sect4_move img {cursor: pointer; width: 150px; height: 150px; position: absolute; top:-7%; left: 27%; z-index: 9999;}  
-.sect4_move_ko { animation: moVe 4s linear 2s infinite;}
+.sect4_move img {
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -7%;
+  left: 27%;
+  z-index: 9999;
+}
+.sect4_move_ko {
+  animation: moVe 4s linear 2s infinite;
+}
 
 @keyframes moVe {
   0% {
-
-    transform:scale(1);
+    transform: scale(1);
   }
 
   25% {
- 
-    transform:scale(1.2);
+    transform: scale(1.2);
   }
 
-  50%{
-
- 
-    transform:scale(1);
+  50% {
+    transform: scale(1);
   }
 
   75% {
- 
-    transform:scale(1.2);
+    transform: scale(1.2);
   }
-  
 
   100% {
-    transform:scale(1);
+    transform: scale(1);
   }
 }
