@@ -204,14 +204,9 @@ $(function() {
     }
   })
 
-  $(".sect6").mouseenter(function() {
-    $(".sect6_menu6").css("display", "block")
-    $(".sect6_menu6 h4").css("margin-left", "0px")
+  $(".sect6_menu6 h6").click(function(){
+    $(".sect6_menu6 h3").fadeToggle()
   })
-  $(".sect6").mouseleave(function() {
-    $(".sect6_menu6").css("display", "none")
-  })
-
   //sect7
 
   var galleryThumbs = new Swiper(".sect7_thumbs", {
