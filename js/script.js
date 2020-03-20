@@ -31,42 +31,22 @@ $(function() {
 
   //////////////////////////////////// sect3 /////////////////////////////////
 
-  var swiper3 = new Swiper(".sect3_wrap .swiper-container", {
+  var swiper3 = new Swiper(".sect3 .swiper-container", {
     slidesPerView: 3,
     spaceBetween: 30,
-    pagination: {
-      el: ".sect3_wrap .swiper-pagination",
-      clickable: true
-    }
   })
 
-  $(".sect3_menu1").click(function() {
-    $(".sect3_menu").removeClass("sect3_on")
-    $(this).addClass("sect3_on")
+  $(".sect3_menu").click(function() {
+    $(".sect3_menu").removeClass("on")
+    $(this).addClass("on")
 
-    $(".sect3_bottom").fadeOut()
-    $(".sect3_kimbab").fadeIn()
+    var idx = $(this).index()
+
+    $(".sect3_box .box").stop().fadeOut().removeClass('on')
+    $(".sect3_box .box").eq(idx).stop().fadeIn().addClass('on')
+
   })
 
-  $(".sect3_menu2").click(function() {
-    $(".sect3_menu").removeClass("sect3_on")
-    $(this).addClass("sect3_on")
-
-    $(".sect3_bottom").fadeOut()
-    $(".sect3_dupbab")
-      .css("top", "0px")
-      .fadeIn()
-  })
-
-  $(".sect3_menu3").click(function() {
-    $(".sect3_menu").removeClass("sect3_on")
-    $(this).addClass("sect3_on")
-
-    $(".sect3_bottom").fadeOut()
-    $(".sect3_noodle")
-      .css("top", "0px")
-      .fadeIn()
-  })
 
   //////////////////////////////////// sect4 ///////////////////////////////
 
