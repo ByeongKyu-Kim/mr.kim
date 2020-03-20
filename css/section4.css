@@ -155,7 +155,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 9000;
 }
 #flag_road:after {
   content: "";
@@ -177,14 +177,15 @@
   width: 120%;
   height: 80%;
   position: absolute;
-  bottom: 28.5%;
+  bottom: 31%;
   left: 0;
+  z-index: 9888;
 }
 .sect4_people_on {
   transform: scale(0.1);
   transition: ease 1.2s 0.5s;
   margin-left: -230px;
-  margin-bottom: -101px;
+  margin-bottom: -124px;
   bottom: 6%;
   left: 0;
 }

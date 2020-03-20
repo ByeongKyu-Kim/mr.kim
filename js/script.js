@@ -1,4 +1,6 @@
 $(function() {
+
+
   // sect1
 
   var swiper1 = new Swiper(".sect1 .swiper-container", {
@@ -194,18 +196,24 @@ $(function() {
 
   //sect6
 
-  var swiper6 = new Swiper(".sect6 .swiper-container", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false
+
+  var swiper = new Swiper('.sect6 .swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows : true,
     },
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true
-    }
-  })
+      el: '.sect6 .swiper-pagination',
+    },
+  });
+
 
   //sect7
 
