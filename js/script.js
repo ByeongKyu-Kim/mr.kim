@@ -100,9 +100,14 @@ $(function() {
   //   }
   // })
 
+  $(".sect4").mouseenter(function() {
+    $(".sect4_people img").addClass("sect4_people_on")
+    $(".sect4_move img").addClass("sect4_move_ko")
+  })
+
   //sect5
 
-  var swiper5 = new Swiper('.sect5 .swiper-container', {
+  var swiper5 = new Swiper(".sect5 .swiper-container", {
     slidesPerView: 2,
     spaceBetween: 30,
     loop: true,
@@ -118,19 +123,26 @@ $(function() {
 
   //sect6
 
-  var swiper6 = new Swiper(".sect6 .swiper-container", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false
+  var swiper = new Swiper(".sect6 .swiper-container", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true
     },
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true
+      el: ".sect6 .swiper-pagination"
     }
   })
 
+  $(".sect6_menu6 h6").click(function(){
+    $(".sect6_menu6 h3").fadeToggle()
+  })
   //sect7
 
   var galleryThumbs = new Swiper(".sect7_thumbs", {
@@ -155,30 +167,19 @@ $(function() {
     }
   })
 
-
-
-  $(".sect4").mouseenter(function(){
-      $ (".sect4_people img").addClass("sect4_people_on")
-      $ (".sect4_move img").addClass("sect4_move_ko")
-  })
-
-  
-
-
   //sect8
 
   $(".sect8_menu li").click(function() {
-    
     $(".sect8_menu li").removeClass("on")
     $(this).addClass("on")
 
     var idx = $(this).index()
 
     $(".sect8_con li").fadeOut()
-    $(".sect8_con li").eq(idx).fadeIn()
+    $(".sect8_con li")
+      .eq(idx)
+      .fadeIn()
   })
 
   //sect9
 })
-
-

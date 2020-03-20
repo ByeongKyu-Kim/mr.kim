@@ -4,6 +4,7 @@
 .sect2 article {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 .sect2_txt {
   text-align: center;
@@ -34,9 +35,14 @@
 .sect2_btn li {
   cursor: pointer;
   width: 130px;
-  height: 150px;
+  height: 153px;
   background: url(../img/secret_food_list.png) no-repeat 10px;
   background-color: #c7a776;
+}
+
+.sect2_btn li:hover {
+  transform: scale(0.8);
+  transition: 1s;
 }
 .sect2_btn li.on {
   background-color: #795620;
@@ -105,4 +111,102 @@
   color: #777;
   font-size: 20px;
   margin-top: 20px;
+}
+
+.sect2_chef_move h5 {
+  background-image: url(../img/chef-1417239_6400.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 110px;
+  height: 200px;
+  background-position-y: -100px;
+  top: 10%;
+  left: 7%;
+  z-index: 11;
+}
+.sect2_chef_move h6 {
+  background-image: url(../img/chef-1417239_6401.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 50px;
+  height: 70px;
+  background-position: -296px -123px;
+  top: 19.5%;
+  left: 15%;
+  z-index: 10;
+}
+.sect2_chef_move h6 {
+  animation: chef1 4s linear infinite;
+}
+
+.sect2_chef_move2 h5 {
+  background-image: url(../img/chef-1417239_6402.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 110px;
+  height: 200px;
+  background-position: -529px -100px;
+  top: 10%;
+  right: 7%;
+  z-index: 14;
+}
+.sect2_chef_move2 h6 {
+  background-image: url(../img/chef-1417239_6403.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 55px;
+  height: 120px;
+  background-position: -498px -180px;
+  top: 19.5%;
+  right: 13.5%;
+  z-index: 10;
+}
+.sect2_chef_move2 h6 {
+  animation: chef2 4s linear infinite;
+}
+
+@keyframes chef1 {
+  0% {
+    transform: rotate(10deg);
+    transform-origin: 20% 100%;
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  75% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes chef2 {
+  0% {
+    transform: rotate(7deg);
+    transform-origin: 100% 20%;
+  }
+
+  25% {
+    transform: rotate(-7deg);
+  }
+
+  50% {
+    transform: rotate(7deg);
+  }
+
+  75% {
+    transform: rotate(-7deg);
+  }
+
+  100% {
+    transform: rotate(7deg);
+  }
 }

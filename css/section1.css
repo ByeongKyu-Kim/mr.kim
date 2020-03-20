@@ -70,13 +70,15 @@ header .hd_nav2 li:nth-child(3) a {
 .sect0_dart_fix {
   position: absolute;
   right: 120px;
-  top: 290px;
+  top: 110px;
   position: fixed;
   animation: dartA 3s;
+  z-index: 9100;
 }
 .sect0_dart_fix img {
   width: 100px;
   height: 50px;
+
 }
 
 @keyframes dartA {
@@ -118,12 +120,13 @@ header .hd_nav2 li:nth-child(3) a {
 .sect0_box_fix {
   background-color: burlywood;
   position: absolute;
-  top: 30%;
+  top: 110px;
   right: 2%;
   position: fixed;
   /* margin-top: -1000px; */
   animation: box_fix 3s;
   transform-origin: center top;
+  z-index: 9000;
 }
 
 .sect0_box_fix img {
