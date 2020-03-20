@@ -1,6 +1,4 @@
 $(function() {
-
-
   // sect1
 
   var swiper1 = new Swiper(".sect1 .swiper-container", {
@@ -166,21 +164,14 @@ $(function() {
   //   }
   // })
 
-
-  
-  $(".sect4").mouseenter(function(){
-    $ (".sect4_people img").addClass("sect4_people_on")
-    $ (".sect4_move img").addClass("sect4_move_ko")
-})
-
-
-
-
-
+  $(".sect4").mouseenter(function() {
+    $(".sect4_people img").addClass("sect4_people_on")
+    $(".sect4_move img").addClass("sect4_move_ko")
+  })
 
   //sect5
 
-  var swiper5 = new Swiper('.sect5 .swiper-container', {
+  var swiper5 = new Swiper(".sect5 .swiper-container", {
     slidesPerView: 2,
     spaceBetween: 30,
     loop: true,
@@ -196,24 +187,30 @@ $(function() {
 
   //sect6
 
-
-  var swiper = new Swiper('.sect6 .swiper-container', {
-    effect: 'coverflow',
+  var swiper = new Swiper(".sect6 .swiper-container", {
+    effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: 'auto',
+    slidesPerView: "auto",
     coverflowEffect: {
       rotate: 50,
       stretch: 0,
       depth: 100,
       modifier: 1,
-      slideShadows : true,
+      slideShadows: true
     },
     pagination: {
-      el: '.sect6 .swiper-pagination',
-    },
-  });
+      el: ".sect6 .swiper-pagination"
+    }
+  })
 
+  $(".sect6").mouseenter(function() {
+    $(".sect6_menu6").css("display", "block")
+    $(".sect6_menu6 h4").css("margin-left", "0px")
+  })
+  $(".sect6").mouseleave(function() {
+    $(".sect6_menu6").css("display", "none")
+  })
 
   //sect7
 
@@ -239,22 +236,19 @@ $(function() {
     }
   })
 
-
-
   //sect8
 
   $(".sect8_menu li").click(function() {
-    
     $(".sect8_menu li").removeClass("on")
     $(this).addClass("on")
 
     var idx = $(this).index()
 
     $(".sect8_con li").fadeOut()
-    $(".sect8_con li").eq(idx).fadeIn()
+    $(".sect8_con li")
+      .eq(idx)
+      .fadeIn()
   })
 
   //sect9
 })
-
-
