@@ -23,22 +23,40 @@
   padding-top: 8%;
 }
 .sect3_top h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bold;
+  text-shadow: 3px 3px 3px black;
+  color: white;
 }
 .sect3_top p {
+  color: rgb(211, 209, 209);
   font-size: 0.8rem;
   font-weight: bold;
   margin-top: 10%;
-  background-color: #faebd7;
+  background-color: rgba(1, 2, 3, 0.4);
   width: 40%;
   height: 30%;
   margin: auto;
   padding-top: 4.5%;
+  
 }
 .sect3_menu{
   background-color: #e4e4e4;
   cursor: pointer;
+  
+  background-image: url(../img/20180725488389.jpg); background-repeat: no-repeat;
+  background-size:100%;
+
+}
+.sect3_menu2 {
+  background-image: url(../img/20180725435813.jpg); background-repeat: no-repeat;
+  background-size:100%;
+
+}
+.sect3_menu3 {
+  background-image: url(../img/20180725259422.jpg); background-repeat: no-repeat;
+  background-size:100%;
+
 }
 .sect3_menu > span {
   background-color: lightgrey;
