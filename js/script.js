@@ -155,6 +155,16 @@ $(function() {
     }
   })
 
+
+
+  $(".sect4").mouseenter(function(){
+      $ (".sect4_people img").addClass("sect4_people_on")
+      $ (".sect4_move img").addClass("sect4_move_ko")
+  })
+
+  
+
+
   //sect8
 
   $(".sect8_menu li").click(function() {
@@ -170,3 +180,5 @@ $(function() {
 
   //sect9
 })
+
+

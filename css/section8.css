@@ -32,7 +32,7 @@
   padding: 8% 0;
   cursor: pointer;
 }
-.sect8_menu li:hover{
+.sect8_menu li:hover {
   background-color: #c7a776;
 }
 /* .sect8_menu li a {
@@ -49,7 +49,7 @@
   height: 100%;
   margin: auto;
   position: relative;
-  top: -695px;
+  top: -703px;
   overflow: hidden;
   border: 1px solid #c7a776;
 }
