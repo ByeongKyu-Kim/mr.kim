@@ -31,11 +31,21 @@ $(function() {
 
   //////////////////////////////////// sect3 /////////////////////////////////
 
+<<<<<<< HEAD
   var swiper3 = new Swiper(".sect3 .swiper-container", {
     slidesPerView: 5,
+=======
+  var swiper3 = new Swiper(".sect3_wrap .swiper-container", {
+    slidesPerView: 3,
+>>>>>>> parent of 895b287... section3  수정작업
     spaceBetween: 30,
+    pagination: {
+      el: ".sect3_wrap .swiper-pagination",
+      clickable: true
+    }
   })
 
+<<<<<<< HEAD
   $(".sect3_menu").click(function(e) {
     e.preventDefault()
 
@@ -46,9 +56,35 @@ $(function() {
 
     $(".sect3_box .box").stop().removeClass('on')
     $(href).addClass('on')
+=======
+  $(".sect3_menu1").click(function() {
+    $(".sect3_menu").removeClass("sect3_on")
+    $(this).addClass("sect3_on")
 
+    $(".sect3_bottom").fadeOut()
+    $(".sect3_kimbab").fadeIn()
   })
 
+  $(".sect3_menu2").click(function() {
+    $(".sect3_menu").removeClass("sect3_on")
+    $(this).addClass("sect3_on")
+>>>>>>> parent of 895b287... section3  수정작업
+
+    $(".sect3_bottom").fadeOut()
+    $(".sect3_dupbab")
+      .css("top", "0px")
+      .fadeIn()
+  })
+
+  $(".sect3_menu3").click(function() {
+    $(".sect3_menu").removeClass("sect3_on")
+    $(this).addClass("sect3_on")
+
+    $(".sect3_bottom").fadeOut()
+    $(".sect3_noodle")
+      .css("top", "0px")
+      .fadeIn()
+  })
 
   //////////////////////////////////// sect4 ///////////////////////////////
 
