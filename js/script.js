@@ -32,18 +32,20 @@ $(function() {
   //////////////////////////////////// sect3 /////////////////////////////////
 
   var swiper3 = new Swiper(".sect3 .swiper-container", {
-    slidesPerView: 3,
+    slidesPerView: 5,
     spaceBetween: 30,
   })
 
-  $(".sect3_menu").click(function() {
+  $(".sect3_menu").click(function(e) {
+    e.preventDefault()
+
     $(".sect3_menu").removeClass("on")
     $(this).addClass("on")
 
-    var idx = $(this).index()
+    var href = $(this).attr('href')
 
-    $(".sect3_box .box").stop().fadeOut().removeClass('on')
-    $(".sect3_box .box").eq(idx).stop().fadeIn().addClass('on')
+    $(".sect3_box .box").stop().removeClass('on')
+    $(href).addClass('on')
 
   })
 
