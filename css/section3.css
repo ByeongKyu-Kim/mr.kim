@@ -1,5 +1,7 @@
 .sect3{
-  height: 100vh;
+  height: 55vh;
+  background-color: #c7a776;
+  padding: 20px 0;
 }
 .sect3 .btn{
   display: flex;
@@ -9,27 +11,28 @@
 .sect3 .btn span{
   display: block;
   width: 200px;
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #795620;
 }
 .boerder_bottom{
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 .sect3_menu{
   display: block;
   padding: 20px 40px;
-  border-bottom: 1px solid #000;
+  color: #795620;
+  border-bottom: 2px solid #795620;
 }
 
 .sect3_menu.on{
-  border: 1px solid #000;
-  border-bottom: 1px solid rgba(0,0,0,0);
+  border: 2px solid #795620;
+  border-radius: 100px 100px 0 0;
+  border-bottom: 2px solid transparent;
 }
 .sect3_box{
   max-width: 1200px;
   height: 40vh;
   margin: auto;
   position: relative;
-  background-color: #fff;
 }
 .sect3 .box{
   top: 100px;
@@ -44,10 +47,16 @@
 }
 .sect3 .swiper-slide{
   cursor: pointer;
+  transform: scale(.7);
+  opacity: .7;
 }
 .sect3_box img{
-  width: 200px;
+  width: 100%;
 }
 .sect3_box p{
   text-align: center;
+}
+.sect3 .swiper-slide-active{
+  transform: scale(1);
+  opacity: 1;
 }

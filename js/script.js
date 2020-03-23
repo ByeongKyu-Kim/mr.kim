@@ -9,7 +9,7 @@ $(function() {
       delay: 3000,
       disableOnInteraction: false
     },
-    loop: true
+    loop: true,
   })
 
   // sect2
@@ -34,6 +34,8 @@ $(function() {
   var swiper3 = new Swiper(".sect3 .swiper-container", {
     slidesPerView: 5,
     spaceBetween: 30,
+    loop: true,
+    centeredSlides: true,
   })
 
   $(".sect3_menu").click(function(e) {
@@ -48,6 +50,8 @@ $(function() {
     $(href).addClass('on')
 
   })
+
+  $(".group1").colorbox({rel:'group1'});
 
 
   //////////////////////////////////// sect4 ///////////////////////////////
