@@ -34,10 +34,8 @@ $(function() {
   var swiper3 = new Swiper(".sect3_wrap .swiper-container", {
     slidesPerView: 3,
     spaceBetween: 30,
-    pagination: {
-      el: ".sect3_wrap .swiper-pagination",
-      clickable: true,
-    },
+    loop: true,
+    centeredSlides: true,
   })
 
   $(".sect3_menu1").click(function() {
@@ -58,15 +56,8 @@ $(function() {
       .fadeIn()
   })
 
-  $(".sect3_menu3").click(function() {
-    $(".sect3_menu").removeClass("sect3_on")
-    $(this).addClass("sect3_on")
+  $(".group1").colorbox({rel:'group1'});
 
-    $(".sect3_bottom").fadeOut()
-    $(".sect3_noodle")
-      .css("top", "0px")
-      .fadeIn()
-  })
 
   //////////////////////////////////// sect4 ///////////////////////////////
 
