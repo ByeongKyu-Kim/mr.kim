@@ -28,6 +28,7 @@
   font-size: 25px;
   padding: 8% 0;
   cursor: pointer;
+  line-height: 22vh;
 }
 
 .sect8_menu li.on {

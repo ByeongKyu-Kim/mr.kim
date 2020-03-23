@@ -40,10 +40,6 @@
   background-color: #c7a776;
 }
 
-.sect2_btn li:hover {
-  transform: scale(0.8);
-  transition: 1s;
-}
 .sect2_btn li.on {
   background-color: #795620;
 }
