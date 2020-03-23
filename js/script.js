@@ -31,42 +31,24 @@ $(function() {
 
   //////////////////////////////////// sect3 /////////////////////////////////
 
-  var swiper3 = new Swiper(".sect3_wrap .swiper-container", {
-    slidesPerView: 3,
+  var swiper3 = new Swiper(".sect3 .swiper-container", {
+    slidesPerView: 5,
     spaceBetween: 30,
-    pagination: {
-      el: ".sect3_wrap .swiper-pagination",
-      clickable: true
-    }
   })
 
-  $(".sect3_menu1").click(function() {
-    $(".sect3_menu").removeClass("sect3_on")
-    $(this).addClass("sect3_on")
+  $(".sect3_menu").click(function(e) {
+    e.preventDefault()
 
-    $(".sect3_bottom").fadeOut()
-    $(".sect3_kimbab").fadeIn()
+    $(".sect3_menu").removeClass("on")
+    $(this).addClass("on")
+
+    var href = $(this).attr('href')
+
+    $(".sect3_box .box").stop().removeClass('on')
+    $(href).addClass('on')
+
   })
 
-  $(".sect3_menu2").click(function() {
-    $(".sect3_menu").removeClass("sect3_on")
-    $(this).addClass("sect3_on")
-
-    $(".sect3_bottom").fadeOut()
-    $(".sect3_dupbab")
-      .css("top", "0px")
-      .fadeIn()
-  })
-
-  $(".sect3_menu3").click(function() {
-    $(".sect3_menu").removeClass("sect3_on")
-    $(this).addClass("sect3_on")
-
-    $(".sect3_bottom").fadeOut()
-    $(".sect3_noodle")
-      .css("top", "0px")
-      .fadeIn()
-  })
 
   //////////////////////////////////// sect4 ///////////////////////////////
 
@@ -101,44 +83,39 @@ $(function() {
     $(".sect3_kimbab, .sect3_dupbab").removeClass("sect3_ko")
     $(".sect3_noodle").addClass("sect3_ko")
 
-    $(".sect3_bottom").fadeOut()
-    $(".sect3_noodle").fadeIn()
+    $(".sect3_box > div").fadeOut()
+    $(".sect3_box > div").eq(idx).fadeIn()
   })
 
-  // 음식 이미지 클릭하면 1.15배로 확대
+  // var s3q
+  // s3q = 0
 
-  $(".sect3_swiper").mouseenter(function() {
-    $(".sect3_swiper").removeClass("sect3_form")
-    $(this).addClass("sect3_form")
-  })
+  // $(".sect3_next").click(function() {
+  //   s3q++
+  //   if (s3q < 9) {
+  //     alert(s3q)
+  //     $(".sect3_scroll").animate({ "margin-left": "-=410px" })
+  //   } else {
+  //     alert(s3q)
+  //     s3q = 8
+  //     $(".sect3_scroll").animate({ "margin-left": "-=0px" })
+  //   }
+  // })
 
-  var s3q
-  s3q = 0
+  // $(".sect3_prev").click(function() {
+  //   s3q--
 
-  $(".sect3_next").click(function() {
-    s3q++
-    if (s3q < 9) {
-      alert(s3q)
-      $(".sect3_scroll").animate({ "margin-left": "-=410px" })
-    } else {
-      alert(s3q)
-      s3q = 8
-      $(".sect3_scroll").animate({ "margin-left": "-=0px" })
-    }
-  })
+  //   if (s3q > -1) {
+  //     alert(s3q)
+  //     $(".sect3_scroll").animate({ "margin-left": "+=410px" })
+  //   } else {
+  //     alert(s3q)
+  //     s3q = 0
+  //     $(".sect3_scroll").animate({ "margin-left": "+=0px" })
+  //   }
+  // })
 
-  $(".sect3_prev").click(function() {
-    s3q--
-
-    if (s3q > -1) {
-      alert(s3q)
-      $(".sect3_scroll").animate({ "margin-left": "+=410px" })
-    } else {
-      alert(s3q)
-      s3q = 0
-      $(".sect3_scroll").animate({ "margin-left": "+=0px" })
-    }
-  })
+  //////////////////////////////////// sect4 ///////////////////////////////
 
   // 섹트4의 오토바이 그림위 배달안내 스크립트 / 아직 css하지 않은 상황. 수정 중에 있음 /
 
