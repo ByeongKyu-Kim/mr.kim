@@ -3,16 +3,10 @@
   background-color: #c7a776;
   padding: 20px 0;
 }
-.sect3_top {
-  width: 100%;
-  height: 30vh;
-  min-height: 150px;
+.sect3 .btn{
   display: flex;
-}
-.sect3_top div {
-  width: 33.4%;
+  justify-content: center;
   text-align: center;
-  padding-top: 8%;
 }
 .sect3 .btn span{
   display: block;
@@ -40,42 +34,16 @@
   margin: auto;
   position: relative;
 }
-.sect3_on {
-  background-color: white !important;
-}
-.sect3_top > div {
-  background-color: #e4e4e4;
-}
-
-.sect3_kimbab {
+.sect3 .box{
+  top: 100px;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
-  background-color: white;
   opacity: 0;
-  z-index: -99;
 }
-.sect3_dupbab {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: white;
-  opacity: 0;
-  z-index: -99;
-}
-.sect3_noodle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: white;
-  opacity: 0;
-  z-index: -99;
-}
-.sect3_on {
-  background-color: white !important;
-}
-.sect3_ko {
+.sect3 .box.on{
   opacity: 1;
+  z-index: 10;
 }
 .sect3 .swiper-slide{
   cursor: pointer;
@@ -85,9 +53,7 @@
 .sect3_box img{
   width: 100%;
 }
-.sect3_swiper a {
-  font-size: 0.8rem;
-  font-weight: bold;
+.sect3_box p{
   text-align: center;
 }
 .sect3 .swiper-slide-active{
