@@ -31,16 +31,55 @@ $(function() {
 
   //////////////////////////////////// sect3 /////////////////////////////////
 
-  var swiper3 = new Swiper(".sect3_box .swiper-container",{
+  var swiper3 = new Swiper(".sect3 .swiper-container", {
     slidesPerView: 3,
     spaceBetween: 30,
   })
 
   $(".sect3_menu").click(function() {
+    $(".sect3_menu").removeClass("on")
+    $(this).addClass("on")
+
+    var idx = $(this).index()
+
+    $(".sect3_box .box").stop().fadeOut().removeClass('on')
+    $(".sect3_box .box").eq(idx).stop().fadeIn().addClass('on')
+
+  })
+
+
+  //////////////////////////////////// sect4 ///////////////////////////////
+
+  // 김밥 메뉴 페이드인, 페이드 아웃
+  $(".sect3_menu1").click(function() {
     $(".sect3_menu").removeClass("sect3_on")
     $(this).addClass("sect3_on")
 
-    var idx = $(this).index()
+    $(".sect3_dupbab, .sect3_noodle").removeClass("sect3_ko")
+    $(".sect3_kimbab").addClass("sect3_ko")
+
+    $(".sect3_bottom").fadeOut()
+    $(".sect3_kimbab").fadeIn()
+  })
+  // 덮밥 메뉴 페이드인, 페이드 아웃
+  $(".sect3_menu2").click(function() {
+    $(".sect3_menu").removeClass("sect3_on")
+    $(this).addClass("sect3_on")
+
+    $(".sect3_kimbab, .sect3_noodle").removeClass("sect3_ko")
+    $(".sect3_dupbab").addClass("sect3_ko")
+
+    $(".sect3_bottom").fadeOut()
+    $(".sect3_dupbab").fadeIn()
+  })
+
+  // 면 메뉴 페이드인, 페이드 아웃
+  $(".sect3_menu3").click(function() {
+    $(".sect3_menu").removeClass("sect3_on")
+    $(this).addClass("sect3_on")
+
+    $(".sect3_kimbab, .sect3_dupbab").removeClass("sect3_ko")
+    $(".sect3_noodle").addClass("sect3_ko")
 
     $(".sect3_box > div").fadeOut()
     $(".sect3_box > div").eq(idx).fadeIn()
