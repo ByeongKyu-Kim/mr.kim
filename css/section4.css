@@ -5,6 +5,7 @@
   height: 120vh;
   display: flex;
   background-color: white;
+  position: relative;
 }
 
 .sect4_wrap {
@@ -12,6 +13,27 @@
   height: 100vh;
   margin: auto;
 }
+
+.sect4_paper img { width: 200px; height: 200px; position: absolute; z-index: 9990;
+left: 0; top: 0;  margin-left: -400px; margin-top: -400px; transition: 1.5s;}
+
+.sect4_paper_click {width: 200px; height: 200px; position: absolute; z-index: 9990;
+  left: 9.5%; top: 17%; opacity: 0; transition: 2.7s;}
+/* ".sect4_paper img" ,".sect4_move img " */
+
+.sect4_move img {
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -16%;
+  left: -28%;
+  z-index: 9980;
+  margin-left: -400px; 
+  margin-top: -400px;
+  transition: 1.5s;
+}
+
 
 .sect4 #flag_right {
   width: 600px;
@@ -177,7 +199,7 @@
   width: 120%;
   height: 80%;
   position: absolute;
-  bottom: 31%;
+  bottom: 30.5%;
   left: 0;
   z-index: 9888;
 }
@@ -190,15 +212,6 @@
   left: 0;
 }
 
-.sect4_move img {
-  cursor: pointer;
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: -7%;
-  left: 27%;
-  z-index: 9999;
-}
 .sect4_move_ko {
   animation: moVe 4s linear 2s infinite;
 }
