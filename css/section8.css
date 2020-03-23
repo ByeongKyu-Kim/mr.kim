@@ -9,21 +9,18 @@
   height: 75vh;
   margin-bottom: 100px;
   position: relative;
+  border: 1px solid #c7a776;
 }
 /* .sect8_content a {
   display: block;
   text-decoration: none;
 }  bk*/
 .sect8_menu {
+  width: 10%;
   height: 100%;
-  display: flex;
-  flex-flow: wrap column;
-  /* flex-wrap: wrap;
-  flex-direction: column; */
-  align-content: space-between;
 }
 .sect8_menu li {
-  width: 10%;
+  width: 100%;
   height: 25vh;
   background-color: #f7f3e9;
   border-bottom: 1px solid #c7a776;
@@ -32,7 +29,8 @@
   padding: 8% 0;
   cursor: pointer;
 }
-.sect8_menu li:hover {
+
+.sect8_menu li.on {
   background-color: #c7a776;
 }
 /* .sect8_menu li a {
@@ -49,9 +47,9 @@
   height: 100%;
   margin: auto;
   position: relative;
-  top: -703px;
   overflow: hidden;
-  border: 1px solid #c7a776;
+  border-left: 1px solid #c7a776;
+  border-right: 1px solid #c7a776;
 }
 .sect8_con li {
   width: 100%;
@@ -106,17 +104,18 @@
 }
 .sect8_img {
   width: 50%;
-  height: 100%;
 }
 .sect8_img img {
-  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .sect8_img2 {
   width: 100%;
 }
 .sect8_img2 img {
-  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .sect8_con > li:nth-child(4) {
@@ -163,8 +162,8 @@
 }
 .sect8_txt2 p:nth-child(3) span {
   display: block;
-  width: 100px;
+  width: 50px;
   height: 1px;
   border-top: 1px solid #e2e2e2;
-  margin: 0px;
+  padding-bottom: 20px;
 }
