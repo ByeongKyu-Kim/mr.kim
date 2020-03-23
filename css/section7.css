@@ -1,11 +1,27 @@
-.sect7 article{
-    max-width: 1200px;
-    margin: 0 auto;
+.sect7 {
+  border: 1px solid #000;
+  background-image: url(../img/movie_bg1.png), url(../img/movie_bg2.png);
+  background-size: auto, cover;
+  background-repeat: no-repeat, no-repeat;
+  padding: 100px 0 100px 0;
+  background-position: center, 0 -120px;
 }
-.sect7_top{
-    width: 960px;
-    margin: 0 auto 50px;
+.sect7 article {
+  /* background-image: url(../img/movie_bg1.png); */
+  max-width: 1200px;
+  height: 900px;
+  margin: 0 auto;
+  padding-top: 50px;
 }
-.sect7_thumbs{
-    margin-bottom: 100px;
+.sect7_thumbs {
+  margin-top: 90px;
+  width: 1000px;
+}
+.sect7_top {
+  width: 1000px;
+  margin: 5px auto 0;
+}
+
+.sect7_thumbs img {
+  width: 100%;
 }

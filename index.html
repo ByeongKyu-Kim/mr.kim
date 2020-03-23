@@ -91,6 +91,16 @@ font-family: 'Roboto','Noto Sans KR','Malgun Gothic','AppleSDGothicNeo',sans-ser
     /* section5 */
     /* section6 */
     /* section7 */
+
+
+    }
+
+    .sect7_thumbs .swiper-slide {
+
+      width: 150px;
+      border: 1px solid white;
+    }
+
     /* section8 */
     /* section9 */
   </style>
@@ -101,14 +111,14 @@ font-family: 'Roboto','Noto Sans KR','Malgun Gothic','AppleSDGothicNeo',sans-ser
     <div class="inner">
       <h1></h1>
       <ul class="hd_nav1">
-        <li><a href="#section2">메뉴소개</a></li>
-        <li><a href="#section3">메뉴소개</a></li>
-        <li><a href="#section4">메뉴소개</a></li>
+        <li><a href=".sect2">메뉴소개</a></li>
+        <li><a href=".sect3">메뉴소개</a></li>
+        <li><a href=".sect4">메뉴소개</a></li>
       </ul>
       <ul class="hd_nav2">
-        <li><a href="#section5">메뉴소개</a></li>
-        <li><a href="#section6">메뉴소개</a></li>
-        <li><a href="#section7">메뉴소개</a></li>
+        <li><a href=".sect5">메뉴소개</a></li>
+        <li><a href=".sect6">메뉴소개</a></li>
+        <li><a href=".sect7">메뉴소개</a></li>
       </ul>
     </div>
   </header>
@@ -148,7 +158,7 @@ font-family: 'Roboto','Noto Sans KR','Malgun Gothic','AppleSDGothicNeo',sans-ser
 
   <!--          section 2             -->
 
-  <section class="sect2" id="section2">
+  <section class="sect2">
     <article>
       <div class="sect2_txt">
         <p>
@@ -224,125 +234,149 @@ font-family: 'Roboto','Noto Sans KR','Malgun Gothic','AppleSDGothicNeo',sans-ser
 
   <!--          section 3             -->
 
-  <section class="sect3" id="section3">
-    <article>
-      <div class="btn">
-          <span class="boerder_bottom"></span>
-          <a href="#menu1" class="on sect3_menu"><h2>김밥</h2></a>
-          <a href="#menu2" class="sect3_menu"><h2>덮밥</h2></a>
-          <a href="#menu3" class="sect3_menu"><h2>면</h2></a>
-          <span class="boerder_bottom"></span>
+  <section class="sect3_wrap">
+    <article class="arti3_max1200">
+      <div class="sect3_top">
+        <div class="sect3_menu1 sect3_menu sect3_on">
+          <!-- <span class="sect3_span1"></span>
+            <span class="sect3_span2"></span>
+            <span class="sect3_span3"></span>
+            <span class="sect3_span4"></span> -->
+          <h2>김밥</h2>
+          <p>메뉴판 한눈에 보기</p>
+        </div>
+
+        <div class="sect3_menu2 sect3_menu">
+          <!-- <span class="sect3_span5"></span>
+            <span class="sect3_span6"></span>
+            <span class="sect3_span7"></span>
+            <span class="sect3_span8"></span> -->
+          <h2>덮밥</h2>
+          <p>메뉴판 한눈에 보기</p>
+        </div>
+
+        <div class="sect3_menu3 sect3_menu">
+          <!-- <span class="sect3_span9"></span>
+            <span class="sect3_span10"></span>
+            <span class="sect3_span11"></span>
+            <span class="sect3_span12"></span> -->
+          <h2>면</h2>
+          <p>메뉴판 한눈에 보기</p>
+        </div>
       </div>
-      
-      <div class="sect3_box">
-        
-          <div class="swiper-container box on" id="menu1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <p>돈가스 김밥</p> <img src="img/20180724892057.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>매운 제육 쌈 김밥</p> <img src="img/20180724943317.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>매운 멸추 김밥</p> <img src="img/20180816955495.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>랍스터 김밥</p> <img src="img/20180816731861.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>새우튀김 김밥</p> <img src="img/20180724469443.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>크림치즈 호두 김밥</p> <img src="img/20180724414090.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>불고기 김밥</p> <img src="img/20180724610350.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>참치 김밥</p> <img src="img/20180724506374.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>바른 김밥</p> <img src="img/20180724195350.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>매콤 장아찌 김밥</p> <img src="img/20180724522738.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>어린이 아몬드 김밥</p> <img src="img/20180724675747.png" alt="" />
-              </div>
-            </div>
-        </div>
 
- 
-          <div class="swiper-container box" id="menu2">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <p>무나물 꼬막 비빔밥</p> <img src="img/20190527533854.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>치즈 가락 떡볶이</p> <img src="img/20190527910077.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>가락 떡볶이</p> <img src="img/20180816880093.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>바른 등심 돈가스</p> <img src="img/20180724267843.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>치즈 등심 돈가스</p> <img src="img/20180816399614.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>철판 제육 덮밥</p> <img src="img/20180724407838.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>철판 불고기 덮밥</p> <img src="img/20180724634124.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>바른 삼계죽</p> <img src="img/20180724255473.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>달래향 간장 비빔밥</p> <img src="img/20180724271184.png" alt="" />
-              </div>
-            </div>
-   
-        </div>
+      <div class="sect3_next">
+        <img src="img/icon-2423347_640.png" alt="" />
+      </div>
 
- 
-          <div class="swiper-container box" id="menu3">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <p>순메밀 회냉면</p> <img src="img/20190527406146.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>김선생 비빔면</p> <img src="img/20180724458601.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>닭가슴살 냉국수</p> <img src="img/20180724878794.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>바른 콩국수</p> <img src="img/20180724661107.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>쫄깃 냉우동</p> <img src="img/20180724837047.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>안동국시</p> <img src="img/20180917922250.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>바른 멸치 국수</p> <img src="img/20180724481075.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>해물 짬뽕 라면</p> <img src="img/20181101213938.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <p>튀김 어묵 우동</p> <img src="img/20180724472021.png" alt="" />
-              </div>
-            </div>
+      <div class="sect3_prev">
+        <img src="img/icon-2423347_640 11.png" alt="" />
+      </div>
+
+      <div style="z-index:9;" class="swiper-container sect3_bottom sect3_kimbab sect3_ko">
+        <div class="swiper-wrapper sect3_scroll">
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">돈가스 김밥</a> <img src="img/20180724892057.jpg" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">매운 제육 쌈 김밥</a> <img src="img/20180724943317.jpg" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">매운 멸추 김밥</a> <img src="img/20180816955495.png" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">랍스터 김밥</a> <img src="img/20180816731861.png" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">새우튀김 김밥</a> <img src="img/20180724469443.jpg" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">크림치즈 호두 김밥</a> <img src="img/20180724414090.jpg" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">불고기 김밥</a> <img src="img/20180724610350.jpg" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">참치 김밥</a> <img src="img/20180724506374.jpg" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">바른 김밥</a> <img src="img/20180724195350.png" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">매콤 장아찌 김밥</a> <img src="img/20180724522738.png" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">어린이 아몬드 김밥</a> <img src="img/20180724675747.png" alt="" />
           </div>
         </div>
-    
-    </article>
+      </div>
+
+      <div class="swiper-container sect3_bottom sect3_dupbab">
+        <div class="swiper-wrapper sect3_scroll">
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">무나물 꼬막 비빔밥</a> <img src="img/20190527533854.png" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">치즈 가락 떡볶이</a> <img src="img/20190527910077.png" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">가락 떡볶이</a> <img src="img/20180816880093.png" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">바른 등심 돈가스</a> <img src="img/20180724267843.png" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">치즈 등심 돈가스</a> <img src="img/20180816399614.png" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">철판 제육 덮밥</a> <img src="img/20180724407838.png" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">철판 불고기 덮밥</a> <img src="img/20180724634124.png" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">바른 삼계죽</a> <img src="img/20180724255473.png" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">달래향 간장 비빔밥</a> <img src="img/20180724271184.png" alt="" />
+          </div>
+        </div>
+
+      </div>
+
+      <div class="swiper-container sect3_bottom sect3_noodle">
+        <div class="swiper-wrapper sect3_scroll">
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">순메밀 회냉면</a> <img src="img/20190527406146.png" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">김선생 비빔면</a> <img src="img/20180724458601.png" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">닭가슴살 냉국수</a> <img src="img/20180724878794.png" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">바른 콩국수</a> <img src="img/20180724661107.png" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">쫄깃 냉우동</a> <img src="img/20180724837047.png" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">안동국시</a> <img src="img/20180917922250.png" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">바른 멸치 국수</a> <img src="img/20180724481075.png" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">해물 짬뽕 라면</a> <img src="img/20181101213938.png" alt="" />
+          </div>
+          <div class="swiper-slide sect3_swiper">
+            <a href="#">튀김 어묵 우동</a> <img src="img/20180724472021.png" alt="" />
+          </div>
+        </div>
+
+      </div>
+      </div>
   </section>
 
 
@@ -400,7 +434,7 @@ font-family: 'Roboto','Noto Sans KR','Malgun Gothic','AppleSDGothicNeo',sans-ser
 
   <!--          section 5          -->
 
-  <section class="sect5" id="section5">
+  <section class="sect5">
     <article>
       <!-- Swiper -->
       <div class="swiper-container">
@@ -460,7 +494,7 @@ font-family: 'Roboto','Noto Sans KR','Malgun Gothic','AppleSDGothicNeo',sans-ser
 
   <!--          section 6             -->
 
-  <section class="sect6" id="section6">
+  <section class="sect6">
     <article class="sect6_wrap">
       <div class="swiper-container">
         <div class="swiper-wrapper sect6_swiper_wrap">
@@ -510,24 +544,24 @@ font-family: 'Roboto','Noto Sans KR','Malgun Gothic','AppleSDGothicNeo',sans-ser
 
   <!--          section 7             -->
 
-  <section class="sect7" id="section7">
+  <section class="sect7">
 
     <article>
       <div class="swiper-container sect7_top">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><iframe width="960" height="540" src="https://www.youtube.com/embed/mW3qEIAD2rA"
+          <div class="swiper-slide"><iframe width="1000" height="563" src="https://www.youtube.com/embed/mW3qEIAD2rA"
               frameborder="0" allow="accelerometer;  autoplay;    encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe></div>
-          <div class="swiper-slide"><iframe width="960" height="540" src="https://www.youtube.com/embed/GfsslwyeNlI"
+          <div class="swiper-slide"><iframe width="1000" height="563" src="https://www.youtube.com/embed/GfsslwyeNlI"
               frameborder="0" allow="accelerometer;  autoplay;    encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe></div>
-          <div class="swiper-slide"><iframe width="960" height="540" src="https://www.youtube.com/embed/JNCvYZiGRXY"
+          <div class="swiper-slide"><iframe width="1000" height="563" src="https://www.youtube.com/embed/JNCvYZiGRXY"
               frameborder="0" allow="accelerometer;  autoplay;    encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe></div>
-          <div class="swiper-slide"><iframe width="960" height="540" src="https://www.youtube.com/embed/8-pKNnXrufM"
+          <div class="swiper-slide"><iframe width="1000" height="563" src="https://www.youtube.com/embed/8-pKNnXrufM"
               frameborder="0" allow="accelerometer;  autoplay;    encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe></div>
-          <div class="swiper-slide"><iframe width="960" height="540" src="https://www.youtube.com/embed/szI_faaZHxY"
+          <div class="swiper-slide"><iframe width="1000" height="563" src="https://www.youtube.com/embed/szI_faaZHxY"
               frameborder="0" allow="accelerometer;  autoplay;    encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe></div>
         </div>
@@ -556,19 +590,15 @@ font-family: 'Roboto','Noto Sans KR','Malgun Gothic','AppleSDGothicNeo',sans-ser
 
 
   <!--          section 8             -->
-
-  <section class="sect8" id="section8">
+  <section class="sect8">
     <div class="inner">
       <div class="sect8_content">
-        <ul class="sect8_menu">
+        <ul class="sect8_menu fl sect8_menu_l">
           <li class="on">관리</li>
           <li>교육</li>
           <li>소통</li>
-          <li>장점1</li>
-          <li>장점2</li>
-          <li>장점3</li>
         </ul>
-        <ul class="sect8_con">
+        <ul class="sect8_con fl">
           <li class="on clearfix">
             <div class="sect8_txt fl">
               <p>관리</p>
@@ -608,8 +638,8 @@ font-family: 'Roboto','Noto Sans KR','Malgun Gothic','AppleSDGothicNeo',sans-ser
             <div class="sect8_img fl">
               <img src="img/operation_communication_img.jpg" alt="">
             </div>
-          </li class="clearfix">
-          <li>
+          </li>
+          <li class="clearfix">
             <div class="sect8_img2 fl"></div>
             <div class="sect8_txt2 fl">
               <p>장점 01</p>
@@ -621,7 +651,6 @@ font-family: 'Roboto','Noto Sans KR','Malgun Gothic','AppleSDGothicNeo',sans-ser
                 원가율을 실현하였습니다.</p>
             </div>
           </li>
-
           <li class="clearfix">
             <div class="sect8_img2 fl"></div>
             <div class="sect8_txt2 fl">
@@ -634,8 +663,7 @@ font-family: 'Roboto','Noto Sans KR','Malgun Gothic','AppleSDGothicNeo',sans-ser
                 매출 증대에 기여합니다.</p>
             </div>
           </li>
-
-          <li class=clearfix>
+          <li class="clearfix">
             <div class="sect8_img2 fl"></div>
             <div class="sect8_txt2 fl">
               <p>장점 03</p>
@@ -648,10 +676,15 @@ font-family: 'Roboto','Noto Sans KR','Malgun Gothic','AppleSDGothicNeo',sans-ser
             </div>
           </li>
         </ul>
+        <ul class="sect8_menu fl sect8_menu_r">
+          <li>장점01</li>
+          <li>장점02</li>
+          <li>장점03</li>
+        </ul>
       </div>
+
     </div>
   </section>
-
   <!--          section 9             -->
 
   <section class="sect9">

@@ -1,53 +1,179 @@
-.sect3{
+.sect3_wrap {
+  width: 100%;
   height: 100vh;
-}
-.sect3 .btn{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-.sect3 .btn span{
-  display: block;
-  width: 200px;
-  border-bottom: 1px solid #000;
-}
-.boerder_bottom{
-  border-bottom: 1px solid transparent;
-}
-.sect3_menu{
-  display: block;
-  padding: 20px 40px;
-  border-bottom: 1px solid #000;
+  background-color: antiquewhite;
+  padding: 2% 0;
+  font-family: "Song Myung", serif;
 }
 
-.sect3_menu.on{
-  border: 1px solid #000;
-  border-bottom: 1px solid rgba(0,0,0,0);
-}
-.sect3_box{
+.arti3_max1200 {
   max-width: 1200px;
-  height: 40vh;
+  height: 70vh;
+  background-color: white;
+  margin: 0 auto;
+  position: relative;
+}
+.sect3_top {
+  width: 100%;
+  height: 30vh;
+  min-height: 150px;
+  display: flex;
+}
+.sect3_top div {
+  width: 33.4%;
+  text-align: center;
+  padding-top: 8%;
+}
+.sect3_top h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.sect3_top p {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: 10%;
+  background-color: #faebd7;
+  width: 40%;
+  height: 30%;
   margin: auto;
+  padding-top: 4.5%;
+}
+.sect3_menu {
   position: relative;
   background-color: #fff;
 }
-.sect3 .box{
-  top: 100px;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  opacity: 0;
-}
-.sect3 .box.on{
-  opacity: 1;
-  z-index: 10;
-}
-.sect3 .swiper-slide{
+
+.sect3_menu1 {
+  background-color: #e4e4e4;
   cursor: pointer;
 }
-.sect3_box img{
-  width: 200px;
+.sect3_menu2,
+.sect3_menu3 {
+  background-color: #e4e4e4;
+  cursor: pointer;
 }
-.sect3_box p{
+.sect3_on {
+  background-color: white !important;
+}
+.sect3_top > div {
+  background-color: #e4e4e4;
+}
+
+.sect3_kimbab {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0;
+  z-index: -99;
+}
+.sect3_dupbab {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0;
+  z-index: -99;
+}
+.sect3_noodle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0;
+  z-index: -99;
+}
+.sect3_on {
+  background-color: white !important;
+}
+.sect3_ko {
+  opacity: 1;
+}
+.sect3_menu > span {
+  background-color: lightgrey;
+  position: absolute;
+  display: inline-block;
+}
+
+/* .sect3_span1 {
+  width: 0;
+  height: 5px;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.sect3_span2 {
+  width: 5px;
+  height: 0px;
+  top: 0;
+  right: 0;
+  opacity: 0;
+} 
+
+.sect3_span4 {
+  width: 5px;
+  height: 0px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+}
+.sect3_border {
+    opacity: 1;
+} */
+
+.sect3_swiper {
+  padding: 6% 4%;
+}
+.sect3_swiper img {
+  width: 100%;
+}
+.sect3_swiper a {
+  font-size: 0.8rem;
+  font-weight: bold;
   text-align: center;
+  display: block;
+  font-family: "Song Myung", serif;
+}
+.sect3_form {
+  transform: scale(1.15);
+}
+
+.sect3 .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.sect3 .swiper-slide {
+  text-align: center;
+  font-size: 1em;
+  background: #fff;
+}
+
+.sect3_next {
+  width: 5%;
+  height: 10%;
+  position: absolute;
+  top: 50%;
+  right: -2.5%;
+  z-index: 9999;
+  opacity: 0.6;
+}
+.sect3_prev {
+  width: 5%;
+  height: 10%;
+  position: absolute;
+  top: 50%;
+  left: -2.5%;
+  z-index: 9999;
+  opacity: 0.6;
+}
+
+.sect3_prev img,
+.sect3_next img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px 1px;
 }

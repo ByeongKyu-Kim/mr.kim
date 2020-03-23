@@ -3,13 +3,13 @@ $(function() {
 
   var swiper1 = new Swiper(".sect1 .swiper-container", {
     pagination: {
-      el: ".sect1 .swiper-pagination"
+      el: ".sect1 .swiper-pagination",
     },
     autoplay: {
       delay: 3000,
-      disableOnInteraction: false
+      disableOnInteraction: false,
     },
-    loop: true
+    loop: true,
   })
 
   // sect2
@@ -31,24 +31,42 @@ $(function() {
 
   //////////////////////////////////// sect3 /////////////////////////////////
 
-  var swiper3 = new Swiper(".sect3 .swiper-container", {
-    slidesPerView: 5,
+  var swiper3 = new Swiper(".sect3_wrap .swiper-container", {
+    slidesPerView: 3,
     spaceBetween: 30,
+    pagination: {
+      el: ".sect3_wrap .swiper-pagination",
+      clickable: true,
+    },
   })
 
-  $(".sect3_menu").click(function(e) {
-    e.preventDefault()
+  $(".sect3_menu1").click(function() {
+    $(".sect3_menu").removeClass("sect3_on")
+    $(this).addClass("sect3_on")
 
-    $(".sect3_menu").removeClass("on")
-    $(this).addClass("on")
-
-    var href = $(this).attr('href')
-
-    $(".sect3_box .box").stop().removeClass('on')
-    $(href).addClass('on')
-
+    $(".sect3_bottom").fadeOut()
+    $(".sect3_kimbab").fadeIn()
   })
 
+  $(".sect3_menu2").click(function() {
+    $(".sect3_menu").removeClass("sect3_on")
+    $(this).addClass("sect3_on")
+
+    $(".sect3_bottom").fadeOut()
+    $(".sect3_dupbab")
+      .css("top", "0px")
+      .fadeIn()
+  })
+
+  $(".sect3_menu3").click(function() {
+    $(".sect3_menu").removeClass("sect3_on")
+    $(this).addClass("sect3_on")
+
+    $(".sect3_bottom").fadeOut()
+    $(".sect3_noodle")
+      .css("top", "0px")
+      .fadeIn()
+  })
 
   //////////////////////////////////// sect4 ///////////////////////////////
 
@@ -84,7 +102,9 @@ $(function() {
     $(".sect3_noodle").addClass("sect3_ko")
 
     $(".sect3_box > div").fadeOut()
-    $(".sect3_box > div").eq(idx).fadeIn()
+    $(".sect3_box > div")
+      .eq(idx)
+      .fadeIn()
   })
 
   // var s3q
@@ -182,37 +202,31 @@ $(function() {
     loop: true,
     pagination: {
       el: ".swiper-pagination",
-      clickable: true
+      clickable: true,
     },
     navigation: {
       nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    }
+      prevEl: ".swiper-button-prev",
+    },
   })
 
   //sect6
 
-  var swiper = new Swiper(".sect6 .swiper-container", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true
+  var swiper6 = new Swiper(".sect6 .swiper-container", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
     },
     pagination: {
-      el: ".sect6 .swiper-pagination"
-    }
+      el: ".swiper-pagination",
+      clickable: true,
+    },
   })
 
-  $(".sect6_menu6 h6, .sect6_menu6 p").click(function(){
-    $(".sect6_menu6 h3").fadeToggle(function(){
-      $(".sect6_menu6 h2").fadeToggle()
-    })
+  $(".sect6_menu6 h6").click(function() {
+    $(".sect6_menu6 h3").fadeToggle()
   })
 
   $(".sect6").mouseenter(function(){
@@ -227,13 +241,13 @@ $(function() {
   //sect7
 
   var galleryThumbs = new Swiper(".sect7_thumbs", {
-    spaceBetween: 10,
+    spaceBetween: 15,
     slidesPerView: 4,
     loop: true,
     freeMode: true,
     loopedSlides: 5, //looped slides should be the same
     watchSlidesVisibility: true,
-    watchSlidesProgress: true
+    watchSlidesProgress: true,
   })
   var galleryTop = new Swiper(".sect7_top", {
     spaceBetween: 10,
@@ -241,16 +255,18 @@ $(function() {
     loopedSlides: 5, //looped slides should be the same
     navigation: {
       nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      prevEl: ".swiper-button-prev",
     },
     thumbs: {
-      swiper: galleryThumbs
-    }
+      swiper: galleryThumbs,
+    },
   })
 
   //sect8
 
-  $(".sect8_menu li").click(function() {
+  $(".sect8_menu_l li").click(function(e) {
+    e.preventDefault()
+
     $(".sect8_menu li").removeClass("on")
     $(this).addClass("on")
 
@@ -259,6 +275,20 @@ $(function() {
     $(".sect8_con li").fadeOut()
     $(".sect8_con li")
       .eq(idx)
+      .fadeIn()
+  })
+
+  $(".sect8_menu_r li").click(function(e) {
+    e.preventDefault()
+
+    $(".sect8_menu li").removeClass("on")
+    $(this).addClass("on")
+
+    var idx = $(this).index()
+
+    $(".sect8_con li").fadeOut()
+    $(".sect8_con li")
+      .eq(idx + 3)
       .fadeIn()
   })
 
