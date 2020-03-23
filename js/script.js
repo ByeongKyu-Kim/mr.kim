@@ -31,29 +31,24 @@ $(function() {
 
   //////////////////////////////////// sect3 /////////////////////////////////
 
-  var swiper3 = new Swiper(".sect3_wrap .swiper-container", {
-    slidesPerView: 3,
+  var swiper3 = new Swiper(".sect3 .swiper-container", {
+    slidesPerView: 5,
     spaceBetween: 30,
     loop: true,
     centeredSlides: true,
   })
 
-  $(".sect3_menu1").click(function() {
-    $(".sect3_menu").removeClass("sect3_on")
-    $(this).addClass("sect3_on")
+  $(".sect3_menu").click(function(e) {
+    e.preventDefault()
 
-    $(".sect3_bottom").fadeOut()
-    $(".sect3_kimbab").fadeIn()
-  })
+    $(".sect3_menu").removeClass("on")
+    $(this).addClass("on")
 
-  $(".sect3_menu2").click(function() {
-    $(".sect3_menu").removeClass("sect3_on")
-    $(this).addClass("sect3_on")
+    var href = $(this).attr('href')
 
-    $(".sect3_bottom").fadeOut()
-    $(".sect3_dupbab")
-      .css("top", "0px")
-      .fadeIn()
+    $(".sect3_box .box").stop().removeClass('on')
+    $(href).addClass('on')
+
   })
 
   $(".group1").colorbox({rel:'group1'});
