@@ -102,7 +102,9 @@ $(function() {
     $(".sect3_noodle").addClass("sect3_ko")
 
     $(".sect3_box > div").fadeOut()
-    $(".sect3_box > div").eq(idx).fadeIn()
+    $(".sect3_box > div")
+      .eq(idx)
+      .fadeIn()
   })
 
   // var s3q
@@ -195,13 +197,13 @@ $(function() {
     },
   })
 
-  $(".sect6_menu6 h6").click(function(){
+  $(".sect6_menu6 h6").click(function() {
     $(".sect6_menu6 h3").fadeToggle()
   })
   //sect7
 
   var galleryThumbs = new Swiper(".sect7_thumbs", {
-    spaceBetween: 10,
+    spaceBetween: 15,
     slidesPerView: 4,
     loop: true,
     freeMode: true,
