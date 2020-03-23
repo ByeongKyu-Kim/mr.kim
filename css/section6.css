@@ -62,17 +62,21 @@
   width: 300px;
   height: 300px;
   background-size: 100%;
+  margin-left: -400px;
+  transition: 1.5s;
 }
 
 .sect6_menu6 h5 {
   position: absolute;
-  left: 9.5%;
-  top: 11.2%;
-  width: 40px;
+  left: 8.5%;
+  top: 13.2%;
+  width: 80px;
   height: 20px;
-  font-size: 4em;
+  font-size: 3.5em;
   font-weight: bold;
-  animation: sect6_menu6 linear 2s infinite;
+  animation: sect6_menu6 linear 6s infinite;
+  margin-left: -400px;
+  transition: 1.5s;
 }
 
 @keyframes sect6_menu6 {
@@ -81,7 +85,7 @@
   }
 
   25% {
-    transform: rotate(-2deg) scale(0.8);
+    transform: rotate(-2deg) scale(0.9);
   }
 
   50% {
@@ -89,7 +93,7 @@
   }
 
   75% {
-    transform: rotate(-2deg) scale(0.8);
+    transform: rotate(-2deg) scale(0.9);
   }
 
   100% {
@@ -104,9 +108,20 @@
   top: 66.3%;
 }
 
+.sect6_menu6 h2 {background-image: url(../img/maxresdefault.jpg); background-repeat: no-repeat;
+width: 54%;
+height: 59%;
+z-index: 9997;
+background-position-x: -117px;
+position: absolute;
+top: 4.5%;
+left: 23%;
+}
+
+
 .sect6_menu6 h3 {
-  width: 1035px;
-  height: 715px;
+  width: 54%;
+  height: 59%;
   background-color: black;
   z-index: 9999;
   position: absolute;
@@ -117,11 +132,11 @@
 .sect6_menu6 p {
   background-image: url(../img/arrow-161142_640.png);
   background-repeat: no-repeat;
-  width: 8%;
-  height: 12%;
+  width: 50px;
+  height: 50px;
   position: absolute;
-  right: 16%;
-  top: 68%;
+  right: 21.5%;
+  top: 66.8%;
   background-size: cover;
   background-position-x: 2px;
   animation: sect6_menu6_p linear 4s infinite;
@@ -134,7 +149,7 @@
 
   25% {
     transform: rotate(-2deg) scale(0.8);
-    opacity: 0.1;
+    opacity: 0.7;
   }
 
   50% {
@@ -143,7 +158,7 @@
 
   75% {
     transform: rotate(-2deg) scale(0.8);
-    opacity: 0.1;
+    opacity: 0.7;
   }
 
   100% {

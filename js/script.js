@@ -144,7 +144,35 @@ $(function() {
   $(".sect4").mouseenter(function() {
     $(".sect4_people img").addClass("sect4_people_on")
     $(".sect4_move img").addClass("sect4_move_ko")
+    $(".sect4_paper img, .sect4_move img").css("margin","0px")
+    $(".sect4_paper_click").css("opacity","1")
   })
+
+
+  $(".sect4").mouseleave(function() {
+    $(".sect4_paper_click").css("opacity","0")
+    $(".sect4_paper img").css({
+      "width": "200px",
+      "height": "200px",
+      "z-index":"9990"
+    })
+    $(".sect4_move img").css("z-index","9980")
+    $(".sect4_paper img, .sect4_move img").css("margin","-400px")
+  })
+    
+    
+
+
+  $(".sect4_paper img").click(function(){
+    $(".sect4_paper img").css({
+      "width": "400px",
+      "height": "400px" ,
+      "z-index":"9980"
+    })
+    $(".sect4_paper_click").css("opacity","0")
+    $(".sect4_move img").css("z-index","9990")
+  })
+
 
   //sect5
 
@@ -181,9 +209,21 @@ $(function() {
     }
   })
 
-  $(".sect6_menu6 h6").click(function(){
-    $(".sect6_menu6 h3").fadeToggle()
+  $(".sect6_menu6 h6, .sect6_menu6 p").click(function(){
+    $(".sect6_menu6 h3").fadeToggle(function(){
+      $(".sect6_menu6 h2").fadeToggle()
+    })
   })
+
+  $(".sect6").mouseenter(function(){
+    $(".sect6_menu6 h4, .sect6_menu6 h5").css("margin-left","0px")
+  })
+  
+  $(".sect6").mouseleave(function(){
+    $(".sect6_menu6 h4, .sect6_menu6 h5").css("margin-left","-400px")
+  })
+
+
   //sect7
 
   var galleryThumbs = new Swiper(".sect7_thumbs", {
