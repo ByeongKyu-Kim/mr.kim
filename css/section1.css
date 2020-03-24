@@ -9,6 +9,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 10;
+  border-bottom: 3px solid darkorchid;
 }
 header.on{
   background-color: #f7f3e9;
@@ -47,13 +48,14 @@ header ul li a {
   font-family: 'East Sea Dokdo', cursive;
 }
 header ul li a:hover{
-   background-color: #e7e3e9;
-   color: #795620;
+   background-color: darkorchid;
+   color: tan;
 }
 header ul li a.on{
   color: #795620;
 }
 header ul li a.on:hover{
+  background-color: #795620;
   color: #f7f3e9;
 }
 header .hd_nav1 {
