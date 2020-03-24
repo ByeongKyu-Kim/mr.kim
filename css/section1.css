@@ -2,7 +2,7 @@
 
 header {
   width: 100%;
-  height: 100px;
+  height: 80px;
   background-color: #f7f3e9;
 }
 
@@ -28,7 +28,6 @@ header ul {
   justify-content: space-between;
 }
 header ul li a {
-  text-indent: -99999px;
   display: block;
   width: 135px;
   height: 100px;
@@ -38,32 +37,31 @@ header .hd_nav1 {
 }
 
 header .hd_nav1 li:nth-child(1) a {
-  background-image: url(../img/hd_menu_3.png);
-
-  background-size: 140px;
+  /* background-image: url(../img/hd_menu_3.png);
+  background-size: 140px; */
 }
 header .hd_nav1 li:nth-child(2) a {
-  background-image: url(../img/hd_menu_2.png);
-  background-size: 140px;
+  /* background-image: url(../img/hd_menu_2.png);
+  background-size: 140px; */
 }
 header .hd_nav1 li:nth-child(3) a {
-  background-image: url(../img/hd_menu_1.png);
-  background-size: 140px;
+  /* background-image: url(../img/hd_menu_1.png);
+  background-size: 140px; */
 }
 header .hd_nav2 {
   float: right;
 }
 header .hd_nav2 li:nth-child(1) a {
-  background-image: url(../img/hd_menu_4.png);
-  background-size: 140px;
+  /* background-image: url(../img/hd_menu_4.png);
+  background-size: 140px; */
 }
 header .hd_nav2 li:nth-child(2) a {
-  background-image: url(../img/hd_menu_1.png);
-  background-size: 140px;
+  /* background-image: url(../img/hd_menu_1.png);
+  background-size: 140px; */
 }
 header .hd_nav2 li:nth-child(3) a {
-  background-image: url(../img/hd_menu_1.png);
-  background-size: 140px;
+  /* background-image: url(../img/hd_menu_1.png);
+  background-size: 140px; */
 }
 
 .sect0_dart_fix {
@@ -180,7 +178,7 @@ header .hd_nav2 li:nth-child(3) a {
 .sect1 {
   /* background-image: url(../img/bg.gif); */
   width: 100%;
-  height: 700px;
+  height: 800px;
 }
 /* .sect1 .inner {
   max-width: 1200px;
@@ -220,6 +218,7 @@ header .hd_nav2 li:nth-child(3) a {
 .sect1 .bg2 {
   background-image: url(../img/20190527434342.png);
   background-size: cover;
+  background-position: -520px;
 }
 .sect1 .bg3 {
   background-image: url(../img/20200323262025.png);
@@ -228,8 +227,10 @@ header .hd_nav2 li:nth-child(3) a {
 .sect1 .bg4 {
   background-image: url(../img/20190527712495.png);
   background-size: cover;
+  background-position: -600px;
 }
 .sect1 .bg5 {
   background-image: url(../img/brand_info_bg2.jpg);
   background-size: cover;
+  background-position: -50px;
 }
