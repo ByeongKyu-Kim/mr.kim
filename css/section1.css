@@ -3,10 +3,14 @@
 header {
   width: 100%;
   height: 80px;
-  background-color: #f7f3e9;
+  background-color: rosybrown;
+  /* background-color: #f7f3e9; */
   /* display: none; */
   position: fixed;
-  z-index: 10;
+  z-index: 999;
+}
+header.on{
+  background-color: #f7f3e9;
 }
 
 header .inner {
@@ -14,7 +18,6 @@ header .inner {
   height: 100%;
   margin: auto;
   overflow: hidden;
-  border: 1px solid #000;
 }
 header h1 {
   background-image: url(../img/logo3.png);
@@ -28,18 +31,20 @@ header h1 {
 }
 header ul {
   width: 40%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 header ul li a {
   display: block;
-  width: 135px;
-  height: 100px;
   font-size: 20px;
   text-align: center;
-  background-color: rosybrown;
-  /* width: 100%;
-  height: 100%; */
+  padding: 5px 10px;
+  color: #fff;
+}
+header ul li a.on {
+  color: #000;
 }
 header .hd_nav1 {
   float: left;
@@ -178,7 +183,7 @@ header .hd_nav2 {
   top: 100px;
   left: 50%;
   transform: translate(-50%);
-  z-index: 10;
+  z-index: 999;
 }
 .sect1 .swiper-container {
   width: 100%;

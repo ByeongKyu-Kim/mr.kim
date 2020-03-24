@@ -3,15 +3,18 @@ $(function() {
   $(document).scroll(function(){
     var scrT = $(this).scrollTop()
 
-    console.log(scrT)
+    // console.log(scrT)
 
     if(scrT >= 130 ){
-      $('.sect1 h1').css({'position':'fixed','top':-'50'})
+      $('.sect1 h1').css({'position':'fixed','top':-50})
+      $('header').addClass('on')
+      $('header li a').addClass('on')
     }
     
-    
     else{
-      $('.sect1 h1').css({'position':'absolute','top':'300'})
+      $('.sect1 h1').css({'position':'absolute','top':100})
+      $('header').removeClass('on')
+      $('header li a').removeClass('on')
     }
   })
   // sect1
@@ -111,9 +114,9 @@ $(function() {
     $(".sect4_paper img").css({
       width: "200px",
       height: "200px",
-      "z-index": "9990",
+      "z-index": "90",
     })
-    $(".sect4_move img").css("z-index", "9980")
+    $(".sect4_move img").css("z-index", "80")
     $(".sect4_paper img, .sect4_move img").css("margin", "-400px")
   })
 
@@ -121,10 +124,10 @@ $(function() {
     $(".sect4_paper img").css({
       width: "400px",
       height: "400px",
-      "z-index": "9980",
+      "z-index": "80",
     })
     $(".sect4_paper_click").css("opacity", "0")
-    $(".sect4_move img").css("z-index", "9990")
+    $(".sect4_move img").css("z-index", "90")
   })
 
   //sect5
