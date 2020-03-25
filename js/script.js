@@ -5,8 +5,8 @@ $(function() {
 
     // console.log(scrT)
 
-    if(scrT >= 130 ){
-      $('.sect1 h1').css({'position':'fixed','top':-50})
+    if(scrT >= 170 ){
+      $('.sect1 h1').css({'position':'fixed','top':-170})
       $('header').addClass('on')
       $('header li a').addClass('on')
     }
