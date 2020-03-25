@@ -1,122 +1,29 @@
 .sect5 {
-  padding-bottom: 7%;
-  position: relative;
-  background-color:#F7F3E8;
+  border: 1px solid #000;
+  background-image: url(../img/movie_bg1.png), url(../img/movie_bg2.png);
+  background-size: 1500px 935px, cover;
+  background-repeat: no-repeat, no-repeat;
+  padding: 100px 0 100px 0;
+  background-position: center 0, 0 -120px;
 }
 .sect5 article {
+  /* background-image: url(../img/movie_bg1.png); */
   max-width: 1200px;
+  height: 900px;
   margin: 0 auto;
-  padding-bottom: 5%;
+  padding-top: 50px;
 }
-/* 별모양 깃대 */
-.sect5_star_imgwrap {
-  display: flex;
+.sect5_thumbs {
+  margin-top: 75px;
+  width: 800px;
 }
-.sect5_right_img {
-  width: 50%;
-  height: 30%;
-  opacity: 0.6;
-  transform: rotate(7deg);
-  margin-top: 5%;
-  margin-left: -2%;
+.sect5_thumbs .swiper-slide{
+  border: 1px solid #fff;
 }
-.sect5_left_img {
-  width: 50%;
-  height: 30%;
-  transform: rotate(340deg);
-  opacity: 0.4;
-  margin-top: 5%;
+.sect5_top {
+  width: 800px;
+  margin: 5px auto 0;
 }
-
-/* 하트모양 풍선  */
-
-.sect5_balloon_imgwrap img {
-  width: 25px;
-  animation: balloon1 10s infinite;
-  position: absolute;
-  z-index: 20;
-  opacity: 0.6;
-}
-.sect5_balloon1 {
-  left: 5%;
-  top: 33%;
-}
-.sect5_balloon2 {
-  left: 25%;
-  top: 35%;
-}
-.sect5_balloon3 {
-  left: 35%;
-  top: 15%;
-}
-.sect5_balloon4 {
-  left: 50%;
-  top: 15%;
-}
-.sect5_balloon5 {
-  left: 68%;
-  top: 17%;
-}
-.sect5_balloon6 {
-  left: 90%;
-  top: 40%;
-}
-@keyframes balloon1 {
-  0% {
-    transform: translateY(5px);
-  }
-  25% {
-    transform: translateY(-5px);
-  }
-
-  50% {
-    transform: translateY(5px);
-  }
-  75% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(5px);
-  }
-}
-
-.sect5_imgtxt img {
-  width: 38%;
-  height: 40%;
-  position: absolute;
-  top: 15%;
-  left: 30%;
-  z-index: 30;
-  animation: sect5_txt 10s infinite linear;
-}
-@keyframes sect5_txt {
-  0% {
-    transform-origin: 3% 30%;
-    transform: skewx(5deg);
-  }
-
-  50% {
-    transform-origin: 97% 30%;
-    transform: skewx(-5deg);
-  }
-
-  100% {
-    transform-origin: 3% 30%;
-    transform: skewx(5deg);
-  }
-}
-
-.sect5 .box {
-  cursor: pointer;
-  text-align: center;
-  padding: 20px;
-  background-color: #f7f3e9;
-  border: 1px solid #c7a776;
-  margin-bottom: 60px;
-}
-.sect5 .box h3 {
-  margin: 20px 0;
-}
-.sect5 .box p {
-  text-align: right;
+.sect5_thumbs img {
+  width: 100%;
 }
