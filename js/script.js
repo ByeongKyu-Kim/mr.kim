@@ -31,47 +31,51 @@ $(function() {
     loop: true,
   })
 
-  // sect2
 
-  $(".sect2_btn li").click(function() {
-    $(".sect2_btn li").removeClass("on")
-    $(this).addClass("on")
+  //   sect2
 
-    var idx = $(this).index()
-
-    $(".sect2_box li")
-      .stop()
-      .fadeOut()
-    $(".sect2_box li")
-      .eq(idx)
-      .stop()
-      .fadeIn()
-  })
-
-  //////////////////////////////////// sect3 /////////////////////////////////
-
-  var swiper3 = new Swiper(".sect3 .swiper-container", {
+  var swiper2 = new Swiper(".sect2 .swiper-container", {
     slidesPerView: 5,
     spaceBetween: 30,
     loop: true,
     centeredSlides: true,
   })
 
-  $(".sect3_menu").click(function(e) {
+  $(".sect2_menu").click(function(e) {
     e.preventDefault()
 
-    $(".sect3_menu").removeClass("on")
+    $(".sect2_menu").removeClass("on")
     $(this).addClass("on")
 
     var href = $(this).attr("href")
 
-    $(".sect3_box .box")
+    $(".sect2_box .box")
       .stop()
       .removeClass("on")
     $(href).addClass("on")
   })
 
   $(".group1").colorbox({ rel: "group1" })
+
+
+
+  // sect3
+
+  $(".sect3_btn li").click(function() {
+    $(".sect3_btn li").removeClass("on")
+    $(this).addClass("on")
+
+    var idx = $(this).index()
+
+    $(".sect3_box li")
+      .stop()
+      .fadeOut()
+    $(".sect3_box li")
+      .eq(idx)
+      .stop()
+      .fadeIn()
+  })
+
 
 
   

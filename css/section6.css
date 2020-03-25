@@ -111,7 +111,7 @@
 .sect6_menu6 h2 {background-image: url(../img/maxresdefault.jpg); background-repeat: no-repeat;
 width: 54%;
 height: 59%;
-z-index: 9997;
+z-index: 4;
 background-position-x: -117px;
 position: absolute;
 top: 4.5%;
@@ -123,7 +123,7 @@ left: 23%;
   width: 54%;
   height: 59%;
   background-color: black;
-  z-index: 9999;
+  z-index: 5;
   position: absolute;
   top: 4.5%;
   left: 23%;
