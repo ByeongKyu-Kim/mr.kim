@@ -1,23 +1,29 @@
-.sect5{
-    margin: 200px 0;
+.sect5 {
+  border: 1px solid #000;
+  background-image: url(../img/movie_bg1.png), url(../img/movie_bg2.png);
+  background-size: 1500px 935px, cover;
+  background-repeat: no-repeat, no-repeat;
+  padding: 100px 0 100px 0;
+  background-position: center 0, 0 -120px;
 }
-.sect5 article{
-    max-width: 1200px;
-    margin: 0 auto;
+.sect5 article {
+  /* background-image: url(../img/movie_bg1.png); */
+  max-width: 1200px;
+  height: 900px;
+  margin: 0 auto;
+  padding-top: 50px;
 }
-.sect5 .box{
-    cursor: pointer;
-    text-align: center;
-    padding: 20px;
-    background-color: #F7F3E9;
-    border: 1px solid #C7A776;
-    margin-bottom: 60px;
+.sect5_thumbs {
+  margin-top: 75px;
+  width: 800px;
 }
-.sect5 .box h3{
-    margin: 20px 0;
+.sect5_thumbs .swiper-slide{
+  border: 1px solid #fff;
 }
-.sect5 .box p{
-    text-align: right;
+.sect5_top {
+  width: 800px;
+  margin: 5px auto 0;
 }
-
-
+.sect5_thumbs img {
+  width: 100%;
+}

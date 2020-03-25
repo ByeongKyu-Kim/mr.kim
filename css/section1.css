@@ -22,6 +22,7 @@ header .inner {
   margin: auto;
   overflow: hidden;
 }
+
 header h1 {
   background-image: url(../img/logo3.png);
   background-size: 150px;
@@ -32,6 +33,7 @@ header h1 {
   top: -100px;
   left: 100px;
 }
+
 header ul {
   width: 40%;
   height: 100%;
@@ -196,7 +198,7 @@ header .hd_nav2 {
   top: 100px;
   left: 50%;
   transform: translate(-50%);
-  z-index: 999;
+  z-index:11111;
 }
 .sect1 .swiper-container {
   width: 100%;
