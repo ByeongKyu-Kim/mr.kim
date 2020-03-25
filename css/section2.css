@@ -1,208 +1,70 @@
-.sect2 {
-  padding: 200px 0;
-}
-.sect2 article {
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-}
-.sect2_txt {
-  text-align: center;
-  color: #fff;
+.sect2{
+  background-color: #c7a776;
   padding: 50px 0;
-  background: url(../img/brand_info_bg1.png) no-repeat;
-  background-size: cover;
 }
-.sect2_txt p:nth-child(1) {
-  margin-bottom: 30px;
-  font-size: 50px;
-  line-height: 60px;
-  font-family: "Nanum Pen Script", cursive;
+.sect2 .title{
+  height: 200px;
 }
-
-.sect2_txt p:nth-child(2) {
-  padding: 5px;
-}
-.sect2_txt p:nth-child(3) {
-  font-size: 18px;
-  font-weight: 300;
-}
-.sect2_btn {
+.sect2 .btn{
   display: flex;
   justify-content: center;
-  background-color: #c7a776;
+  text-align: center;
 }
-.sect2_btn li {
-  cursor: pointer;
-  width: 130px;
-  height: 153px;
-  background: url(../img/secret_food_list.png) no-repeat 10px;
-  background-color: #c7a776;
+.sect2 .btn span{
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #795620;
 }
-
-.sect2_btn li.on {
-  background-color: #795620;
+.boerder_bottom{
+  border-bottom: 2px solid transparent;
 }
-.sect2_btn li:hover {
-  background-color: #795620;
+.sect2_menu{
+  width: 200px;
+  display: block;
+  padding: 20px 40px;
+  color: #795620;
+  border-bottom: 2px solid #795620;
 }
-.sect2_btn li:nth-child(1) {
-  background-position: 10px;
+.sect2 h2{
+  font-size: 20px;
 }
-.sect2_btn li:nth-child(2) {
-  background-position: -130px 10px;
+.sect2_menu.on{
+  border: 2px solid #795620;
+  border-radius: 30px 30px 0 0;
+  border-bottom: 2px solid transparent;
+  background-color: #fff;
 }
-.sect2_btn li:nth-child(3) {
-  background-position: -255px 10px;
-}
-.sect2_btn li:nth-child(4) {
-  background-position: -385px 10px;
-}
-.sect2_btn li:nth-child(5) {
-  background-position: -520px 10px;
-}
-.sect2_btn li:nth-child(6) {
-  background-position: -660px 10px;
-}
-.sect2_box {
-  height: 320px;
+.sect2_box{
+  width: 100%;
+  height: 50vh;
+  margin: auto;
   position: relative;
+  background-image: url(../img/bg.gif);
+  border-bottom: 2px solid #795620;
 }
-.sect2_box li {
+.sect2 .box{
+  top: 100px;
   width: 100%;
   height: 100%;
-  padding: 50px 100px;
   position: absolute;
-  display: none;
+  opacity: 0;
 }
-.sect2_box li.on {
-  display: block;
+.sect2 .box.on{
+  opacity: 1;
+  z-index: 8;
 }
-.sect2_box li:nth-child(1) {
-  background: url(../img/food_info1_bg.jpg) -700px 0;
+.sect2 .swiper-slide{
+  cursor: pointer;
+  transform: scale(.7);
+  opacity: .3;
 }
-.sect2_box li:nth-child(2) {
-  background: url(../img/food_info2_bg.jpg) -700px 0;
+.sect2_box img{
+  width: 100%;
 }
-.sect2_box li:nth-child(3) {
-  background: url(../img/food_info3_bg.jpg) -700px 0;
+.sect2_box p{
+  text-align: center;
 }
-.sect2_box li:nth-child(4) {
-  background: url(../img/food_info4_bg.jpg) -700px 0;
-}
-.sect2_box li:nth-child(5) {
-  background: url(../img/food_info5_bg.jpg) -700px 0;
-}
-.sect2_box li:nth-child(6) {
-  background: url(../img/food_info6_bg.jpg) -700px 0;
-}
-.sect2 h3 {
-  display: inline-block;
-  color: #3e3a39;
-  font-size: 45px;
-  border-bottom: 1px solid #777;
-  padding-bottom: 8px;
-}
-.sect2_box p {
-  color: #777;
-  font-size: 20px;
-  margin-top: 20px;
-}
-
-.sect2_chef_move h5 {
-  background-image: url(../img/chef-1417239_6400.png);
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 110px;
-  height: 200px;
-  background-position-y: -100px;
-  top: 10%;
-  left: 7%;
-  z-index: 11;
-}
-.sect2_chef_move h6 {
-  background-image: url(../img/chef-1417239_6401.png);
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 50px;
-  height: 70px;
-  background-position: -296px -123px;
-  top: 19.5%;
-  left: 15%;
-  z-index: 10;
-}
-.sect2_chef_move h6 {
-  animation: chef1 4s linear infinite;
-}
-
-.sect2_chef_move2 h5 {
-  background-image: url(../img/chef-1417239_6402.png);
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 110px;
-  height: 200px;
-  background-position: -529px -100px;
-  top: 10%;
-  right: 7%;
-  z-index: 14;
-}
-.sect2_chef_move2 h6 {
-  background-image: url(../img/chef-1417239_6403.png);
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 55px;
-  height: 120px;
-  background-position: -498px -180px;
-  top: 19.5%;
-  right: 13.5%;
-  z-index: 10;
-}
-.sect2_chef_move2 h6 {
-  animation: chef2 4s linear infinite;
-}
-
-@keyframes chef1 {
-  0% {
-    transform: rotate(10deg);
-    transform-origin: 20% 100%;
-  }
-
-  25% {
-    transform: rotate(-10deg);
-  }
-
-  50% {
-    transform: rotate(10deg);
-  }
-
-  75% {
-    transform: rotate(-10deg);
-  }
-
-  100% {
-    transform: rotate(10deg);
-  }
-}
-
-@keyframes chef2 {
-  0% {
-    transform: rotate(7deg);
-    transform-origin: 100% 20%;
-  }
-
-  25% {
-    transform: rotate(-7deg);
-  }
-
-  50% {
-    transform: rotate(7deg);
-  }
-
-  75% {
-    transform: rotate(-7deg);
-  }
-
-  100% {
-    transform: rotate(7deg);
-  }
+.sect2 .swiper-slide-active{
+  transform: scale(1);
+  opacity: 1;
 }
