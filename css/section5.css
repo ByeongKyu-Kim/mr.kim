@@ -1,12 +1,12 @@
 .sect5 {
-  margin-bottom: 200px;
+  padding-bottom: 7%;
   position: relative;
-  background-color: rgb(253, 235, 235);
+  background-color:#F7F3E8;
 }
 .sect5 article {
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 50px;
+  padding-bottom: 5%;
 }
 /* 별모양 깃대 */
 .sect5_star_imgwrap {
