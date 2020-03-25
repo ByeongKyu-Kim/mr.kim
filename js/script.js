@@ -211,9 +211,13 @@ $(function() {
     },
   })
 
-  $(".sect6_menu6 h6").click(function() {
-    $(".sect6_menu6 h3").fadeToggle()
+  $(".sect6_menu6 p").click(function() {
+    $(".sect6_menu6 h2").fadeToggle(200,function(){
+      $(".sect6_menu6 h3").fadeToggle(300)
+    })
   })
+
+
 
   $(".sect6").mouseenter(function(){
     $(".sect6_menu6 h4, .sect6_menu6 h5").css("margin-left","0px")
@@ -222,6 +226,8 @@ $(function() {
   $(".sect6").mouseleave(function(){
     $(".sect6_menu6 h4, .sect6_menu6 h5").css("margin-left","-400px")
   })
+
+
 
 
   //sect7
