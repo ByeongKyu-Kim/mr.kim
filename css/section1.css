@@ -3,15 +3,15 @@
 header {
   width: 100%;
   height: 80px;
-  background-color: rosybrown;
+  background-color: #b66c6c;
   /* background-color: #f7f3e9; */
   /* display: none; */
   position: fixed;
   top: 0;
   z-index: 10;
-  border-bottom: 3px solid darkorchid;
+  border-bottom: 3px solid #f7f3e9;
 }
-header.on{
+header.on {
   background-color: #f7f3e9;
   border-bottom: 3px solid #795620;
 }
@@ -45,16 +45,16 @@ header ul li a {
   padding: 15px;
   text-align: center;
   color: #f7f3e9;
-  font-family: 'East Sea Dokdo', cursive;
+  font-family: "East Sea Dokdo", cursive;
 }
-header ul li a:hover{
-   background-color: darkorchid;
-   color: tan;
-}
-header ul li a.on{
+header ul li a:hover {
+  background-color: #f7f3e9;
   color: #795620;
 }
-header ul li a.on:hover{
+header ul li a.on {
+  color: #795620;
+}
+header ul li a.on:hover {
   background-color: #795620;
   color: #f7f3e9;
 }
