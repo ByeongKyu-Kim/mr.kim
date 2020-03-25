@@ -1,21 +1,122 @@
-.sect5{
-    margin: 200px 0;
+.sect5 {
+  margin-bottom: 200px;
+  position: relative;
+  background-color: rgb(253, 235, 235);
 }
-.sect5 article{
-    max-width: 1200px;
-    margin: 0 auto;
+.sect5 article {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
 }
-.sect5 .box{
-    cursor: pointer;
-    text-align: center;
-    padding: 20px;
-    background-color: #F7F3E9;
-    border: 1px solid #C7A776;
-    margin-bottom: 60px;
+/* 별모양 깃대 */
+.sect5_star_imgwrap {
+  display: flex;
 }
-.sect5 .box h3{
-    margin: 20px 0;
+.sect5_right_img {
+  width: 50%;
+  height: 30%;
+  opacity: 0.6;
+  transform: rotate(7deg);
+  margin-top: 5%;
+  margin-left: -2%;
 }
-.sect5 .box p{
-    text-align: right;
+.sect5_left_img {
+  width: 50%;
+  height: 30%;
+  transform: rotate(340deg);
+  opacity: 0.4;
+  margin-top: 5%;
+}
+
+/* 하트모양 풍선  */
+
+.sect5_balloon_imgwrap img {
+  width: 25px;
+  animation: balloon1 10s infinite;
+  position: absolute;
+  z-index: 20;
+  opacity: 0.6;
+}
+.sect5_balloon1 {
+  left: 5%;
+  top: 33%;
+}
+.sect5_balloon2 {
+  left: 25%;
+  top: 35%;
+}
+.sect5_balloon3 {
+  left: 35%;
+  top: 15%;
+}
+.sect5_balloon4 {
+  left: 50%;
+  top: 15%;
+}
+.sect5_balloon5 {
+  left: 68%;
+  top: 17%;
+}
+.sect5_balloon6 {
+  left: 90%;
+  top: 40%;
+}
+@keyframes balloon1 {
+  0% {
+    transform: translateY(5px);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+.sect5_imgtxt img {
+  width: 38%;
+  height: 40%;
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  z-index: 30;
+  animation: sect5_txt 10s infinite linear;
+}
+@keyframes sect5_txt {
+  0% {
+    transform-origin: 3% 30%;
+    transform: skewx(5deg);
+  }
+
+  50% {
+    transform-origin: 97% 30%;
+    transform: skewx(-5deg);
+  }
+
+  100% {
+    transform-origin: 3% 30%;
+    transform: skewx(5deg);
+  }
+}
+
+.sect5 .box {
+  cursor: pointer;
+  text-align: center;
+  padding: 20px;
+  background-color: #f7f3e9;
+  border: 1px solid #c7a776;
+  margin-bottom: 60px;
+}
+.sect5 .box h3 {
+  margin: 20px 0;
+}
+.sect5 .box p {
+  text-align: right;
 }

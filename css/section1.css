@@ -8,9 +8,10 @@ header {
   /* display: none; */
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 10000;
   border-bottom: 3px solid darkorchid;
 }
+
 header.on{
   background-color: #f7f3e9;
   border-bottom: 3px solid #795620;
@@ -22,6 +23,7 @@ header .inner {
   margin: auto;
   overflow: hidden;
 }
+
 header h1 {
   background-image: url(../img/logo3.png);
   background-size: 150px;
@@ -32,6 +34,7 @@ header h1 {
   top: -100px;
   left: 100px;
 }
+
 header ul {
   width: 40%;
   height: 100%;
@@ -196,7 +199,7 @@ header .hd_nav2 {
   top: 100px;
   left: 50%;
   transform: translate(-50%);
-  z-index: 999;
+  z-index:11111;
 }
 .sect1 .swiper-container {
   width: 100%;
