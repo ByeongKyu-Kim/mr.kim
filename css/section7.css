@@ -1,10 +1,10 @@
 .sect7 {
   border: 1px solid #000;
   background-image: url(../img/movie_bg1.png), url(../img/movie_bg2.png);
-  background-size: auto, cover;
+  background-size: 1500px 935px, cover;
   background-repeat: no-repeat, no-repeat;
   padding: 100px 0 100px 0;
-  background-position: center, 0 -120px;
+  background-position: center 0, 0 -120px;
 }
 .sect7 article {
   /* background-image: url(../img/movie_bg1.png); */
@@ -14,14 +14,16 @@
   padding-top: 50px;
 }
 .sect7_thumbs {
-  margin-top: 90px;
-  width: 1000px;
+  margin-top: 75px;
+  width: 800px;
+}
+.sect7_thumbs .swiper-slide{
+  border: 1px solid #fff;
 }
 .sect7_top {
-  width: 1000px;
+  width: 800px;
   margin: 5px auto 0;
 }
-
 .sect7_thumbs img {
   width: 100%;
 }

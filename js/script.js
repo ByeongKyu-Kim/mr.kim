@@ -1,9 +1,28 @@
 $(function() {
+  //header
+  $(document).scroll(function(){
+    var scrT = $(this).scrollTop()
+
+    // console.log(scrT)
+
+    if(scrT >= 170 ){
+      $('.sect1 h1').css({'position':'fixed','top':-170})
+      $('header').addClass('on')
+      $('header li a').addClass('on')
+    }
+    
+    else{
+      $('.sect1 h1').css({'position':'absolute','top':100})
+      $('header').removeClass('on')
+      $('header li a').removeClass('on')
+    }
+  })
   // sect1
 
   var swiper1 = new Swiper(".sect1 .swiper-container", {
     pagination: {
       el: ".sect1 .swiper-pagination",
+      clickable: true,
     },
     autoplay: {
       delay: 3000,
@@ -44,82 +63,18 @@ $(function() {
     $(".sect3_menu").removeClass("on")
     $(this).addClass("on")
 
-    var href = $(this).attr('href')
+    var href = $(this).attr("href")
 
-    $(".sect3_box .box").stop().removeClass('on')
-    $(href).addClass('on')
-
+    $(".sect3_box .box")
+      .stop()
+      .removeClass("on")
+    $(href).addClass("on")
   })
 
-  $(".group1").colorbox({rel:'group1'});
+  $(".group1").colorbox({ rel: "group1" })
 
 
-  //////////////////////////////////// sect4 ///////////////////////////////
-
-  // 김밥 메뉴 페이드인, 페이드 아웃
-  $(".sect3_menu1").click(function() {
-    $(".sect3_menu").removeClass("sect3_on")
-    $(this).addClass("sect3_on")
-
-    $(".sect3_dupbab, .sect3_noodle").removeClass("sect3_ko")
-    $(".sect3_kimbab").addClass("sect3_ko")
-
-    $(".sect3_bottom").fadeOut()
-    $(".sect3_kimbab").fadeIn()
-  })
-  // 덮밥 메뉴 페이드인, 페이드 아웃
-  $(".sect3_menu2").click(function() {
-    $(".sect3_menu").removeClass("sect3_on")
-    $(this).addClass("sect3_on")
-
-    $(".sect3_kimbab, .sect3_noodle").removeClass("sect3_ko")
-    $(".sect3_dupbab").addClass("sect3_ko")
-
-    $(".sect3_bottom").fadeOut()
-    $(".sect3_dupbab").fadeIn()
-  })
-
-  // 면 메뉴 페이드인, 페이드 아웃
-  $(".sect3_menu3").click(function() {
-    $(".sect3_menu").removeClass("sect3_on")
-    $(this).addClass("sect3_on")
-
-    $(".sect3_kimbab, .sect3_dupbab").removeClass("sect3_ko")
-    $(".sect3_noodle").addClass("sect3_ko")
-
-    $(".sect3_box > div").fadeOut()
-    $(".sect3_box > div")
-      .eq(idx)
-      .fadeIn()
-  })
-
-  // var s3q
-  // s3q = 0
-
-  // $(".sect3_next").click(function() {
-  //   s3q++
-  //   if (s3q < 9) {
-  //     alert(s3q)
-  //     $(".sect3_scroll").animate({ "margin-left": "-=410px" })
-  //   } else {
-  //     alert(s3q)
-  //     s3q = 8
-  //     $(".sect3_scroll").animate({ "margin-left": "-=0px" })
-  //   }
-  // })
-
-  // $(".sect3_prev").click(function() {
-  //   s3q--
-
-  //   if (s3q > -1) {
-  //     alert(s3q)
-  //     $(".sect3_scroll").animate({ "margin-left": "+=410px" })
-  //   } else {
-  //     alert(s3q)
-  //     s3q = 0
-  //     $(".sect3_scroll").animate({ "margin-left": "+=0px" })
-  //   }
-  // })
+  
 
   //////////////////////////////////// sect4 ///////////////////////////////
 
@@ -150,35 +105,30 @@ $(function() {
   $(".sect4").mouseenter(function() {
     $(".sect4_people img").addClass("sect4_people_on")
     $(".sect4_move img").addClass("sect4_move_ko")
-    $(".sect4_paper img, .sect4_move img").css("margin","0px")
-    $(".sect4_paper_click").css("opacity","1")
+    $(".sect4_paper img, .sect4_move img").css("margin", "0px")
+    $(".sect4_paper_click").css("opacity", "1")
   })
-
 
   $(".sect4").mouseleave(function() {
-    $(".sect4_paper_click").css("opacity","0")
+    $(".sect4_paper_click").css("opacity", "0")
     $(".sect4_paper img").css({
-      "width": "200px",
-      "height": "200px",
-      "z-index":"9990"
+      width: "200px",
+      height: "200px",
+      "z-index": "90",
     })
-    $(".sect4_move img").css("z-index","9980")
-    $(".sect4_paper img, .sect4_move img").css("margin","-400px")
-  })
-    
-    
-
-
-  $(".sect4_paper img").click(function(){
-    $(".sect4_paper img").css({
-      "width": "400px",
-      "height": "400px" ,
-      "z-index":"9980"
-    })
-    $(".sect4_paper_click").css("opacity","0")
-    $(".sect4_move img").css("z-index","9990")
+    $(".sect4_move img").css("z-index", "80")
+    $(".sect4_paper img, .sect4_move img").css("margin", "-400px")
   })
 
+  $(".sect4_paper img").click(function() {
+    $(".sect4_paper img").css({
+      width: "400px",
+      height: "400px",
+      "z-index": "80",
+    })
+    $(".sect4_paper_click").css("opacity", "0")
+    $(".sect4_move img").css("z-index", "90")
+  })
 
   //sect5
 
@@ -227,6 +177,9 @@ $(function() {
     $(".sect6_menu6 h4, .sect6_menu6 h5").css("margin-left","-400px")
   })
 
+  $(".sect6").mouseleave(function() {
+    $(".sect6_menu6 h4, .sect6_menu6 h5").css("margin-left", "-400px")
+  })
 
 
 
@@ -234,7 +187,7 @@ $(function() {
 
   var galleryThumbs = new Swiper(".sect7_thumbs", {
     spaceBetween: 15,
-    slidesPerView: 4,
+    slidesPerView: 5,
     loop: true,
     freeMode: true,
     loopedSlides: 5, //looped slides should be the same
@@ -253,6 +206,13 @@ $(function() {
       swiper: galleryThumbs,
     },
   })
+
+
+  $('.sect7_thumbs > div > div').click(function(){
+    $('.sect7_thumbs > div > div').removeClass('.swiper-slide-active')
+    $(this).addClass('.swiper-slide-active')
+  })
+
 
   //sect8
 
