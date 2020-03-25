@@ -41,7 +41,7 @@
 footer {
   width: 100%;
   border: 1px solid #000;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 footer .inner {

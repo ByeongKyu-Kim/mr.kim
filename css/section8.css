@@ -11,10 +11,7 @@
   position: relative;
   border: 1px solid #c7a776;
 }
-/* .sect8_content a {
-  display: block;
-  text-decoration: none;
-}  bk*/
+
 .sect8_menu {
   width: 10%;
   height: 100%;
@@ -34,14 +31,9 @@
 .sect8_menu li.on {
   background-color: #c7a776;
 }
-/* .sect8_menu li a {
-  width: 100%;
-  height: 100%;
-  
-}  bk*/
+
 .sect8_menu li.on {
   background-color: #c7a776;
-  /* text-decoration: none; bk */
 }
 .sect8_con {
   width: 80%;
