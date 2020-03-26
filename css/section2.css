@@ -13,7 +13,6 @@
 .sect2 .btn span{
   display: block;
   width: 25%;
-  border-bottom: 2px solid #795620;
 }
 .sect2 .btn span:nth-child(1){
   width: 75%;
@@ -27,21 +26,23 @@
   display: block;
   padding: 10px 20px;
   color: #f7f3e9;
-  border-bottom: 2px solid #795620;
+}
+.sect2_menu:hover{
+  border-radius: 20px 20px 0 0;
+  background-color: #e3d2b9;
+  color: #795620;
 }
 .sect2 h2{
   font-size: 20px;
 }
 .sect2_menu.on{
-  border: 2px solid #795620;
   border-radius: 20px 20px 0 0;
-  border-bottom: 2px solid transparent;
   background-color: #f7f3e9;
   color: #b66c6c;
 }
 .sect2_box{
   width: 100%;
-  height: 65vh;
+  height: 55vh;
   margin: auto;
   position: relative;
   background-color: #f7f3e9;
@@ -50,7 +51,7 @@
 .sect2 .box{
   top: 100px;
   width: 100%;
-  height: 100%;
+  height: 75vh;
   position: absolute;
   opacity: 0;
 }
