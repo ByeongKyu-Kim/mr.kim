@@ -10,10 +10,10 @@
   margin: auto;
 }
 
-.sect7_paper img { width: 200px; height: 200px; position: absolute; z-index: 5;
+.sect7_paper img { width: 200px; height: 200px; position: absolute; z-index: 1;
 left: 0; top: 0;  margin-left: -400px; margin-top: -400px; transition: 1.5s;}
 
-.sect7_paper_click {width: 200px; height: 200px; position: absolute; z-index: 5;
+.sect7_paper_click {width: 200px; height: 200px; position: absolute; z-index: 1;
   left: 9.5%; top: 17%; opacity: 0; transition: 2.7s;}
 /* ".sect7_paper img" ,".sect7_move img " */
 
@@ -24,7 +24,6 @@ left: 0; top: 0;  margin-left: -400px; margin-top: -400px; transition: 1.5s;}
   position: absolute;
   top: -16%;
   left: -28%;
-  z-index: 4;
   margin-left: -400px; 
   margin-top: -400px;
   transition: 1.5s;

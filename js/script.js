@@ -192,9 +192,9 @@ $('.sect5_thumbs > div > div').click(function(){
     $(".sect7_paper img").css({
       width: "200px",
       height: "200px",
-      "z-index": "90",
+      // "z-index": "2",
     })
-    $(".sect7_move img").css("z-index", "80")
+    // $(".sect7_move img").css("z-index", "5")
     $(".sect7_paper img, .sect7_move img").css("margin", "-400px")
   })
 
@@ -202,10 +202,10 @@ $('.sect5_thumbs > div > div').click(function(){
     $(".sect7_paper img").css({
       width: "400px",
       height: "400px",
-      "z-index": "80",
+      // "z-index": "2",
     })
     $(".sect7_paper_click").css("opacity", "0")
-    $(".sect7_move img").css("z-index", "90")
+    // $(".sect7_move img").css("z-index", "6")
   })
 
 
