@@ -11,13 +11,14 @@
 /* 별모양 깃대 */
 .sect4_star_imgwrap {
   display: flex;
+  margin-bottom: 5%;
 }
 .sect4_right_img {
   width: 50%;
   height: 30%;
   opacity: 0.6;
   transform: rotate(7deg);
-  margin-top: 5%;
+  margin-top: -5%;
   margin-left: -2%;
 }
 .sect4_left_img {
@@ -25,7 +26,8 @@
   height: 30%;
   transform: rotate(340deg);
   opacity: 0.4;
-  margin-top: 5%;
+  margin-top: -5%;
+
 }
 
 /* 하트모양 풍선  */
@@ -84,7 +86,7 @@
   width: 38%;
   height: 40%;
   position: absolute;
-  top: 15%;
+  top: 11%;
   left: 30%;
   z-index: 5;
   animation: sect4_txt 10s infinite linear;
