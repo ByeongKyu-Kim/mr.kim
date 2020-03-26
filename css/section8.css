@@ -30,9 +30,13 @@
   cursor: pointer;
   line-height: 22vh;
 }
-
+.sect8_menu li:hover{
+  background-color: #c7a776;
+  border: 1px solid #f7f3e9;
+}
 .sect8_menu li.on {
   background-color: #c7a776;
+  border: 1px solid #f7f3e9;
 }
 /* .sect8_menu li a {
   width: 100%;
