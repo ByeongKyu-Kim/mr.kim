@@ -1,20 +1,18 @@
 $(function() {
   //header
-  $(document).scroll(function(){
+  $(document).scroll(function() {
     var scrT = $(this).scrollTop()
 
     // console.log(scrT)
 
-    if(scrT >= 170 ){
-      $('.sect1 h1').css({'position':'fixed','top':-170})
-      $('header').addClass('on')
-      $('header li a').addClass('on')
-    }
-    
-    else{
-      $('.sect1 h1').css({'position':'absolute','top':100})
-      $('header').removeClass('on')
-      $('header li a').removeClass('on')
+    if (scrT >= 170) {
+      $(".sect1 h1").css({ position: "fixed", top: -170 })
+      $("header").addClass("on")
+      $("header li a").addClass("on")
+    } else {
+      $(".sect1 h1").css({ position: "absolute", top: 100 })
+      $("header").removeClass("on")
+      $("header li a").removeClass("on")
     }
   })
   // sect1
@@ -22,15 +20,14 @@ $(function() {
   var swiper1 = new Swiper(".sect1 .swiper-container", {
     pagination: {
       el: ".sect1 .swiper-pagination",
-      clickable: true,
+      clickable: true
     },
     autoplay: {
       delay: 3000,
-      disableOnInteraction: false,
+      disableOnInteraction: false
     },
-    loop: true,
+    loop: true
   })
-
 
   //   sect2
 
@@ -38,7 +35,7 @@ $(function() {
     slidesPerView: 5,
     spaceBetween: 30,
     loop: true,
-    centeredSlides: true,
+    centeredSlides: true
   })
 
   $(".sect2_menu").click(function(e) {
@@ -56,8 +53,6 @@ $(function() {
   })
 
   $(".group1").colorbox({ rel: "group1" })
-
-
 
   // sect3
 
@@ -84,46 +79,42 @@ $(function() {
     loop: true,
     pagination: {
       el: ".swiper-pagination",
-      clickable: true,
+      clickable: true
     },
     navigation: {
       nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+      prevEl: ".swiper-button-prev"
+    }
   })
 
-  
-//sect5
+  //sect5
 
-var galleryThumbs = new Swiper(".sect5_thumbs", {
-  spaceBetween: 15,
-  slidesPerView: 5,
-  loop: true,
-  freeMode: true,
-  loopedSlides: 5, //looped slides should be the same
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
-})
-var galleryTop = new Swiper(".sect5_top", {
-  spaceBetween: 10,
-  loop: true,
-  loopedSlides: 5, //looped slides should be the same
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  thumbs: {
-    swiper: galleryThumbs,
-  },
-})
+  var galleryThumbs = new Swiper(".sect5_thumbs", {
+    spaceBetween: 15,
+    slidesPerView: 5,
+    loop: true,
+    freeMode: true,
+    loopedSlides: 5, //looped slides should be the same
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true
+  })
+  var galleryTop = new Swiper(".sect5_top", {
+    spaceBetween: 10,
+    loop: true,
+    loopedSlides: 5, //looped slides should be the same
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    thumbs: {
+      swiper: galleryThumbs
+    }
+  })
 
-
-$('.sect5_thumbs > div > div').click(function(){
-  $('.sect5_thumbs > div > div').removeClass('.swiper-slide-active')
-  $(this).addClass('.swiper-slide-active')
-})
-
-
+  $(".sect5_thumbs > div > div").click(function() {
+    $(".sect5_thumbs > div > div").removeClass(".swiper-slide-active")
+    $(this).addClass(".swiper-slide-active")
+  })
 
   //sect6
 
@@ -133,33 +124,11 @@ $('.sect5_thumbs > div > div').click(function(){
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
+      
     },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
+    centeredSlides: true,
+    loop:true
   })
-
-  $(".sect6_menu6 p").click(function() {
-    $(".sect6_menu6 h2").fadeToggle(200,function(){
-      $(".sect6_menu6 h3").fadeToggle(300)
-    })
-  })
-
-
-
-  $(".sect6").mouseenter(function(){
-    $(".sect6_menu6 h4, .sect6_menu6 h5").css("margin-left","0px")
-  })
-  
-  $(".sect6").mouseleave(function(){
-    $(".sect6_menu6 h4, .sect6_menu6 h5").css("margin-left","-400px")
-  })
-
-  $(".sect6").mouseleave(function() {
-    $(".sect6_menu6 h4, .sect6_menu6 h5").css("margin-left", "-400px")
-  })
-
 
 
   //////////////////////////////////// sect7 ///////////////////////////////
@@ -178,12 +147,10 @@ $('.sect5_thumbs > div > div').click(function(){
     }
   })
 
-
-
-  $(".sect4").mouseenter(function() {
+  $(".sect7").mouseenter(function() {
     $(".sect7_people img").addClass("sect7_people_on")
     $(".sect7_move img").addClass("sect7_move_ko")
-    $(".sect7_paper img, .sect4_move img").css("margin", "0px")
+    $(".sect7_paper img, .sect7_move img").css("margin", "0px")
     $(".sect7_paper_click").css("opacity", "1")
   })
 
@@ -192,25 +159,21 @@ $('.sect5_thumbs > div > div').click(function(){
     $(".sect7_paper img").css({
       width: "200px",
       height: "200px",
-      "z-index": "90",
+      "z-index": "90"
     })
     $(".sect7_move img").css("z-index", "80")
-    $(".sect7_paper img, .sect4_move img").css("margin", "-400px")
+    $(".sect7_paper img, .sect7_move img").css("margin", "-400px")
   })
 
   $(".sect7_paper img").click(function() {
     $(".sect7_paper img").css({
-      width: "400px",
-      height: "400px",
-      "z-index": "80",
+      width: "380px",
+      height: "380px",
+      "z-index": "80"
     })
     $(".sect7_paper_click").css("opacity", "0")
     $(".sect7_move img").css("z-index", "90")
   })
-
-
-
-  
 
   //sect8
 
@@ -240,6 +203,16 @@ $('.sect5_thumbs > div > div').click(function(){
     $(".sect8_con li")
       .eq(idx + 3)
       .fadeIn()
+  })
+
+
+
+  $(".sect8").mouseenter(function(){
+    $(".sect8_dart_fix,.sect8_box_fix").css({"display":"block"})
+  })
+
+  $(".sect8").mouseleave(function(){
+    $(".sect8_dart_fix,.sect8_box_fix").css({"display":"none"})
   })
 
   //sect9

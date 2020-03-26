@@ -37,7 +37,7 @@
   animation: balloon1 10s infinite;
   position: absolute;
   z-index: 20;
-  opacity: 0.6;
+  opacity: 0.2;
 }
 .sect4_balloon1 {
   left: 5%;
@@ -79,32 +79,6 @@
   }
   100% {
     transform: translateY(5px);
-  }
-}
-
-.sect4_imgtxt img {
-  width: 38%;
-  height: 40%;
-  position: absolute;
-  top: 11%;
-  left: 30%;
-  z-index: 30;
-  animation: sect4_txt 10s infinite linear;
-}
-@keyframes sect4_txt {
-  0% {
-    transform-origin: 3% 30%;
-    transform: skewx(5deg);
-  }
-
-  50% {
-    transform-origin: 97% 30%;
-    transform: skewx(-5deg);
-  }
-
-  100% {
-    transform-origin: 3% 30%;
-    transform: skewx(5deg);
   }
 }
 
