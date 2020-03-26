@@ -36,7 +36,7 @@ $(function() {
 
   var swiper2 = new Swiper(".sect2 .swiper-container", {
     slidesPerView: 5,
-    spaceBetween: 30,
+    spaceBetween: 10,
     loop: true,
     centeredSlides: true,
   })
@@ -180,10 +180,10 @@ $('.sect5_thumbs > div > div').click(function(){
 
 
 
-  $(".sect4").mouseenter(function() {
+  $(".sect7").mouseenter(function() {
     $(".sect7_people img").addClass("sect7_people_on")
     $(".sect7_move img").addClass("sect7_move_ko")
-    $(".sect7_paper img, .sect4_move img").css("margin", "0px")
+    $(".sect7_paper img, .sect7_move img").css("margin", "0px")
     $(".sect7_paper_click").css("opacity", "1")
   })
 
@@ -195,7 +195,7 @@ $('.sect5_thumbs > div > div').click(function(){
       "z-index": "90",
     })
     $(".sect7_move img").css("z-index", "80")
-    $(".sect7_paper img, .sect4_move img").css("margin", "-400px")
+    $(".sect7_paper img, .sect7_move img").css("margin", "-400px")
   })
 
   $(".sect7_paper img").click(function() {

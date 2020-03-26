@@ -1,7 +1,7 @@
 .sect4 {
   padding-bottom: 7%;
   position: relative;
-  background-color:#F7F3E8;
+  background-color:#C7A776;
 }
 .sect4 article {
   max-width: 1200px;
@@ -34,7 +34,7 @@
   width: 25px;
   animation: balloon1 10s infinite;
   position: absolute;
-  z-index: 20;
+  z-index: 5;
   opacity: 0.6;
 }
 .sect4_balloon1 {
@@ -86,7 +86,7 @@
   position: absolute;
   top: 15%;
   left: 30%;
-  z-index: 30;
+  z-index: 5;
   animation: sect4_txt 10s infinite linear;
 }
 @keyframes sect4_txt {

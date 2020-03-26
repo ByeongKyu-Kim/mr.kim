@@ -24,7 +24,7 @@ left: 0; top: 0;  margin-left: -400px; margin-top: -400px; transition: 1.5s;}
   position: absolute;
   top: -16%;
   left: -28%;
-  z-index: 5;
+  z-index: 4;
   margin-left: -400px; 
   margin-top: -400px;
   transition: 1.5s;
