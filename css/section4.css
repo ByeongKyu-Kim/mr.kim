@@ -1,7 +1,7 @@
 .sect4 {
   padding-bottom: 7%;
   position: relative;
-  background-color:#C7A776;
+  background-color:#F7F3E9;
 }
 .sect4 article {
   max-width: 1200px;
@@ -86,7 +86,7 @@
   cursor: pointer;
   text-align: center;
   padding: 20px;
-  background-color: #f7f3e9;
+  background-color: #fff;
   border: 1px solid #c7a776;
   margin-bottom: 60px;
 }
