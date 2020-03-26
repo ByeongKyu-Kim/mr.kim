@@ -1,6 +1,7 @@
 .sect2 {
   background-color: #b66c6c;
   padding: 0 0 50px 0;
+  /* background-image: url(../img/bg2.jpg); */
 }
 
 .sect2 .title2 {
@@ -28,7 +29,7 @@
   padding: 10px 20px;
   color: #f7f3e9;
 }
-.sect2_menu:hover{
+.sect2_menu:hover {
   border-radius: 20px 20px 0 0;
   background-color: #e3d2b9;
   color: #795620;
@@ -36,7 +37,7 @@
 .sect2 h2 {
   font-size: 20px;
 }
-.sect2_menu.on{
+.sect2_menu.on {
   border-radius: 20px 20px 0 0;
   background-color: #f7f3e9;
   color: #b66c6c;
