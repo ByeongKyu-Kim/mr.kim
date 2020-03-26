@@ -76,67 +76,9 @@ $(function() {
       .fadeIn()
   })
 
+  //sect4
 
-
-  
-
-  //////////////////////////////////// sect4 ///////////////////////////////
-
-  // 섹트4의 오토바이 그림위 배달안내 스크립트 / 아직 css하지 않은 상황. 수정 중에 있음 /
-
-  $(document).scroll(function() {
-    var scrT = $(this).scrollTop()
-
-    if (scrT >= 900) {
-      $(".sect4_effact1").fadeIn(600)
-      $(".sect4_effact2").fadeIn(2000)
-      $(".sect4_effact3").fadeIn(3200)
-    } else {
-      $(".sect4_effact").fadeOut(100)
-    }
-  })
-
-  // $(document).scroll(function() {
-  //   var scrT = $(this).scrollTop()
-
-  //   if (scrT >= 400) {
-  //     $("").addClass("scroll_header")
-  //   } else {
-  //     $("").removeClass("scroll_header")
-  //   }
-  // })
-
-  $(".sect4").mouseenter(function() {
-    $(".sect4_people img").addClass("sect4_people_on")
-    $(".sect4_move img").addClass("sect4_move_ko")
-    $(".sect4_paper img, .sect4_move img").css("margin", "0px")
-    $(".sect4_paper_click").css("opacity", "1")
-  })
-
-  $(".sect4").mouseleave(function() {
-    $(".sect4_paper_click").css("opacity", "0")
-    $(".sect4_paper img").css({
-      width: "200px",
-      height: "200px",
-      "z-index": "90",
-    })
-    $(".sect4_move img").css("z-index", "80")
-    $(".sect4_paper img, .sect4_move img").css("margin", "-400px")
-  })
-
-  $(".sect4_paper img").click(function() {
-    $(".sect4_paper img").css({
-      width: "400px",
-      height: "400px",
-      "z-index": "80",
-    })
-    $(".sect4_paper_click").css("opacity", "0")
-    $(".sect4_move img").css("z-index", "90")
-  })
-
-  //sect5
-
-  var swiper5 = new Swiper(".sect5 .swiper-container", {
+  var swiper4 = new Swiper(".sect4 .swiper-container", {
     slidesPerView: 2,
     spaceBetween: 30,
     loop: true,
@@ -149,6 +91,39 @@ $(function() {
       prevEl: ".swiper-button-prev",
     },
   })
+
+  
+//sect5
+
+var galleryThumbs = new Swiper(".sect5_thumbs", {
+  spaceBetween: 15,
+  slidesPerView: 5,
+  loop: true,
+  freeMode: true,
+  loopedSlides: 5, //looped slides should be the same
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+})
+var galleryTop = new Swiper(".sect5_top", {
+  spaceBetween: 10,
+  loop: true,
+  loopedSlides: 5, //looped slides should be the same
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: galleryThumbs,
+  },
+})
+
+
+$('.sect5_thumbs > div > div').click(function(){
+  $('.sect5_thumbs > div > div').removeClass('.swiper-slide-active')
+  $(this).addClass('.swiper-slide-active')
+})
+
+
 
   //sect6
 
@@ -187,36 +162,55 @@ $(function() {
 
 
 
-  //sect7
+  //////////////////////////////////// sect7 ///////////////////////////////
 
-  var galleryThumbs = new Swiper(".sect7_thumbs", {
-    spaceBetween: 15,
-    slidesPerView: 5,
-    loop: true,
-    freeMode: true,
-    loopedSlides: 5, //looped slides should be the same
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-  })
-  var galleryTop = new Swiper(".sect7_top", {
-    spaceBetween: 10,
-    loop: true,
-    loopedSlides: 5, //looped slides should be the same
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    thumbs: {
-      swiper: galleryThumbs,
-    },
+  // 섹트4의 오토바이 그림위 배달안내 스크립트 / 아직 css하지 않은 상황. 수정 중에 있음 /
+
+  $(document).scroll(function() {
+    var scrT = $(this).scrollTop()
+
+    if (scrT >= 900) {
+      $(".sect7_effact1").fadeIn(600)
+      $(".sect7_effact2").fadeIn(2000)
+      $(".sect7_effact3").fadeIn(3200)
+    } else {
+      $(".sect7_effact").fadeOut(100)
+    }
   })
 
 
-  $('.sect7_thumbs > div > div').click(function(){
-    $('.sect7_thumbs > div > div').removeClass('.swiper-slide-active')
-    $(this).addClass('.swiper-slide-active')
+
+  $(".sect4").mouseenter(function() {
+    $(".sect7_people img").addClass("sect7_people_on")
+    $(".sect7_move img").addClass("sect7_move_ko")
+    $(".sect7_paper img, .sect4_move img").css("margin", "0px")
+    $(".sect7_paper_click").css("opacity", "1")
   })
 
+  $(".sect7").mouseleave(function() {
+    $(".sect7_paper_click").css("opacity", "0")
+    $(".sect7_paper img").css({
+      width: "200px",
+      height: "200px",
+      "z-index": "90",
+    })
+    $(".sect7_move img").css("z-index", "80")
+    $(".sect7_paper img, .sect4_move img").css("margin", "-400px")
+  })
+
+  $(".sect7_paper img").click(function() {
+    $(".sect7_paper img").css({
+      width: "400px",
+      height: "400px",
+      "z-index": "80",
+    })
+    $(".sect7_paper_click").css("opacity", "0")
+    $(".sect7_move img").css("z-index", "90")
+  })
+
+
+
+  
 
   //sect8
 

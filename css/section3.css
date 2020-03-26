@@ -1,18 +1,19 @@
-.sect3 {
-  padding: 200px 0;
-}
 .sect3 article {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 80px;
   position: relative;
 }
 .sect3_txt {
+  position: relative;
   text-align: center;
   color: #fff;
   padding: 50px 0;
-  background: url(../img/brand_info_bg1.png) no-repeat;
+  background: url(../img/food2.jpg) no-repeat;
+  margin-bottom: 80px;
   background-size: cover;
+  background-attachment: fixed;
 }
+
 .sect3_txt p:nth-child(1) {
   margin-bottom: 30px;
   font-size: 50px;

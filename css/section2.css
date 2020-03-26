@@ -1,79 +1,84 @@
-.sect2{
-  background-color: #c7a776;
-  padding: 50px 0;
+.sect2 {
+  background-color: #b66c6c;
+  padding: 0 0 50px 0;
+  /* background-image: url(../img/bg2.jpg); */
 }
-.sect2 .title{
-  height: 200px;
+
+.sect2 .title2 {
+  margin-bottom: -50px;
 }
-.sect2 .btn{
+.sect2 .btn {
   display: flex;
   justify-content: center;
   text-align: center;
 }
-.sect2 .btn span{
+.sect2 .btn span {
   display: block;
   width: 25%;
-  border-bottom: 2px solid #795620;
 }
-.sect2 .btn span:nth-child(1){
+.sect2 .btn span:nth-child(1) {
   width: 75%;
-}
-.boerder_bottom{
   border-bottom: 2px solid transparent;
 }
-.sect2_menu{
-  width: 200px;
-  display: block;
-  padding: 20px 40px;
-  color: #795620;
-  border-bottom: 2px solid #795620;
+.boerder_bottom {
+  border-bottom: 2px solid transparent;
 }
-.sect2 h2{
+.sect2_menu {
+  width: 100px;
+  display: block;
+  padding: 10px 20px;
+  color: #f7f3e9;
+}
+.sect2_menu:hover {
+  border-radius: 20px 20px 0 0;
+  background-color: #e3d2b9;
+  color: #795620;
+}
+.sect2 h2 {
   font-size: 20px;
 }
-.sect2_menu.on{
-  border: 2px solid #795620;
-  border-radius: 30px 30px 0 0;
-  border-bottom: 2px solid transparent;
-  background-color: #fff;
+.sect2_menu.on {
+  border-radius: 20px 20px 0 0;
+  background-color: #f7f3e9;
+  color: #b66c6c;
 }
-.sect2_box{
+.sect2_box {
   width: 100%;
-  height: 65vh;
+  height: 55vh;
   margin: auto;
   position: relative;
-  background-image: url(../img/bg.gif);
+  background-color: #f7f3e9;
   border-bottom: 2px solid #795620;
 }
-.sect2 .box{
+.sect2 .box {
   top: 100px;
   width: 100%;
-  height: 100%;
+  height: 75vh;
   position: absolute;
   opacity: 0;
 }
-.sect2 .box.on{
+.sect2 .box.on {
   opacity: 1;
   z-index: 8;
 }
-.sect2 .swiper-slide{
+.sect2 .swiper-slide {
   cursor: pointer;
-  transform: scale(.6);
-  opacity: .3;
+  transform: scale(0.6);
+  opacity: 0.3;
 }
-.sect2 .swiper-slide p{
+.sect2 .swiper-slide p {
   opacity: 0;
 }
-.sect2_box img{
+.sect2_box img {
   width: 100%;
 }
-.sect2_box p{
+.sect2_box p {
   text-align: center;
 }
-.sect2 .swiper-slide-active{
+.sect2 .swiper-slide-active {
   transform: scale(1);
   opacity: 1;
 }
-.sect2 .swiper-slide-active p{
+.sect2 .swiper-slide-active p {
   opacity: 1;
 }
