@@ -3,13 +3,16 @@
   background-image: url(../img/movie_bg1.png), url(../img/movie_bg2.png);
   background-size: 1500px 935px, cover;
   background-repeat: no-repeat, no-repeat;
-  padding: 100px 0 100px 0;
-  background-position: center 0, 0 -120px;
+  /* padding: 100px 0 100px 0; */
+  background-position: center 145px, 0 -120px;
+}
+.sect5 .title2 {
+  margin-bottom: -50px;
 }
 .sect5 article {
   /* background-image: url(../img/movie_bg1.png); */
   max-width: 1200px;
-  height: 900px;
+  height: 820px;
   margin: 0 auto;
   padding-top: 50px;
 }
@@ -17,7 +20,7 @@
   margin-top: 75px;
   width: 800px;
 }
-.sect5_thumbs .swiper-slide{
+.sect5_thumbs .swiper-slide {
   border: 1px solid #fff;
 }
 .sect5_top {
