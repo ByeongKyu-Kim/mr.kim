@@ -170,7 +170,7 @@
   position: absolute;
   bottom: 31%;
   left: 0;
-  z-index: 6;
+  z-index: 0;
 }
 .sect7_people_on {
   transform: scale(0.1);

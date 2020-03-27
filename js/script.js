@@ -157,7 +157,7 @@ $(function() {
       height: "200px",
       // "z-index": "90"
     })
-    $(".sect7_move img").css("z-index", "80")
+
     $(".sect7_paper img, .sect7_move img").css("margin", "-400px")
   })
 

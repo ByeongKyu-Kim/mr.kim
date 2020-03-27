@@ -68,6 +68,7 @@ header .hd_nav2 {
   float: right;
 }
 /* section1 */
+html > body {padding: 20px 2%;}
 
 .sect1 {
   /* background-image: url(../img/bg.gif); */
