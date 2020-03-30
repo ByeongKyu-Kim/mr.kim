@@ -229,7 +229,6 @@
 
 .sect8_box_fix {
   display: none;
-  background-color: burlywood;
   position: absolute;
   top: 110px;
   right: 2%;
@@ -241,7 +240,7 @@
 
 .sect8_box_fix img {
   height: 180px;
-  box-shadow: 3px 3px 7px dimgray;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
   border: 3px outset lightgray;
 }
 
