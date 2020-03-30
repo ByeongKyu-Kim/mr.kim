@@ -128,7 +128,27 @@ header .hd_nav2 {
   background-position: -50px;
 }
 @media screen and (max-width: 1200px){
+  .sect2 .title2 {
+    padding-left: 5%;
+  }
+  .hd_nav1 li a,
+  .hd_nav2 li a {
+    font-size: 22px;
+  }
 
+  .sect7_paper_click,
+  .sect7_paper img {
+    display: none;
+  }
+  .sect7_move img {
+    left: 86%;
+    top: 0%;
+    border: 1px solid #fff;
+  }
+
+  .sect9 p {
+    font-size: 26px !important;
+  }
 }
 @media screen and (max-width: 560px){
 
