@@ -92,9 +92,7 @@
 .sect4 .box p {
   text-align: right;
 }
-@media screen and (max-width: 1200px){
-
+@media screen and (max-width: 1200px) {
 }
-@media screen and (max-width: 560px){
-
+@media screen and (max-width: 560px) {
 }
