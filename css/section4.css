@@ -1,7 +1,7 @@
 .sect4 {
   padding-bottom: 7%;
   position: relative;
-  background-color:#F7F3E9;
+  background-color: #f7f3e9;
 }
 .sect4 article {
   max-width: 1200px;
@@ -9,27 +9,19 @@
   padding-bottom: 5%;
 }
 /* 별모양 깃대 */
-.sect4_star_imgwrap {
-  display: flex;
-  margin-bottom: 5%;
-}
-.sect4_right_img {
-  width: 50%;
-  height: 30%;
-  opacity: 0.6;
-  transform: rotate(7deg);
-  margin-top: -5%;
-  margin-left: -2%;
-}
-.sect4_left_img {
-  width: 50%;
-  height: 30%;
-  transform: rotate(340deg);
-  opacity: 0.4;
-  margin-top: -5%;
 
+.star {
+  background-image: url(../img/star3.png);
+  width: 1920px;
+  height: 286px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-position: auto; */
+  position: absolute;
+  top: 170px;
+  z-index: 0;
+  background-attachment: fixed;
 }
-
 /* 하트모양 풍선  */
 
 .sect4_balloon_imgwrap img {
@@ -37,7 +29,7 @@
   animation: balloon1 10s infinite;
   position: absolute;
   z-index: 5;
-  opacity: 0.2;
+  opacity: 0.1;
 }
 .sect4_balloon1 {
   left: 5%;
@@ -83,12 +75,16 @@
 }
 
 .sect4 .box {
+  width: 100%;
   cursor: pointer;
   text-align: center;
   padding: 20px;
   background-color: #fff;
   border: 1px solid #c7a776;
   margin-bottom: 60px;
+}
+.sect4 .box img {
+  width: 100%;
 }
 .sect4 .box h3 {
   margin: 20px 0;
