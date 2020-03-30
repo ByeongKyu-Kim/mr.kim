@@ -1,4 +1,5 @@
 $(function() {
+
   //header
   $(document).scroll(function() {
     var scrT = $(this).scrollTop()
@@ -14,6 +15,14 @@ $(function() {
       $("header").removeClass("on")
       $("header li a").removeClass("on")
     }
+
+    // var sect = $(this).scrollTop('section')
+
+    // if(scrT >= sect){
+    //   $('.title').animete({marginLeft: 100})
+    // }else{
+    //   $('.title').animete({marginLeft: 0})
+    // }
   })
   // sect1
 
