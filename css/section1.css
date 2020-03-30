@@ -127,3 +127,9 @@ header .hd_nav2 {
   background-size: cover;
   background-position: -50px;
 }
+@media screen and (max-width: 1200px){
+
+}
+@media screen and (max-width: 560px){
+
+}

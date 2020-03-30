@@ -24,6 +24,13 @@ $(function() {
     //   $('.title').animete({marginLeft: 0})
     // }
   })
+  
+  $('header a').click(function(){
+    var href = $(this).attr('href')
+    var scrT = $(href).offset().top
+    $('html, body').animate({scrollTop : scrT})
+  })
+
   // sect1
 
   var swiper1 = new Swiper(".sect1 .swiper-container", {
@@ -61,7 +68,7 @@ $(function() {
     $(href).addClass("on")
   })
 
-  $(".group1").colorbox({ rel: "group1" })
+  // $(".group1").colorbox({ rel: "group1" })
 
   // sect3
 
@@ -166,7 +173,7 @@ $(function() {
       height: "200px",
       // "z-index": "90"
     })
-    $(".sect7_move img").css("z-index", "80")
+    $(".sect7_move img").css("z-index", "5")
     $(".sect7_paper img, .sect7_move img").css("margin", "-400px")
   })
 

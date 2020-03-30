@@ -48,7 +48,7 @@
   box-sizing: content-box;
   padding-top: 15px;
   position: relative;
-  background: green;
+  /* background: green; */
   color: white;
   font-size: 11px;
   letter-spacing: 0.2em;
@@ -224,4 +224,10 @@
     margin-left: -400px; 
     margin-top: -400px;
     transition: 1.5s;
+  }
+  @media screen and (max-width: 1200px){
+
+  }
+  @media screen and (max-width: 560px){
+  
   }
