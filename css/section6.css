@@ -1,93 +1,83 @@
 .sect6 {
-  width: 100%;
+  margin: auto;
   height: auto;
   background-color: #c7a776;
   background-repeat: no-repeat;
   position: relative;
-  padding-bottom: 100px;
 }
 
 .sect6_wrap {
   max-width: 1200px;
   width: 1200px;
   height: auto;
-  margin:auto;
-  padding: 2% 5%;
+  margin: auto;
+  padding: 5%;
 }
 
 .sect6_slide_img {
   position: relative;
   padding-bottom: 4%;
-  border: 5px double rgba(63, 63, 63, 0.712);
+  /* border: 5px double rgba(63, 63, 63, 0.712); */
+  margin: 3%;
+  background-color: #f7f3e9;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #795620;
 }
 
 .sect6_slide_img img {
-  width: 100%;
+  
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  display: block;
+  border: 1px solid #795620;
 }
 
+.sect6_slide_img a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.po {
+  display: block;
+}
+
+/* js로 호버하면 디스플레이 block 처리할 것 */
 .sect6_slide_img p {
+  display: none;
   background-color: rgba(3, 3, 3, 0.45);
   width: 100%;
-  height: 30%;
-  box-shadow: 1px 1px 5px inset white, -1px -1px 5px inset white;
+  height: 40%;
+  /* box-shadow: 1px 1px 5px inset white, -1px -1px 5px inset white; */
   position: absolute;
-  bottom: 0;
+  bottom: 0%;
   left: 0;
-  z-index: 9991;
-  padding: 10% 5%;
+  padding: 5%;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
 }
-
+.sect6_slide_img:hover .sect6_slide_img p {
+  display: block;
+}
 .sect6 .swiper-container {
   width: 100%;
-
-  padding-top: 50px;
   padding-bottom: 50px;
+  margin-top: -50px;
 }
 
 .sect6 .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 55vh;
-  opacity: 0.3;
+  width: 25vw;
+  height: 100%;
+  opacity: 0.4;
+  padding: 0;
 }
 
 .sect6 .swiper-slide-active {
-  transform: scale(1.2);
+  transform: scale(1.05);
   opacity: 1;
 }
 
-
-.sect6_menu6 h6 {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  right: 22.5%;
-  top: 66.3%;
-}
-
-.sect6_menu6 h2 {
-  background-image: url(../img/maxresdefault.jpg);
-  background-repeat: no-repeat;
-  width: 54%;
-  height: 52%;
-  z-index: 4;
-  background-position-x: -117px;
-  position: absolute;
-  top: 4%;
-  left: 23%;
-}
-
-.sect6_menu6 h3 {
-  width: 54%;
-  height: 52%;
-  background-color: black;
-  z-index: 5;
-  position: absolute;
-  top: 4%;
-  left: 23%;
-}
-
+.swiper-button-next:after {color: white;}

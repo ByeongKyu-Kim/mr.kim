@@ -1,7 +1,7 @@
 /* header */
 
 header {
-  width: 98%;
+  width: 100%;
   height: 80px;
   background-color: #b66c6c;
   /* background-color: #f7f3e9; */
@@ -68,7 +68,6 @@ header .hd_nav2 {
   float: right;
 }
 /* section1 */
-html > body {padding: 20px 2%;}
 
 .sect1 {
   /* background-image: url(../img/bg.gif); */
@@ -127,4 +126,40 @@ html > body {padding: 20px 2%;}
   background-image: url(../img/brand_info_bg2.jpg);
   background-size: cover;
   background-position: -50px;
+}
+
+/* 태블릿 반응형 */
+@media screen and (min-width: 560px) and (max-width: 1023px) {
+  .sect2,
+  .sect3,
+  .sect4,
+  .sect5,
+  .sect6,
+  .sect7,
+  .sect8,
+  .sect9 {
+    padding: 4%;
+  }
+
+  .sect2 .title2 {
+    padding-left: 5%;
+  }
+  .hd_nav1 li a,
+  .hd_nav2 li a {
+    font-size: 22px;
+  }
+
+  .sect7_paper_click,
+  .sect7_paper img {
+    display: none;
+  }
+  .sect7_move img {
+    left: 86%;
+    top: 0%;
+    border: 1px solid #fff;
+  }
+
+  .sect9 p {
+    font-size: 26px !important;
+  }
 }
