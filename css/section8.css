@@ -237,6 +237,9 @@
   transform-origin: center top;
   z-index:7;
 }
+.sect8_box_fix.on{
+  display: block;
+}
 
 .sect8_box_fix img {
   height: 180px;
