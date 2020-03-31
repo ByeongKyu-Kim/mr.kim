@@ -132,15 +132,6 @@ $(function() {
     $(this).addClass(".swiper-slide-active")
   })
 
-
-  $(".sect5").reSize(function(){
-    $(".sect5").css({"width":"700px"})
-  })
-
-
-
-
-
   //sect6
   var swiper = new Swiper('.sect6 .swiper-container', {
     slidesPerView: 3,
