@@ -61,8 +61,15 @@
   opacity: 1;
   z-index: 8;
 }
+.sect2 .swiper-container{
+  height: 100%;
+}
+.sect2 .swiper-wrapper{
+  height: 100%;
+}
 .sect2 .swiper-slide {
   cursor: pointer;
+  height: 100%;
   transform: scale(0.6);
   opacity: 0.3;
 }
@@ -81,4 +88,11 @@
 }
 .sect2 .swiper-slide-active p {
   opacity: 1;
+}
+
+@media screen and (max-width: 1200px){
+
+}
+@media screen and (max-width: 560px){
+
 }

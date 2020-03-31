@@ -1,4 +1,5 @@
 $(function() {
+
   //header
   $(document).scroll(function() {
     var scrT = $(this).scrollTop()
@@ -14,7 +15,22 @@ $(function() {
       $("header").removeClass("on")
       $("header li a").removeClass("on")
     }
+
+    // var sect = $(this).scrollTop('section')
+
+    // if(scrT >= sect){
+    //   $('.title').animete({marginLeft: 100})
+    // }else{
+    //   $('.title').animete({marginLeft: 0})
+    // }
   })
+  
+  $('header a').click(function(){
+    var href = $(this).attr('href')
+    var scrT = $(href).offset().top
+    $('html, body').animate({scrollTop : scrT})
+  })
+
   // sect1
 
   var swiper1 = new Swiper(".sect1 .swiper-container", {
@@ -52,7 +68,7 @@ $(function() {
     $(href).addClass("on")
   })
 
-  $(".group1").colorbox({ rel: "group1" })
+  // $(".group1").colorbox({ rel: "group1" })
 
   // sect3
 
@@ -131,6 +147,8 @@ $(function() {
   })
 
 
+
+
   //////////////////////////////////// sect7 ///////////////////////////////
 
   // 섹트4의 오토바이 그림위 배달안내 스크립트 / 아직 css하지 않은 상황. 수정 중에 있음 /
@@ -161,7 +179,7 @@ $(function() {
       height: "200px",
       // "z-index": "90"
     })
-    $(".sect7_move img").css("z-index", "80")
+    $(".sect7_move img").css("z-index", "5")
     $(".sect7_paper img, .sect7_move img").css("margin", "-400px")
   })
 
