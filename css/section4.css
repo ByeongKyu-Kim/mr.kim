@@ -1,12 +1,16 @@
 .sect4 {
-  padding-bottom: 7%;
   position: relative;
   background-color: #f7f3e9;
+  padding-bottom: 130px;
 }
 .sect4 article {
   max-width: 1200px;
   margin: 0 auto;
-  padding-bottom: 5%;
+}
+.sect4_con {
+  position: relative;
+  /* overflow: hidden; */
+  max-height: 480px;
 }
 /* 별모양 깃대 */
 
@@ -16,7 +20,6 @@
   height: 286px;
   background-repeat: no-repeat;
   background-size: contain;
-  /* background-position: auto; */
   position: absolute;
   top: 170px;
   z-index: 0;
@@ -31,27 +34,27 @@
 }
 .sect4_balloon1 {
   left: 5%;
-  top: 33%;
+  top: 63%;
 }
 .sect4_balloon2 {
   left: 25%;
-  top: 35%;
+  top: 65%;
 }
 .sect4_balloon3 {
   left: 35%;
-  top: 15%;
+  top: 45%;
 }
 .sect4_balloon4 {
   left: 50%;
-  top: 15%;
+  top: 45%;
 }
 .sect4_balloon5 {
   left: 68%;
-  top: 17%;
+  top: 47%;
 }
 .sect4_balloon6 {
   left: 90%;
-  top: 40%;
+  top: 70%;
 }
 @keyframes balloon1 {
   0% {
@@ -79,13 +82,13 @@
   padding: 20px;
   background-color: #fff;
   border: 1px solid #c7a776;
-  margin-bottom: 60px;
 }
 .sect4 .box img {
   width: 100%;
 }
 .sect4 .box h3 {
   margin: 20px 0;
+  height: 30px;
 }
 .sect4 .box p {
   text-align: right;
