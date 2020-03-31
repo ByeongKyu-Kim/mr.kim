@@ -109,6 +109,7 @@
 }
 .sect8_img {
   width: 50%;
+  height: 100%;
 }
 .sect8_img img {
   height: 100%;
@@ -172,10 +173,6 @@
   border-top: 1px solid #e2e2e2;
   padding-bottom: 20px;
 }
-
-
-
-
 
 .sect8_dart_fix {
   display: none;
