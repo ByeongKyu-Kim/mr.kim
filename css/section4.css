@@ -21,9 +21,8 @@
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: 110px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 170px;
+  z-index: 0;
 }
 /* 하트모양 풍선  */
 
