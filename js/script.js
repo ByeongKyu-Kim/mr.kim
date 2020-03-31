@@ -51,7 +51,7 @@ $(function() {
     slidesPerView: 5,
     spaceBetween: 10,
     loop: true,
-    centeredSlides: true
+    centeredSlides: true,
   })
 
   $(".sect2_menu").click(function(e) {
@@ -136,9 +136,8 @@ $(function() {
   var swiper = new Swiper('.sect6 .swiper-container', {
     slidesPerView: 3,
     spaceBetween: 30,
-    slidesPerGroup: 1,
     loop: true,
-    loopFillGroupWithBlank: true,
+    centeredSlides: true,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
