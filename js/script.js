@@ -1,5 +1,4 @@
 $(function() {
-
   //header
   $(document).scroll(function() {
     var scrT = $(this).scrollTop()
@@ -24,25 +23,44 @@ $(function() {
     //   $('.title').animete({marginLeft: 0})
     // }
   })
-  
-  $('header a').click(function(){
-    var href = $(this).attr('href')
-    var scrT = $(href).offset().top
-    $('html, body').animate({scrollTop : scrT})
+
+  $("header a").click(function() {
+    var href = $(this).attr("href")
+    var secT = $(href).offset().top
+    $("html, body").animate({ scrollTop: secT })
   })
+  // title
+
+  // var h = $('section').height()
+
+  $(window).scroll(function() {
+    $("section").each(function(i) {
+      var secT = $(this).offset().top
+      console.log(secT)
+
+      var scrT = $(window).scrollTop()
+
+      if (secT - 500 <= scrT) {
+        $(".title, .title2").removeClass("on")
+        $(this)
+          .find(".title, .title2")
+          .addClass("on")
+      }
+    }) //each
+  }) //scroll
 
   // sect1
 
   var swiper1 = new Swiper(".sect1 .swiper-container", {
     pagination: {
       el: ".sect1 .swiper-pagination",
-      clickable: true
+      clickable: true,
     },
     autoplay: {
       delay: 3000,
-      disableOnInteraction: false
+      disableOnInteraction: false,
     },
-    loop: true
+    loop: true,
   })
 
   //   sect2
@@ -51,7 +69,7 @@ $(function() {
     slidesPerView: 5,
     spaceBetween: 10,
     loop: true,
-    centeredSlides: true
+    centeredSlides: true,
   })
 
   $(".sect2_menu").click(function(e) {
@@ -95,10 +113,10 @@ $(function() {
     loop: true,
     autoplay: {
       delay: 3000,
-      disableOnInteraction: false
+      disableOnInteraction: false,
     },
     pagination: {
-      el: '.swiper-pagination',
+      el: ".swiper-pagination",
       clickable: true,
     },
   })
@@ -112,7 +130,7 @@ $(function() {
     freeMode: true,
     loopedSlides: 5, //looped slides should be the same
     watchSlidesVisibility: true,
-    watchSlidesProgress: true
+    watchSlidesProgress: true,
   })
   var galleryTop = new Swiper(".sect5_top", {
     spaceBetween: 10,
@@ -120,11 +138,11 @@ $(function() {
     loopedSlides: 5, //looped slides should be the same
     navigation: {
       nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      prevEl: ".swiper-button-prev",
     },
     thumbs: {
-      swiper: galleryThumbs
-    }
+      swiper: galleryThumbs,
+    },
   })
 
   $(".sect5_thumbs > div > div").click(function() {
@@ -134,30 +152,28 @@ $(function() {
 
   //sect6
 
-  var swiper = new Swiper('.sect6 .swiper-container', {
+  var swiper = new Swiper(".sect6 .swiper-container", {
     slidesPerView: 3,
     spaceBetween: 30,
     slidesPerGroup: 1,
     loop: true,
     loopFillGroupWithBlank: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-  });
+  })
 
-
-  $(".sect6_slide_img").mouseenter(function(){
+  $(".sect6_slide_img").mouseenter(function() {
     $(".sect6_slide_img").removeClass("po")
     $(this).addClass("po")
-    $(".sect6_slide_img p").eq($(this).index()).css({"display":"block"})
-    
+    $(".sect6_slide_img p")
+      .eq($(this).index())
+      .css({ display: "block" })
   })
-  $(".sect6_slide_img").mouseleave(function(){
-    $(".sect6_slide_img p").css({"display":"none"})
+  $(".sect6_slide_img").mouseleave(function() {
+    $(".sect6_slide_img p").css({ display: "none" })
   })
-
-
 
   //////////////////////////////////// sect7 ///////////////////////////////
 
@@ -233,14 +249,12 @@ $(function() {
       .fadeIn()
   })
 
-
-
-  $(".sect8").mouseenter(function(){
-    $(".sect8_dart_fix,.sect8_box_fix").css({"display":"block"})
+  $(".sect8").mouseenter(function() {
+    $(".sect8_dart_fix,.sect8_box_fix").css({ display: "block" })
   })
 
-  $(".sect8").mouseleave(function(){
-    $(".sect8_dart_fix,.sect8_box_fix").css({"display":"none"})
+  $(".sect8").mouseleave(function() {
+    $(".sect8_dart_fix,.sect8_box_fix").css({ display: "none" })
   })
 
   //sect9
