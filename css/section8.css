@@ -30,7 +30,7 @@
   cursor: pointer;
   line-height: 22vh;
 }
-.sect8_menu li:hover{
+.sect8_menu li:hover {
   background-color: #c7a776;
   border: 1px solid #f7f3e9;
 }
@@ -232,15 +232,15 @@
   position: fixed;
   animation: box_fix 3s;
   transform-origin: center top;
-  z-index:7;
+  z-index: 7;
 }
-.sect8_box_fix.on{
+.sect8_box_fix.on {
   display: block;
 }
 
 .sect8_box_fix img {
   height: 180px;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
   border: 3px outset lightgray;
 }
 
@@ -285,9 +285,13 @@
     transform: rotate(0deg);
   }
 }
-@media screen and (max-width: 1200px){
-
+@media screen and (max-width: 1200px) {
+  .sect8_box_fix img {
+    display: none;
+  }
+  .sect8_dart_fix img {
+    display: none;
+  }
 }
-@media screen and (max-width: 560px){
-
+@media screen and (max-width: 560px) {
 }
