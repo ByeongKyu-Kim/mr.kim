@@ -60,6 +60,10 @@ header ul li a.on:hover {
   background-color: #795620;
   color: #f7f3e9;
 }
+header ul li a.om {
+  background-color: #795620;
+  color: #f7f3e9;
+}
 header .hd_nav1 {
   float: left;
 }
@@ -127,7 +131,7 @@ header .hd_nav2 {
   background-size: cover;
   background-position: -50px;
 }
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
   .sect2 .title2 {
     padding-left: 5%;
   }
@@ -150,6 +154,5 @@ header .hd_nav2 {
     font-size: 26px !important;
   }
 }
-@media screen and (max-width: 560px){
-
+@media screen and (max-width: 560px) {
 }
