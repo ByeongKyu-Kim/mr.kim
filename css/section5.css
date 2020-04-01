@@ -29,9 +29,18 @@
 .sect5_thumbs img {
   width: 100%;
 }
-@media screen and (max-width: 1200px){
-
+@media screen and (max-width: 1200px) {
 }
-@media screen and (max-width: 560px){
+@media screen and (max-width: 560px) {
+  .sect5_top {
+    width: 400px;
+    margin: 4px auto 0;
+  }
+  .sect5_top iframe {
+    width: 400px;
+  }
 
+  .sect5 .title {
+    margin-top: 150px;
+  }
 }
