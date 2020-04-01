@@ -8,7 +8,12 @@
   max-width: 1200px;
   height: 100vh;
   margin: auto;
+  display: flex;
+  position: relative;
 }
+
+
+
 
 .sect7 #flag_right {
   width: 600px;
@@ -105,10 +110,6 @@
   }
 }
 
-.sect7_wrap {
-  display: flex;
-  position: relative;
-}
 .sect7_road {
   width: 600px;
   height: 652px;
@@ -229,4 +230,48 @@
 
 }
 @media screen and (max-width: 560px) {
+  .sect7 {
+    width: 98%;
+    padding:10px;
+  }
+  .title h6 {
+    font-size: 30px !important;
+  }
+  .title h5 {
+    font-size: 50px !important;
+  }
+  .sect7_wrap {
+    height: 1200px;
+  }
+  .sect7 #flag_right {
+  height: 630px;
+}
+  #flag_road:after  {
+    display: none;
+  }
+  .sect7_wrap {
+    display: block;
+  }
+
+  .sect7_road iframe {
+    display: none;
+  }
+
+    .sect7_people img {
+    display: none;
+  }
+  .sect7_move {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+  }
+
+  .sect7_move img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+  }
 }
