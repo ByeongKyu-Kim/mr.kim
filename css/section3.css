@@ -209,30 +209,28 @@
 }
 @media screen and (max-width: 1200px){
   .sect3_btn li{
-    width: 100px;
-    height: 100px;
-    background-size: 550%;
+    width: 90px;
+    height: 90px;
+    background-size: 540%;
   }
   .sect3_btn li:nth-child(2) {
-    background-position: -90px 5px;
+    background-position: -80px 5px;
   }
   .sect3_btn li:nth-child(3) {
-    background-position: -175px 5px;
+    background-position: -156px 5px;
   }
   .sect3_btn li:nth-child(4) {
-    background-position: -265px 5px;
+    background-position: -235px 5px;
   }
   .sect3_btn li:nth-child(5) {
-    background-position: -363px 5px;
+    background-position: -320px 5px;
   }
   .sect3_btn li:nth-child(6) {
-    background-position: -460px 5px;
+    background-position: -410px 5px;
   }
 }
 @media screen and (max-width: 560px){
-  .sect3_btn{
-    width: 300px;
-    flex-wrap: wrap;
-    margin: 0 auto;
+  .sect3_btn li:nth-child(6) {
+    background-position: -405px 5px;
   }
 }

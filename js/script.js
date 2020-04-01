@@ -1,11 +1,11 @@
 $(function() {
   //header
   $(document).scroll(function() {
-    var scrT = $(this).scrollTop()
+    var secT = $(this).scrollTop()
 
     // console.log(scrT)
 
-    if (scrT >= 170) {
+    if (secT >= 170) {
       $(".sect1 h1").css({ position: "fixed", top: -170 })
       $("header").addClass("on")
       $("header li a").addClass("on")
@@ -15,29 +15,9 @@ $(function() {
       $("header li a").removeClass("on")
     }
 
-    // var sect = $(this).scrollTop('section')
-
-    // if(scrT >= sect){
-    //   $('.title').animete({marginLeft: 100})
-    // }else{
-    //   $('.title').animete({marginLeft: 0})
-    // }
-  })
-
-  $("header a").click(function() {
-    var href = $(this).attr("href")
-    var secT = $(href).offset().top
-    $("html, body").animate({ scrollTop: secT })
-  })
-  // title
-
-  // var h = $('section').height()
-
-  $(window).scroll(function() {
-    $("section").each(function(i) {
+    $("section").each(function() {
       var secT = $(this).offset().top
-      console.log(secT)
-
+      // console.log(secT)
       var scrT = $(window).scrollTop()
 
       if (secT - 500 <= scrT) {
@@ -46,8 +26,20 @@ $(function() {
           .find(".title, .title2")
           .addClass("on")
       }
-    }) //each
-  }) //scroll
+    })
+
+
+  })
+
+  $("header a").click(function() {
+    var href = $(this).attr("href")
+    var secT = $(href).offset().top
+    $("html, body").animate({ scrollTop: secT - 80 })
+  })
+  // title
+
+  // var h = $('section').height()
+
 
   // sect1
 
@@ -72,10 +64,10 @@ $(function() {
     centeredSlides: true,
   })
 
-  $(".sect2_menu").click(function(e) {
+  $(".sect2_menu a").click(function(e) {
     e.preventDefault()
 
-    $(".sect2_menu").removeClass("on")
+    $(".sect2_menu a").removeClass("on")
     $(this).addClass("on")
 
     var href = $(this).attr("href")
