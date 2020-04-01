@@ -64,10 +64,10 @@ $(function() {
     centeredSlides: true,
   })
 
-  $(".sect2_menu").click(function(e) {
+  $(".sect2_menu a").click(function(e) {
     e.preventDefault()
 
-    $(".sect2_menu").removeClass("on")
+    $(".sect2_menu a").removeClass("on")
     $(this).addClass("on")
 
     var href = $(this).attr("href")
