@@ -307,13 +307,11 @@
     height: 100%;
     background-color: #f7f3e9;
     border-bottom: 1px solid #c7a776;
+    border-left: 1px solid #c7a776;
     text-align: center;
     font-size: 25px;
     padding: 3% 0;
     cursor: pointer;
     line-height: 1.5vh;
-  }
-  .sect8_menu li:nth-child(n+2){
-    border-left: 1px solid #c7a776;
   }
 }
