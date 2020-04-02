@@ -36,7 +36,6 @@ header h1 {
 
 header ul {
   width: 40%;
-  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -154,5 +153,36 @@ header .hd_nav2 {
     font-size: 26px !important;
   }
 }
+
 @media screen and (max-width: 560px) {
+  .sect1 {
+    height: 50vh;
+  }
+  header {
+    height: 130px;
+  }
+  header ul {
+    display: block;
+    height: 150px;
+  }
+  .hd_nav1 {
+    width: 35%;
+    float: none;
+  }
+
+  .hd_nav1 li,
+  .hd_nav2 li {
+    width: 100%;
+  }
+
+  .hd_nav1 li a,
+  .hd_nav2 li a {
+    font-size: 21px !important;
+    padding: 0 !important;
+  }
+
+  .hd_nav2 {
+    width: 35%;
+    float: none;
+  }
 }
