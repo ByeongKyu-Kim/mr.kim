@@ -305,33 +305,35 @@
   .sect8_menu li {
     height: 100%;
     background-color: #f7f3e9;
-    border-bottom: 1px solid #c7a776;
-    border-left: 1px solid #c7a776;
+    /* border-bottom: 1px solid #c7a776; */
+    /* border-left: 1px solid #c7a776; */
     text-align: center;
-    font-size: 25px;
+    font-size: 16px;
     padding: 3% 0;
     cursor: pointer;
     line-height: 1.5vh;
   }
 
   .sect8_txt {
-    padding: 8px;
+    padding: 8px 0 0 20px;
     background-image: url(../img/bg_section4.png);
     background-repeat: no-repeat;
     margin-top: -14px;
+  }
+  .sect8_txt p:nth-child(1) {
+    padding: 25px 0 0;
   }
   .sect8_menu li:nth-child(n + 2) {
     border-left: 1px solid #c7a776;
   }
 
   .sect8_txt p:nth-child(2) {
-    font-size: 21px !important;
+    font-size: 30px !important;
     font-weight: bold;
   }
 
   .sect8_txt p:nth-child(3) {
-    font-size: 12px !important;
-    font-weight: bold;
+    font-size: 14px !important;
     text-align: left;
   }
 
