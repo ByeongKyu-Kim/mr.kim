@@ -120,6 +120,11 @@ header .hd_nav2 {
   background-position: -50px;
 }
 @media screen and (max-width: 1200px) {
+  .title.on,
+  .title2.on {
+    transform: translateX(25px);
+
+  }
   .sect2 .title2 {
     padding-left: 5%;
   }
