@@ -32,12 +32,12 @@ $(function() {
       if (i <= 2) {
         console.log(i)
         $("hd_nav1 li")
-          .eq(i = i)
+          .eq((i = i))
           .find("a")
           .addClass("om")
       } else {
         $("hd_nav2 li")
-          .eq(i = i - 2)
+          .eq((i = i - 2))
           .find("a")
           .addClass("om")
       }
@@ -53,23 +53,23 @@ $(function() {
   })
 
   // 스크롤휠 이벤트
-  $("section").on("mousewheel", function(event, delta) {
-    if (delta > 0) {
-      var prev = $(this)
-        .prev()
-        .offset().top
-      $("html, body")
-        .stop()
-        .animate({ scrollTop: prev - 80 }, 500, "easeOutBack")
-    } else if (delta < 0) {
-      var next = $(this)
-        .next()
-        .offset().top
-      $("html, body")
-        .stop()
-        .animate({ scrollTop: next - 80 }, 500, "easeOutBack")
-    }
-  })
+  // $("section").on("mousewheel", function(event, delta) {
+  //   if (delta > 0) {
+  //     var prev = $(this)
+  //       .prev()
+  //       .offset().top
+  //     $("html, body")
+  //       .stop()
+  //       .animate({ scrollTop: prev - 80 }, 500, "easeOutBack")
+  //   } else if (delta < 0) {
+  //     var next = $(this)
+  //       .next()
+  //       .offset().top
+  //     $("html, body")
+  //       .stop()
+  //       .animate({ scrollTop: next - 80 }, 500, "easeOutBack")
+  //   }
+  // })
 
   // sect1
 
