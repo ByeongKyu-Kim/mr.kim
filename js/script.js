@@ -145,7 +145,7 @@ $(function() {
         clickable: true,
       },
     })
-  } else {
+  } else if(w > 560){
     var swiper4 = new Swiper(".sect4 .swiper-container", {
       slidesPerView: 2,
       spaceBetween: 30,

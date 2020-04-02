@@ -230,7 +230,7 @@
   }
 }
 @media screen and (max-width: 560px) {
-  .sect3_btn li:nth-child(1) {
+  /* .sect3_btn li:nth-child(1) {
     background-position: 0px;
   }
   .sect3_btn li:nth-child(2) {
@@ -244,16 +244,12 @@
   }
   .sect3_btn li:nth-child(5) {
     background-position: -280px 5px;
-  }
-  .sect3_txt{
+  } */
+  .sect3_txt {
     background-size: auto;
   }
   .sect3_btn li:nth-child(6) {
-    background-position: -350px 5px;
-  }
-
-  .sect3_btn li:nth-child(6) {
-    background-position: -365px 10px;
+    background-position: -405px 5px;
   }
 
   .sect3_mobile2 h3,
@@ -279,12 +275,12 @@
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px black, -2px -2px 4px dimgray;
   }
-}
-  .sect3_txt p:nth-child(1){
+
+  .sect3_txt p:nth-child(1) {
     font-size: 36px;
     line-height: 50px;
   }
-  .sect3_txt p:nth-child(3){
+  .sect3_txt p:nth-child(3) {
     font-size: 16px;
   }
 }
