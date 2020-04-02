@@ -230,7 +230,18 @@
   }
 }
 @media screen and (max-width: 560px){
+  .sect3_txt{
+    background-size: auto;
+  }
   .sect3_btn li:nth-child(6) {
     background-position: -405px 5px;
+  }
+
+  .sect3_txt p:nth-child(1){
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .sect3_txt p:nth-child(3){
+    font-size: 16px;
   }
 }

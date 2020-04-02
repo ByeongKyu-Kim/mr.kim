@@ -5,6 +5,9 @@
   /* padding: 100px 0 100px 0; */
   background-position: center 145px, 0 -120px;
 }
+.sect5 iframe{
+  width:800px; height:450px;
+}
 .sect5 .title2 {
   margin-bottom: -50px;
 }
@@ -30,6 +33,11 @@
   width: 100%;
 }
 @media screen and (max-width: 1200px) {
+  .sect5{
+    background-image: url(../img/movie_bg2.png), url(../img/movie_bg3.png);
+  }
+
+  
 }
 @media screen and (max-width: 560px) {
   .sect5_top {
@@ -37,7 +45,7 @@
     margin: 4px auto 0;
   }
   .sect5_top iframe {
-    width: 400px;
+    width: 100%;
   }
 
   .sect5 .title {
