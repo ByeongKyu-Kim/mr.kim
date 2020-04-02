@@ -99,4 +99,7 @@
   .sect4 .title {
     margin-bottom: 30px;
   }
+  .sect4 .slide{
+    width: 100%;
+  }
 }

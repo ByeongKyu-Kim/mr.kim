@@ -32,7 +32,7 @@ $(function() {
       
       $("header li a").removeClass("om")
       if (i <= 2) {
-        console.log(i)
+        // console.log(i)
         $("hd_nav1 li")
           .eq((i = i))
           .find("a")
@@ -130,36 +130,22 @@ $(function() {
   })
 
   //sect4
-  var w = $(window).width()
-  if (w <= 560) {
-    var swiper4 = new Swiper(".sect4 .swiper-container", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    })
-  } else if(w > 560){
-    var swiper4 = new Swiper(".sect4 .swiper-container", {
-      slidesPerView: 2,
-      spaceBetween: 30,
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    })
-  }
+
+
+  var swiper4 = new Swiper(".sect4 .swiper-container", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  })
+  
 
   //sect5
 
