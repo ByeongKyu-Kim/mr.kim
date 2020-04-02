@@ -267,9 +267,7 @@ $(function() {
     var idx = $(this).index()
 
     $(".sect8_con li").fadeOut()
-    $(".sect8_con li")
-      .eq(idx + 3)
-      .fadeIn()
+    $(".sect8_con li").eq(idx + 3).fadeIn()
   })
 
   $(".sect8").mouseenter(function() {
