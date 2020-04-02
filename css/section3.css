@@ -4,7 +4,6 @@
   position: relative;
 }
 .sect3_txt {
-  position: relative;
   text-align: center;
   color: #fff;
   padding: 50px 0;
@@ -20,7 +19,6 @@
   line-height: 60px;
   font-family: "Nanum Pen Script", cursive;
 }
-
 .sect3_txt p:nth-child(2) {
   padding: 5px;
 }
@@ -275,7 +273,10 @@
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px black, -2px -2px 4px dimgray;
   }
-
+  .sect3_txt {
+    background-size: cover;
+    background-position-x: -100px;
+  }
   .sect3_txt p:nth-child(1) {
     font-size: 36px;
     line-height: 50px;
