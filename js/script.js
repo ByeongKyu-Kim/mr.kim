@@ -1,8 +1,9 @@
 $(function() {
   //header
+
+  // 가운데 로고
   $(document).scroll(function() {
     var secT = $(this).scrollTop()
-
     // console.log(scrT)
 
     if (secT >= 170) {
@@ -15,28 +16,62 @@ $(function() {
       $("header li a").removeClass("on")
     }
 
-    $("section").each(function() {
+    // 타이틀 애니메이션 / 메뉴색깔
+    $("section").each(function(i) {
       var secT = $(this).offset().top
-      // console.log(secT)
       var scrT = $(window).scrollTop()
 
-      if (secT - 500 <= scrT) {
+      if (secT - 300 <= scrT) {
         $(".title, .title2").removeClass("on")
         $(this)
           .find(".title, .title2")
           .addClass("on")
       }
-    })
-  })
+      
+      
+      
+      $("header li a").removeClass("om")
+      if (i <= 2) {
+        console.log(i)
+        $("hd_nav1 li")
+          .eq(i = i)
+          .find("a")
+          .addClass("om")
+      } else {
+        $("hd_nav2 li")
+          .eq(i = i - 2)
+          .find("a")
+          .addClass("om")
+      }
+    }) //each
+  }) // 스크롤이벤트 끝
+
+  // 메뉴클릭
 
   $("header a").click(function() {
     var href = $(this).attr("href")
     var secT = $(href).offset().top
     $("html, body").animate({ scrollTop: secT - 80 })
   })
-  // title
 
-  // var h = $('section').height()
+  // 스크롤휠 이벤트
+  $("section").on("mousewheel", function(event, delta) {
+    if (delta > 0) {
+      var prev = $(this)
+        .prev()
+        .offset().top
+      $("html, body")
+        .stop()
+        .animate({ scrollTop: prev - 80 }, 500, "easeOutBack")
+    } else if (delta < 0) {
+      var next = $(this)
+        .next()
+        .offset().top
+      $("html, body")
+        .stop()
+        .animate({ scrollTop: next - 80 }, 500, "easeOutBack")
+    }
+  })
 
   // sect1
 
