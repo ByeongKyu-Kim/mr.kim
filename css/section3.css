@@ -246,7 +246,7 @@
     background-position: -280px 5px;
   } */
   .sect3_txt {
-    background-size: auto;
+    background-size: cover;
   }
   .sect3_btn li:nth-child(6) {
     background-position: -405px 5px;
