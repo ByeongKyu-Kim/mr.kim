@@ -228,7 +228,8 @@
   }
 }
 @media screen and (max-width: 560px) {
-  /* .sect3_btn li:nth-child(1) {
+  .sect3 .title {margin-left: -50px; margin-bottom: 30px;}
+  .sect3_btn li:nth-child(1) {
     background-position: 0px;
   }
   .sect3_btn li:nth-child(2) {
@@ -255,33 +256,33 @@
     color: white;
     text-shadow: 1px 1px 5px rgb(184, 184, 184), -1px -1px 5px rgb(161, 161, 161);
   }
-
-  .sect3_mobile4 h3 {
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 4px black, -2px -2px 4px dimgray;
-  }
-  .sect3_mobile4 p {
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 4px black, -2px -2px 4px dimgray;
-  }
-
-  .sect3_mobile6 h3 {
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 4px black, -2px -2px 4px dimgray;
-  }
+  .sect3_mobile4 h3,
+  .sect3_mobile4 p,
+  .sect3_mobile6 h3 ,
   .sect3_mobile6 p {
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px black, -2px -2px 4px dimgray;
   }
-  .sect3_txt {
+ 
+  .sect3_mobile1 h3,
+  .sect3_mobile1 p,
+  .sect3_mobile3 h3,
+  .sect3_mobile3 p
+   {color: black;
+    text-shadow: 2px 2px 4px rgb(218, 218, 218), -2px -2px 4px rgb(219, 219, 219);
+  }
+  .sect3_mobile5 h3,
+  .sect3_mobile5 p {
+    color: white;
+    text-shadow: 2px 2px 5px rgb(78, 78, 78), -2px -2px 5px rgb(112, 112, 112);
+  }
+
+  .sect3_box li:nth-child(1),
+  .sect3_box li:nth-child(3),
+  .sect3_box li:nth-child(5){
     background-size: cover;
-    background-position-x: -100px;
-  }
-  .sect3_txt p:nth-child(1) {
-    font-size: 36px;
-    line-height: 50px;
-  }
-  .sect3_txt p:nth-child(3) {
-    font-size: 16px;
-  }
+    background-position: 1200px;
 }
+
+}
+
