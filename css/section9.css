@@ -35,7 +35,6 @@
   transform: translate(-50%, -50%);
   z-index: 1;
 }
-/* top */
 
 /* footer */
 
@@ -65,6 +64,13 @@ footer .ft_1 a {
   font-size: 14px;
   text-decoration: none;
 }
+/* footer span {
+  display: block;
+  background-image: url(/img/sect1_logo.png);
+  background-size: cover;
+  width: 100px;
+  height: 200px;
+} */
 footer .ft_2 {
   padding: 10px;
 }
@@ -80,36 +86,24 @@ footer p {
   color: #707070;
 }
 
-.sect9::after {
-  height: 83.5%;
+.top_button {
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  z-index: 10;
+  display: none;
 }
-
-.sect9 p {
-  width: 97%;
-  font-size: 20px !important;
-  line-height: 28px;
-  top: 40%;
-  letter-spacing: 3px;
+.top_button a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
-
-footer {
-  margin-top: -50px;
-}
-footer .ft_1 {
-  padding: 0 10px;
-}
-footer .ft_1 li {
-  padding: 0;
-}
-footer .ft_1 a {
-  font-size: 13px;
-}
-footer p {
-  padding-top: 6px;
-}
-footer .ft_2 li {
-  /* font-size: 12px; */
-  padding-left: 30px;
+.top_button img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -122,5 +116,37 @@ footer .ft_2 li {
   .sect9 {
     height: 300px;
     background-size: 100% 100%;
+  }
+
+  .sect9::after {
+    height: 83.5%;
+  }
+
+  .sect9 p {
+    width: 97%;
+    font-size: 20px !important;
+    line-height: 28px;
+    top: 40%;
+    letter-spacing: 3px;
+  }
+
+  footer {
+    margin-top: -50px;
+  }
+  footer .ft_1 {
+    padding: 0 10px;
+  }
+  footer .ft_1 li {
+    padding: 0;
+  }
+  footer .ft_1 a {
+    font-size: 13px;
+  }
+  footer p {
+    padding-top: 6px;
+  }
+  footer .ft_2 li {
+    /* font-size: 12px; */
+    padding-left: 30px;
   }
 }
