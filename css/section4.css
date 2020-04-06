@@ -98,5 +98,6 @@
 @media screen and (max-width: 560px) {
   .sect4 .title {
     margin-bottom: 30px;
+    margin-left: 15px;
   }
 }

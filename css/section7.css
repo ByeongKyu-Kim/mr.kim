@@ -12,9 +12,6 @@
   position: relative;
 }
 
-
-
-
 .sect7 #flag_right {
   width: 600px;
   height: 70vh;
@@ -226,13 +223,14 @@
   #flag_right {
     overflow: hidden;
   }
-
-
 }
 @media screen and (max-width: 560px) {
   .sect7 {
     width: 98%;
-    padding:10px;
+    padding: 10px;
+  }
+  .title {
+    margin-left: 15px;
   }
   .title h6 {
     font-size: 30px !important;
@@ -244,9 +242,9 @@
     height: 1200px;
   }
   .sect7 #flag_right {
-  height: 630px;
-}
-  #flag_road:after  {
+    height: 630px;
+  }
+  #flag_road:after {
     display: none;
   }
   .sect7_wrap {
@@ -257,7 +255,7 @@
     display: none;
   }
 
-    .sect7_people img {
+  .sect7_people img {
     display: none;
   }
   .sect7_move {
