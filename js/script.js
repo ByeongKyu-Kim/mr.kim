@@ -1,8 +1,8 @@
-$(function () {
+$(function() {
   //header
 
   // 가운데 로고
-  $(document).scroll(function () {
+  $(document).scroll(function() {
     var secT = $(this).scrollTop()
     // console.log(scrT)
 
@@ -17,18 +17,20 @@ $(function () {
     }
 
     // 타이틀 애니메이션 / 메뉴색깔
-    $("section").each(function (i) {
+    $("section").each(function(i) {
       var secT = $(this).offset().top
       var scrT = $(window).scrollTop()
 
       if (secT - 300 <= scrT) {
         $(".title, .title2").removeClass("on")
-        $(this).find(".title, .title2").addClass("on")
+        $(this)
+          .find(".title, .title2")
+          .addClass("on")
       }
 
       $("header li a").removeClass("om")
       if (i <= 2) {
-        console.log(i)
+        // console.log(i)
         $("hd_nav1 li")
           .eq((i = i))
           .find("a")
@@ -44,7 +46,7 @@ $(function () {
 
   // 메뉴클릭
 
-  $("header a").click(function () {
+  $("header a").click(function() {
     var href = $(this).attr("href")
     var secT = $(href).offset().top
     $("html, body").animate({ scrollTop: secT - 80 })
@@ -83,6 +85,24 @@ $(function () {
     loop: true,
   })
 
+  $(".header_mobile").click(function() {
+    var mobile = 0
+
+    if (mobile == 0) {
+      $("header .inner").show()
+      $(".header_mobile img").attr("src", "img/close.png")
+      mobile = 1
+      alert(mobile)
+    } else {
+      $("header .inner").hide()
+      $(".header_mobile img").attr("src", "img/menu2.png")
+      mobile = 0
+      alert(mobile)
+    }
+
+    console.log(mobile)
+  })
+
   //   sect2
 
   var swiper2 = new Swiper(".sect2 .swiper-container", {
@@ -92,7 +112,7 @@ $(function () {
     centeredSlides: true,
   })
 
-  $(".sect2_menu").click(function (e) {
+  $(".sect2_menu").click(function(e) {
     e.preventDefault()
 
     $(".sect2_menu").removeClass("on")
@@ -100,7 +120,9 @@ $(function () {
 
     var href = $(this).attr("href")
 
-    $(".sect2_box .box").stop().removeClass("on")
+    $(".sect2_box .box")
+      .stop()
+      .removeClass("on")
     $(href).addClass("on")
   })
 
@@ -108,14 +130,19 @@ $(function () {
 
   // sect3
 
-  $(".sect3_btn li").click(function () {
+  $(".sect3_btn li").click(function() {
     $(".sect3_btn li").removeClass("on")
     $(this).addClass("on")
 
     var idx = $(this).index()
 
-    $(".sect3_box li").stop().fadeOut()
-    $(".sect3_box li").eq(idx).stop().fadeIn()
+    $(".sect3_box li")
+      .stop()
+      .fadeOut()
+    $(".sect3_box li")
+      .eq(idx)
+      .stop()
+      .fadeIn()
   })
 
   //sect4
@@ -188,7 +215,7 @@ $(function () {
     },
   })
 
-  $(".sect5_thumbs > div > div").click(function () {
+  $(".sect5_thumbs > div > div").click(function() {
     $(".sect5_thumbs > div > div").removeClass(".swiper-slide-active")
     $(this).addClass(".swiper-slide-active")
   })
@@ -206,12 +233,14 @@ $(function () {
     },
   })
 
-  $(".sect6_slide_img").mouseenter(function () {
+  $(".sect6_slide_img").mouseenter(function() {
     $(".sect6_slide_img").removeClass("po")
     $(this).addClass("po")
-    $(".sect6_slide_img p").eq($(this).index()).css({ display: "block" })
+    $(".sect6_slide_img p")
+      .eq($(this).index())
+      .css({ display: "block" })
   })
-  $(".sect6_slide_img").mouseleave(function () {
+  $(".sect6_slide_img").mouseleave(function() {
     $(".sect6_slide_img p").css({ display: "none" })
   })
 
@@ -219,7 +248,7 @@ $(function () {
 
   // 섹트4의 오토바이 그림위 배달안내 스크립트 / 아직 css하지 않은 상황. 수정 중에 있음 /
 
-  $(document).scroll(function () {
+  $(document).scroll(function() {
     var scrT = $(this).scrollTop()
 
     if (scrT >= 900) {
@@ -231,14 +260,14 @@ $(function () {
     }
   })
 
-  $(".sect7").mouseenter(function () {
+  $(".sect7").mouseenter(function() {
     $(".sect7_people img").addClass("sect7_people_on")
     $(".sect7_move img").addClass("sect7_move_ko")
     $(".sect7_paper img, .sect7_move img").css("margin", "0px")
     $(".sect7_paper_click").css("opacity", "1")
   })
 
-  $(".sect7").mouseleave(function () {
+  $(".sect7").mouseleave(function() {
     $(".sect7_paper_click").css("opacity", "0")
     $(".sect7_paper img").css({
       width: "200px",
@@ -249,7 +278,7 @@ $(function () {
     $(".sect7_paper img, .sect7_move img").css("margin", "-400px")
   })
 
-  $(".sect7_paper img").click(function () {
+  $(".sect7_paper img").click(function() {
     $(".sect7_paper img").css({
       width: "380px",
       height: "380px",
@@ -261,7 +290,7 @@ $(function () {
 
   //sect8
 
-  $(".sect8_menu_l li").click(function (e) {
+  $(".sect8_menu_l li").click(function(e) {
     e.preventDefault()
 
     $(".sect8_menu li").removeClass("on")
@@ -270,10 +299,12 @@ $(function () {
     var idx = $(this).index()
 
     $(".sect8_con li").fadeOut()
-    $(".sect8_con li").eq(idx).fadeIn()
+    $(".sect8_con li")
+      .eq(idx)
+      .fadeIn()
   })
 
-  $(".sect8_menu_r li").click(function (e) {
+  $(".sect8_menu_r li").click(function(e) {
     e.preventDefault()
 
     $(".sect8_menu li").removeClass("on")
@@ -287,11 +318,11 @@ $(function () {
       .fadeIn()
   })
 
-  $(".sect8").mouseenter(function () {
+  $(".sect8").mouseenter(function() {
     $(".sect8_dart_fix,.sect8_box_fix").css({ display: "block" })
   })
 
-  $(".sect8").mouseleave(function () {
+  $(".sect8").mouseleave(function() {
     $(".sect8_dart_fix,.sect8_box_fix").css({ display: "none" })
   })
 
