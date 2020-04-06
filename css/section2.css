@@ -4,9 +4,7 @@
   /* background-image: url(../img/bg2.jpg); */
 }
 
-.sect2 .title2 {
-  margin-bottom: -50px;
-}
+
 .sect2 .btn {
   display: flex;
   justify-content: center;
@@ -112,7 +110,7 @@
     padding: 10px;
   }
   .sect2 .title2 {
-    margin-left: 0px;
+    margin-left: 15px;
     padding: 0 !important;
     display: inline-block;
   }
