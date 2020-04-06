@@ -247,11 +247,11 @@
   .sect3_btn li:nth-child(5) {
     background-position: -280px 5px;
   }
-  */ .sect3_txt {
+  .sect3_txt {
     background-size: cover;
   }
   .sect3_btn li:nth-child(6) {
-    background-position: -405px 5px;
+    background-position: -385px 5px;
   }
 
   .sect3_mobile2 h3,
