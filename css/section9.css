@@ -37,8 +37,6 @@
 }
 /* top */
 
-
-
 /* footer */
 
 footer {
@@ -67,13 +65,6 @@ footer .ft_1 a {
   font-size: 14px;
   text-decoration: none;
 }
-/* footer span {
-  display: block;
-  background-image: url(/img/sect1_logo.png);
-  background-size: cover;
-  width: 100px;
-  height: 200px;
-} */
 footer .ft_2 {
   padding: 10px;
 }
