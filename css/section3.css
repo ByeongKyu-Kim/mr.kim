@@ -3,6 +3,7 @@
   margin: 0 auto 80px;
   position: relative;
 }
+
 .sect3_txt {
   text-align: center;
   color: #fff;
@@ -228,7 +229,10 @@
   }
 }
 @media screen and (max-width: 560px) {
-  .sect3 .title {margin-left: -50px; margin-bottom: 30px;}
+  .sect3 .title {
+    margin-left: 15px;
+    margin-bottom: 30px;
+  }
   .sect3_btn li:nth-child(1) {
     background-position: 0px;
   }
@@ -243,12 +247,12 @@
   }
   .sect3_btn li:nth-child(5) {
     background-position: -280px 5px;
-  } */
+  }
   .sect3_txt {
     background-size: cover;
   }
   .sect3_btn li:nth-child(6) {
-    background-position: -405px 5px;
+    background-position: -365px 5px;
   }
 
   .sect3_mobile2 h3,
@@ -258,17 +262,17 @@
   }
   .sect3_mobile4 h3,
   .sect3_mobile4 p,
-  .sect3_mobile6 h3 ,
+  .sect3_mobile6 h3,
   .sect3_mobile6 p {
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px black, -2px -2px 4px dimgray;
   }
- 
+
   .sect3_mobile1 h3,
   .sect3_mobile1 p,
   .sect3_mobile3 h3,
-  .sect3_mobile3 p
-   {color: black;
+  .sect3_mobile3 p {
+    color: black;
     text-shadow: 2px 2px 4px rgb(218, 218, 218), -2px -2px 4px rgb(219, 219, 219);
   }
   .sect3_mobile5 h3,
@@ -279,10 +283,8 @@
 
   .sect3_box li:nth-child(1),
   .sect3_box li:nth-child(3),
-  .sect3_box li:nth-child(5){
+  .sect3_box li:nth-child(5) {
     background-size: cover;
     background-position: 1200px;
+  }
 }
-
-}
-
