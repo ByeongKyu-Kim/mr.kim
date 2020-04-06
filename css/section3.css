@@ -230,7 +230,7 @@
 }
 @media screen and (max-width: 560px) {
   .sect3 .title {
-    margin-left: 0px;
+    margin-left: 15px;
     margin-bottom: 30px;
   }
   .sect3_btn li:nth-child(1) {
