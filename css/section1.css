@@ -22,9 +22,7 @@ header .inner {
   margin: auto;
   overflow: hidden;
 }
-.header_mobile {
-  display: none;
-}
+
 header h1 {
   background-image: url(../img/logo3.png);
   background-size: 150px;
@@ -136,6 +134,7 @@ header .hd_nav2 {
   .title.on,
   .title2.on {
     transform: translateX(25px);
+
   }
   .sect2 .title2 {
     padding-left: 5%;
@@ -167,28 +166,28 @@ header .hd_nav2 {
   header {
     height: 130px;
   }
-  .header_mobile {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    display: block;
-  }
-  .header_mobile img {
-    width: 100%;
-  }
-  header .inner {
-    width: 200px;
-    height: 100vh;
-    background-color: #795620;
-    margin: 0;
-    display: none;
-  }
   header ul {
-    width: 100%;
     display: block;
+    height: 150px;
   }
-  header .hd_nav1,
-  header .hd_nav2 {
+  .hd_nav1 {
+    width: 35%;
+    float: none;
+  }
+
+  .hd_nav1 li,
+  .hd_nav2 li {
+    width: 100%;
+  }
+
+  .hd_nav1 li a,
+  .hd_nav2 li a {
+    font-size: 21px !important;
+    padding: 0 !important;
+  }
+
+  .hd_nav2 {
+    width: 35%;
     float: none;
   }
 }
