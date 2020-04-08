@@ -2,10 +2,11 @@
   width: 100%;
   height: 550px;
   background-image: url(../img/ft_img.jpg);
-  background-size: 100%;
-  background-position: 0 -50px;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  clear: both;
 }
 
 .sect9 .inner {
@@ -13,7 +14,9 @@
   height: 100%;
   margin: auto;
 }
+
 .sect9 p {
+  width: 100%;
   font-size: 40px;
   line-height: 48px;
   font-family: "East Sea Dokdo", cursive;
@@ -28,12 +31,11 @@
   z-index: 1;
 }
 
-
-
 /* footer */
 
 footer {
   width: 100%;
+
 }
 
 footer .inner {
@@ -74,28 +76,24 @@ footer p {
   color: #707070;
 }
 @media screen and (max-width: 1200px) {
-  .sect9 {
+  .sect9{
     height: 300px;
-    background-size: 100%;
+  }
+   .sect9 p {
+    font-size: 25px;
+    line-height: 30px;
   }
 }
 @media screen and (max-width: 560px) {
-  .sect9 {
-    height: 300px;
-    background-size: 100% 100%;
+  .sect9{
+    height: 200px;
   }
-
   .sect9 p {
-    width: 97%;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 28px;
-    top: 40%;
-    letter-spacing: 3px;
+
   }
 
-  footer {
-    margin-top: -50px;
-  }
   footer .ft_1 {
     padding: 0 10px;
   }
@@ -112,6 +110,4 @@ footer p {
     /* font-size: 12px; */
     padding-left: 30px;
   }
-
-
 }
