@@ -27,7 +27,9 @@ $(function() {
           .find(".title, .title2")
           .addClass("on")
       }
-
+      
+      
+      
       $("header li a").removeClass("om")
       if (i <= 2) {
         // console.log(i)
@@ -65,13 +67,13 @@ $(function() {
   var swiper1 = new Swiper(".sect1 .swiper-container", {
     pagination: {
       el: ".sect1 .swiper-pagination",
-      clickable: true,
+      clickable: true
     },
     autoplay: {
       delay: 3000,
-      disableOnInteraction: false,
+      disableOnInteraction: false
     },
-    loop: true,
+    loop: true
   })
 
   $(".header_mobile").click(function() {
@@ -135,50 +137,36 @@ $(function() {
   })
 
   //sect4
-
-  var swiper4 = new Swiper(".sect4 .swiper-container", {
-    slidesPerView: 2,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  })
-  // var w = $(window).width()
-  // if (w <= 560) {
-  //   var swiper4 = new Swiper(".sect4 .swiper-container", {
-  //     slidesPerView: 1,
-  //     spaceBetween: 30,
-  //     loop: true,
-  //     autoplay: {
-  //       delay: 3000,
-  //       disableOnInteraction: false,
-  //     },
-  //     pagination: {
-  //       el: ".swiper-pagination",
-  //       clickable: true,
-  //     },
-  //   })
-  // } else if(w > 560){
-  //   var swiper4 = new Swiper(".sect4 .swiper-container", {
-  //     slidesPerView: 2,
-  //     spaceBetween: 30,
-  //     loop: true,
-  //     autoplay: {
-  //       delay: 3000,
-  //       disableOnInteraction: false,
-  //     },
-  //     pagination: {
-  //       el: ".swiper-pagination",
-  //       clickable: true,
-  //     },
-  //   })
-  // }
+  var w = $(window).width()
+  if (w <= 560) {
+    var swiper4 = new Swiper(".sect4 .swiper-container", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    })
+  } else if(w > 560){
+    var swiper4 = new Swiper(".sect4 .swiper-container", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    })
+  }
 
   //sect5
 
@@ -189,7 +177,7 @@ $(function() {
     freeMode: true,
     loopedSlides: 5, //looped slides should be the same
     watchSlidesVisibility: true,
-    watchSlidesProgress: true,
+    watchSlidesProgress: true
   })
   var galleryTop = new Swiper(".sect5_top", {
     spaceBetween: 10,
@@ -197,11 +185,11 @@ $(function() {
     loopedSlides: 5, //looped slides should be the same
     navigation: {
       nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      prevEl: ".swiper-button-prev"
     },
     thumbs: {
-      swiper: galleryThumbs,
-    },
+      swiper: galleryThumbs
+    }
   })
 
   $(".sect5_thumbs > div > div").click(function() {
@@ -218,8 +206,8 @@ $(function() {
     centeredSlides: true,
     navigation: {
       nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+      prevEl: ".swiper-button-prev"
+    }
   })
 
   $(".sect6_slide_img").mouseenter(function() {
@@ -261,7 +249,7 @@ $(function() {
     $(".sect7_paper img").css({
       width: "200px",
       height: "200px",
-      "z-index": "9",
+      "z-index": "9"
     })
     $(".sect7_move img").css("z-index", "5")
     $(".sect7_paper img, .sect7_move img").css("margin", "-400px")
@@ -270,7 +258,7 @@ $(function() {
   $(".sect7_paper img").click(function() {
     $(".sect7_paper img").css({
       width: "380px",
-      height: "380px",
+      height: "380px"
       // "z-index": "80"
     })
     $(".sect7_paper_click").css("opacity", "0")
@@ -302,9 +290,7 @@ $(function() {
     var idx = $(this).index()
 
     $(".sect8_con li").fadeOut()
-    $(".sect8_con li")
-      .eq(idx + 3)
-      .fadeIn()
+    $(".sect8_con li").eq(idx + 3).fadeIn()
   })
 
   $(".sect8").mouseenter(function() {
