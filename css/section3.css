@@ -234,19 +234,22 @@
     margin-bottom: 30px;
   }
   .sect3_btn li:nth-child(1) {
-    background-position: 0px;
+    background-position: -2%;
   }
   .sect3_btn li:nth-child(2) {
-    background-position: -70px 5px;
+    background-position: 20%;
   }
   .sect3_btn li:nth-child(3) {
-    background-position: -140px 5px;
+    background-position: 39%;
   }
   .sect3_btn li:nth-child(4) {
-    background-position: -210px 5px;
+    background-position: 59%;
   }
   .sect3_btn li:nth-child(5) {
-    background-position: -280px 5px;
+    background-position: 80%;
+  }
+  .sect3_btn li:nth-child(6) {
+    background-position: 102%;
   }
   .sect3_txt {
     background-size: cover;
@@ -260,19 +263,22 @@
   .sect3_txt p:nth-child(3) {
     font-size: 16px;
   }
-  .sect3_btn li:nth-child(6) {
-    background-position: -365px 5px;
-  }
 
   .sect3_mobile2 h3,
   .sect3_mobile2 p {
     color: white;
+    width: 80vw;
+    padding-left: 80px;
+    border: none;
     text-shadow: 1px 1px 5px rgb(184, 184, 184), -1px -1px 5px rgb(161, 161, 161);
   }
   .sect3_mobile4 h3,
   .sect3_mobile4 p,
   .sect3_mobile6 h3,
   .sect3_mobile6 p {
+    width: 80vw;
+    padding-left: 80px;
+    border: none;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px black, -2px -2px 4px dimgray;
   }
@@ -281,11 +287,15 @@
   .sect3_mobile1 p,
   .sect3_mobile3 h3,
   .sect3_mobile3 p {
+    width: 80vw;
+    margin-left: -60px;
     color: black;
     text-shadow: 2px 2px 4px rgb(218, 218, 218), -2px -2px 4px rgb(219, 219, 219);
   }
   .sect3_mobile5 h3,
   .sect3_mobile5 p {
+    width: 80vw;
+    border: none;
     color: white;
     text-shadow: 2px 2px 5px rgb(78, 78, 78), -2px -2px 5px rgb(112, 112, 112);
   }
@@ -295,5 +305,9 @@
   .sect3_box li:nth-child(5) {
     background-size: cover;
     background-position: 1200px;
+  }
+
+  .sect3 .title {
+    width: 60%;
   }
 }
