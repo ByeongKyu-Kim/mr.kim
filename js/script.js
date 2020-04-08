@@ -1,6 +1,12 @@
 $(function () {
   //header
 
+$(".mobile_head img").click(function(){
+  $("header, .inner h1").stop().css("marginTop","50px").fadeToggle(100)
+})
+
+
+
   // 가운데 로고
   $(document).scroll(function () {
     var secT = $(this).scrollTop()
