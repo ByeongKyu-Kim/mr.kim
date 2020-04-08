@@ -283,6 +283,9 @@
   .sect8_dart_fix img {
     display: none;
   }
+  .sect8_menu li {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 560px) {
@@ -357,7 +360,6 @@
 
   .sect8_img img {
     margin-right: 10px;
-
   }
 
   .sect8_txt span {
