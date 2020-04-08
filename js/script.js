@@ -81,10 +81,15 @@ $(function () {
   //   sect2
 
   var swiper2 = new Swiper(".sect2 .swiper-container", {
-    slidesPerView: 5,
-    spaceBetween: 10,
+    slidesPerView: 3,
     loop: true,
     centeredSlides: true,
+    breakpoints: {
+      1200: {
+        slidesPerView: 5,
+        spaceBetween: 0,
+      },
+    }
   })
 
   $(".sect2_menu").click(function (e) {
@@ -116,8 +121,7 @@ $(function () {
   //sect4
 
   var swiper4 = new Swiper(".sect4 .swiper-container", {
-    slidesPerView: 2,
-    spaceBetween: 30,
+    slidesPerView: 1,
     loop: true,
     autoplay: {
       delay: 3000,
@@ -127,6 +131,12 @@ $(function () {
       el: ".swiper-pagination",
       clickable: true,
     },
+    breakpoints: {
+      560: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+    }
   })
   // var w = $(window).width()
   // if (w <= 560) {
