@@ -35,7 +35,7 @@ header h1 {
 }
 
 header ul {
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -165,9 +165,11 @@ header .hd_nav2 {
   header {
     height: 130px;
     margin-top: -300px;
+    display: none;
   }
   .inner h1 {
     margin-top: -600px;
+    display: none;
   }
   header ul {
     display: block;
