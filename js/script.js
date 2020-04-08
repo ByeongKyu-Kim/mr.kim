@@ -1,11 +1,9 @@
 $(function () {
   //header
 
-$(".mobile_head img").click(function(){
-  $("header, .inner h1").stop().css("marginTop","50px").fadeToggle(100)
-})
-
-
+  $(".mobile_head img").click(function () {
+    $("header, .inner h1").stop().css("marginTop", "50px").fadeToggle(100)
+  })
 
   // 가운데 로고
   $(document).scroll(function () {
@@ -16,10 +14,12 @@ $(".mobile_head img").click(function(){
       $(".sect1 h1").css({ position: "fixed", top: -170 })
       $("header").addClass("on")
       $("header li a").addClass("on")
+      $(".mobile_head").css({ "background-image": "url(../img/bar2.jpg)" })
     } else {
       $(".sect1 h1").css({ position: "absolute", top: 100 })
       $("header").removeClass("on")
       $("header li a").removeClass("on")
+      $(".mobile_head").css({ "background-image": "url(../img/bar1.jpg)" })
     }
 
     // 타이틀 애니메이션 / 메뉴색깔
