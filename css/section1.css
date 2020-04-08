@@ -70,6 +70,9 @@ header .hd_nav1 {
 header .hd_nav2 {
   float: right;
 }
+.mobile_head{
+  display: none;
+}
 /* section1 */
 
 .sect1 {
@@ -199,6 +202,7 @@ header .hd_nav2 {
   }
 
   .mobile_head {
+    display: block;
     background-image: url(../img/bar1.jpg);
     background-repeat: no-repeat;
     width: 100%;
