@@ -250,6 +250,15 @@
   }
   .sect3_txt {
     background-size: cover;
+    padding: 50px 10px;
+  }
+  .sect3_txt p:nth-child(1) {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .sect3_txt p:nth-child(3) {
+    font-size: 16px;
   }
   .sect3_btn li:nth-child(6) {
     background-position: -365px 5px;
