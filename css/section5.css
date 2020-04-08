@@ -45,6 +45,9 @@
   .sect5_top iframe {
     width: 100%;
   }
+.sect5 {
+  margin-top: -130px;
+}
 
   .sect5 .title {
     margin-top: 150px;

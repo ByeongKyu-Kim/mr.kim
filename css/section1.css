@@ -156,9 +156,6 @@ header .hd_nav2 {
     border: 1px solid #fff;
   }
 
-  .sect9 p {
-    font-size: 26px !important;
-  }
 }
 
 @media screen and (max-width: 560px) {

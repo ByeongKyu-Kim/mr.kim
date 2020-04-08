@@ -243,7 +243,9 @@
   }
   .sect7 #flag_right {
     height: 630px;
+    background-size: 100% 30%, 70% 70%;
   }
+
   #flag_road:after {
     display: none;
   }
@@ -271,5 +273,57 @@
     top: 0;
     right: 0;
     border: none;
+  }
+
+  @keyframes bike {
+    0% {
+      margin-left: -770px;
+      transform: rotatey(0deg);
+    }
+
+    49% {
+      margin-left: 650px;
+      transform: rotatey(0deg);
+    }
+
+    50% {
+      margin-left: 650px;
+      transform: rotatey(180deg);
+    }
+
+    99% {
+      margin-left: -770px;
+      transform: rotatey(180deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes bike2 {
+    0% {
+      margin-left: -770px;
+      transform: rotatey(0deg);
+    }
+
+    49% {
+      margin-left: 650px;
+      transform: rotatey(0deg);
+    }
+
+    50% {
+      margin-left: 650px;
+      transform: rotatey(180deg);
+    }
+
+    99% {
+      margin-left: -770px;
+      transform: rotatey(180deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
   }
 }

@@ -104,6 +104,9 @@
   }
 }
 @media screen and (max-width: 560px) {
+  .sect2 {
+    margin-top: -40px;
+  }
   .sect2 .box {
     top: 40px;
   }
@@ -118,5 +121,5 @@
     padding: 0 !important;
     display: inline-block;
   }
-
+ 
 }
