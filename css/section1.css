@@ -165,6 +165,10 @@ header .hd_nav2 {
   }
   header {
     height: 130px;
+    margin-top: -300px;
+  }
+  .inner h1 {
+    margin-top: -600px;
   }
   header ul {
     display: block;
@@ -191,4 +195,7 @@ header .hd_nav2 {
     float: none;
   }
 
+  .mobile_head {
+    background-image: url(../img/bar);
+  }
 }
