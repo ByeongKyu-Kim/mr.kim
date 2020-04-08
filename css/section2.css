@@ -3,12 +3,16 @@
   padding: 0 0 50px 0;
   /* background-image: url(../img/bg2.jpg); */
 }
-
+.sect2 .title2{
+  transform: translatey(50px);
+}
 
 .sect2 .btn {
   display: flex;
   justify-content: center;
   text-align: center;
+  position: relative;
+  z-index: 3;
 }
 .sect2 .btn span {
   display: block;
