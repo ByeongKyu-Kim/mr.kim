@@ -41,6 +41,14 @@ $(function() {
           .find("a")
           .addClass("om")
       }
+
+      // top button
+
+      if (i == 0) {
+        $(".top_button").stop().fadeOut()
+      } else {
+        $(".top_button").stop().fadeIn()
+      }
     }) //each
   }) // 스크롤이벤트 끝
 
@@ -51,25 +59,6 @@ $(function() {
     var secT = $(href).offset().top
     $("html, body").animate({ scrollTop: secT - 80 })
   })
-
-  // 스크롤휠 이벤트
-  // $("section").on("mousewheel", function(event, delta) {
-  //   if (delta > 0) {
-  //     var prev = $(this)
-  //       .prev()
-  //       .offset().top
-  //     $("html, body")
-  //       .stop()
-  //       .animate({ scrollTop: prev - 80 }, 500, "easeOutBack")
-  //   } else if (delta < 0) {
-  //     var next = $(this)
-  //       .next()
-  //       .offset().top
-  //     $("html, body")
-  //       .stop()
-  //       .animate({ scrollTop: next - 80 }, 500, "easeOutBack")
-  //   }
-  // })
 
   // sect1
 
