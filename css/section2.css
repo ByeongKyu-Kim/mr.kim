@@ -76,7 +76,6 @@
   opacity: 0;
   font-size: 22px;
   color: #795620;
-  /* color: #b66c6c; */
   font-weight: 500;
 }
 .sect2_box img {
@@ -119,5 +118,9 @@
     margin-left: 15px;
     padding: 0 !important;
     display: inline-block;
+  }
+  .sect2 .swiper-slide p {
+    font-size: 17px;
+    font-weight: 500;
   }
 }
