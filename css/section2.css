@@ -3,9 +3,6 @@
   padding: 0 0 50px 0;
   /* background-image: url(../img/bg2.jpg); */
 }
-.sect2 .title2{
-  transform: translatey(50px);
-}
 
 .sect2 .btn {
   display: flex;
@@ -70,13 +67,17 @@
   height: 100%;
 }
 .sect2 .swiper-slide {
-  cursor: pointer;
+  cursor: grab;
   height: 100%;
   transform: scale(0.6);
   opacity: 0.3;
 }
 .sect2 .swiper-slide p {
   opacity: 0;
+  font-size: 22px;
+  color: #795620;
+  /* color: #b66c6c; */
+  font-weight: 500;
 }
 .sect2_box img {
   width: 100%;
@@ -110,7 +111,7 @@
   .sect2 .box {
     top: 40px;
   }
- 
+
   .sect2_menu {
     padding: 10px;
   }
@@ -119,5 +120,4 @@
     padding: 0 !important;
     display: inline-block;
   }
- 
 }

@@ -270,7 +270,7 @@
     width: 80vw;
     padding-left: 80px;
     border: none;
-    text-shadow: 1px 1px 5px rgb(184, 184, 184), -1px -1px 5px rgb(161, 161, 161);
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
   }
   .sect3_mobile4 h3,
   .sect3_mobile4 p,
@@ -280,7 +280,7 @@
     padding-left: 80px;
     border: none;
     color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 4px black, -2px -2px 4px dimgray;
+    text-shadow: 2px 2px 20px rgb(0, 0, 0);
   }
 
   .sect3_mobile1 h3,
@@ -290,14 +290,14 @@
     width: 80vw;
     margin-left: -60px;
     color: black;
-    text-shadow: 2px 2px 4px rgb(218, 218, 218), -2px -2px 4px rgb(219, 219, 219);
+    text-shadow: 10px 10px 10px rgb(225, 225, 225);
   }
   .sect3_mobile5 h3,
   .sect3_mobile5 p {
     width: 80vw;
     border: none;
     color: white;
-    text-shadow: 2px 2px 5px rgb(78, 78, 78), -2px -2px 5px rgb(112, 112, 112);
+    text-shadow: 5px 5px 20px rgb(0, 0, 0);
   }
 
   .sect3_box li:nth-child(1),
