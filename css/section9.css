@@ -88,6 +88,9 @@ footer p {
   .sect9{
     height: 200px;
   }
+  .sect9 .inner p {
+    word-break: keep-all;
+  }
   .sect9 p {
     font-size: 18px;
     line-height: 28px;

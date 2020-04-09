@@ -3,12 +3,16 @@
   padding: 0 0 50px 0;
   /* background-image: url(../img/bg2.jpg); */
 }
-
+.sect2 .title2{
+  transform: translatey(50px);
+}
 
 .sect2 .btn {
   display: flex;
   justify-content: center;
   text-align: center;
+  position: relative;
+  z-index: 3;
 }
 .sect2 .btn span {
   display: block;
@@ -93,19 +97,20 @@
     top: 60px;
   }
   .sect2_box {
-    height: 35vw;
+    height: 50vw;
   }
   .sect2_menu {
     padding: 10px 15px;
   }
 }
 @media screen and (max-width: 560px) {
+  .sect2 {
+    margin-top: -40px;
+  }
   .sect2 .box {
     top: 40px;
   }
-  .sect2_box {
-    height: 40vw;
-  }
+ 
   .sect2_menu {
     padding: 10px;
   }
@@ -114,5 +119,5 @@
     padding: 0 !important;
     display: inline-block;
   }
-
+ 
 }
