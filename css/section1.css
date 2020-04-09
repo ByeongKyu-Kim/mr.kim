@@ -70,7 +70,7 @@ header .hd_nav1 {
 header .hd_nav2 {
   float: right;
 }
-.mobile_head{
+.mobile_head {
   display: none;
 }
 /* section1 */
@@ -155,7 +155,6 @@ header .hd_nav2 {
     top: 0%;
     border: 1px solid #fff;
   }
-
 }
 
 @media screen and (max-width: 560px) {
@@ -173,11 +172,13 @@ header .hd_nav2 {
   }
   header ul {
     display: block;
-    height: 150px;
+    height: 100%;
   }
   .hd_nav1 {
     width: 35%;
-    float: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   .hd_nav1 li,
@@ -187,13 +188,22 @@ header .hd_nav2 {
 
   .hd_nav1 li a,
   .hd_nav2 li a {
-    font-size: 21px !important;
-    padding: 0 !important;
+    font-size: 21px;
+    padding: 0 20px;
+  }
+
+  .hd_nav1 li a {
+    text-align: right;
+  }
+  .hd_nav2 li a {
+    text-align: left;
   }
 
   .hd_nav2 {
     width: 35%;
-    float: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   .sect1 {
@@ -212,11 +222,11 @@ header .hd_nav2 {
   }
 
   .mobile_head img {
-    width: 50px;
-    height: 35px;
+    width: 35px;
+
     position: absolute;
-    top: 5px;
-    right: 0;
+    top: 10px;
+    right: 10px;
     z-index: 9900;
   }
 }

@@ -1,29 +1,23 @@
 $(function () {
   //header
 
- 
-
-
-  $(".mobile_head img").click(function(){
-    $("header, .inner h1").stop().css("marginTop","50px").fadeToggle(100)
+  $(".mobile_head img").click(function () {
+    $("header, .inner h1").stop().css("marginTop", "50px").fadeToggle(100)
   })
 
-  $(window).resize(function (){
+  $(window).resize(function () {
     if ($(window).width() >= 560) {
-       $('header, .inner h1').css({
-         "marginTop":"0px",
-         "display":"block"
-        }) 
-    }else{
-      $('header, .inner h1').css({
-        "marginTop":"50px",
-        "display":"block"
-       }) 
+      $("header, .inner h1").css({
+        marginTop: "0px",
+        display: "block",
+      })
+    } else {
+      $("header, .inner h1").css({
+        marginTop: "50px",
+        display: "block",
+      })
     }
-    })
-
-
-      
+  })
 
   // 가운데 로고
   $(document).scroll(function () {
@@ -35,11 +29,13 @@ $(function () {
       $("header").addClass("on")
       $("header li a").addClass("on")
       $(".mobile_head").css({ "background-image": "url(../img/bar2.jpg)" })
+      $(".mobile_head img").attr("src", "../img/menu2.png")
     } else {
       $(".sect1 h1").css({ position: "absolute", top: 100 })
       $("header").removeClass("on")
       $("header li a").removeClass("on")
       $(".mobile_head").css({ "background-image": "url(../img/bar1.jpg)" })
+      $(".mobile_head img").attr("src", "../img/menu1.png")
     }
 
     // 타이틀 애니메이션 / 메뉴색깔
@@ -109,7 +105,7 @@ $(function () {
         slidesPerView: 5,
         spaceBetween: 0,
       },
-    }
+    },
   })
 
   $(".sect2_menu").click(function (e) {
@@ -156,7 +152,7 @@ $(function () {
         slidesPerView: 2,
         spaceBetween: 30,
       },
-    }
+    },
   })
   // var w = $(window).width()
   // if (w <= 560) {
@@ -221,16 +217,21 @@ $(function () {
   //sect6
 
   var swiper = new Swiper(".sect6 .swiper-container", {
-    slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerView: 1,
+    // spaceBetween: 30,
     loop: true,
     centeredSlides: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+      560: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    }
   })
-
   $(".sect6_slide_img").mouseenter(function () {
     $(".sect6_slide_img").removeClass("po")
     $(this).addClass("po")
