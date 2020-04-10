@@ -1,6 +1,6 @@
 .sect3 article {
   max-width: 1200px;
-  margin: 0 auto 80px;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -9,7 +9,6 @@
   color: #fff;
   padding: 50px 0;
   background: url(../img/food2.jpg) no-repeat;
-  margin-bottom: 80px;
   background-size: cover;
   background-attachment: fixed;
 }

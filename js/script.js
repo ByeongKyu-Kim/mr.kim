@@ -253,48 +253,6 @@ $(function () {
 
   //////////////////////////////////// sect7 ///////////////////////////////
 
-  // 섹트4의 오토바이 그림위 배달안내 스크립트 / 아직 css하지 않은 상황. 수정 중에 있음 /
-
-  $(document).scroll(function () {
-    var scrT = $(this).scrollTop()
-
-    if (scrT >= 900) {
-      $(".sect7_effact1").fadeIn(600)
-      $(".sect7_effact2").fadeIn(2000)
-      $(".sect7_effact3").fadeIn(3200)
-    } else {
-      $(".sect7_effact").fadeOut(100)
-    }
-  })
-
-  $(".sect7").mouseenter(function () {
-    $(".sect7_people img").addClass("sect7_people_on")
-    $(".sect7_move img").addClass("sect7_move_ko")
-    $(".sect7_paper img, .sect7_move img").css("margin", "0px")
-    $(".sect7_paper_click").css("opacity", "1")
-  })
-
-  $(".sect7").mouseleave(function () {
-    $(".sect7_paper_click").css("opacity", "0")
-    $(".sect7_paper img").css({
-      width: "200px",
-      height: "200px",
-      "z-index": "9",
-    })
-    $(".sect7_move img").css("z-index", "5")
-    $(".sect7_paper img, .sect7_move img").css("margin", "-400px")
-  })
-
-  $(".sect7_paper img").click(function () {
-    $(".sect7_paper img").css({
-      width: "380px",
-      height: "380px",
-      // "z-index": "80"
-    })
-    $(".sect7_paper_click").css("opacity", "0")
-    $(".sect7_move img").css("z-index", "6")
-  })
-
   //sect8
 
   $(".sect8_menu_l li").click(function (e) {

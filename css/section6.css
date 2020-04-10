@@ -2,6 +2,7 @@
   background-color: #c7a776;
   position: relative;
   padding-bottom: 80px;
+  margin-top: -150px;
 }
 
 .sect6_wrap {
@@ -43,7 +44,6 @@
   border: 1px solid #795620;
 } */
 
-
 .po {
   display: block;
 }
@@ -52,7 +52,12 @@
 
 .sect6_slide_img p {
   display: none;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 83%, rgba(0, 0, 0, 0.65) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.65) 83%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
   width: 100%;
   height: 100%;
   position: absolute;

@@ -2,364 +2,65 @@
   width: 100%;
   height: 100vh;
   position: relative;
-}
-
-.sect7_wrap {
-  max-width: 1200px;
-  height: 100vh;
-  margin: auto;
-  display: flex;
-  position: relative;
-}
-
-.sect7 #flag_right {
-  width: 600px;
-  height: 70vh;
-  box-sizing: content-box;
-  padding-top: 15px;
-  position: relative;
-  background: url(../img/road.jpg), url(../img/asdf.png);
-  background-position: 0px 440px, 0px 0px;
+  background-image: url(../img/img116.png);
+  background-size: cover;
   background-repeat: no-repeat;
-  color: white;
-  font-size: 11px;
-  letter-spacing: 0.2em;
-  text-align: center;
-  text-transform: uppercase;
-}
-.sect7 #flag_right:after {
-  content: "";
-  position: absolute;
-  z-index: 5;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid white;
-  border-top: 326px solid white;
-  border-bottom: 326px solid transparent;
+  background-position: center;
 }
 
-.comic p img {
-  width: 80px;
-  height: 70px;
-}
-.bike_left {
-  margin-top: 405px;
-  animation: bike 5s linear 1s infinite;
-}
-.bike_right {
-  margin-top: 58px;
-  animation: bike2 7.5s linear 1s infinite;
-}
-
-@keyframes bike {
-  0% {
-    margin-left: 0px;
-    transform: rotatey(0deg);
-  }
-
-  49% {
-    margin-left: 750px;
-    transform: rotatey(0deg);
-  }
-
-  50% {
-    margin-left: 750px;
-    transform: rotatey(180deg);
-  }
-
-  99% {
-    margin-left: -170px;
-    transform: rotatey(180deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes bike2 {
-  0% {
-    margin-left: 0px;
-    transform: rotatey(0deg);
-  }
-
-  49% {
-    margin-left: 950px;
-    transform: rotatey(0deg);
-  }
-
-  50% {
-    margin-left: 950px;
-    transform: rotatey(180deg);
-  }
-
-  99% {
-    margin-left: -170px;
-    transform: rotatey(180deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-.sect7_road {
-  width: 600px;
-  height: 652px;
-}
-.sect7_road iframe {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 5;
-}
-#flag_road:after {
-  content: "";
-  position: absolute;
-  z-index: 5;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-left: 50px solid white;
-  border-right: 50px solid transparent;
-  border-top: 326px solid transparent;
-  border-bottom: 326px solid white;
-}
-.sect7_people img {
-  width: 120%;
-  height: 80%;
-  position: absolute;
-  bottom: 31%;
-  left: 0;
-  z-index: 6;
-}
-.sect7_people_on {
-  transform: scale(0.1);
-  transition: ease 1.2s 0.5s;
-  margin-left: -230px;
-  margin-bottom: -124px;
-  bottom: 6%;
-  left: 0;
-}
-.sect7_move_ko {
-  animation: moVe 4s linear 2s infinite;
-}
-
-@keyframes moVe {
-  0% {
-    transform: scale(1);
-  }
-
-  25% {
-    transform: scale(1.2);
-  }
-
-  50% {
-    transform: scale(1);
-  }
-
-  75% {
-    transform: scale(1.2);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-.sect7_paper img {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  margin-left: -400px;
-  margin-top: -400px;
-  transition: 1.5s;
-}
+.sect7 .title2 h6 { font-size: 28px !important;}
 
 .sect7_paper_click {
   width: 200px;
   height: 200px;
   position: absolute;
-  left: 9.5%;
-  top: 17%;
-  opacity: 0;
+  left: 32%;
+  top: 65%;
+  z-index: 5;
   transition: 2.7s;
+  animation: move 4s infinite alternate linear;
 }
-/* ".sect7_paper img" ,".sect7_move img " */
 
 .sect7_move img {
   cursor: pointer;
   width: 150px;
   height: 150px;
   position: absolute;
-  top: -23.5%;
-  left: -28%;
-  z-index: 0;
-  margin-left: -400px;
-  margin-top: -400px;
+  top: 50%;
+  left: 20%;
   transition: 1.5s;
+  animation: move 3s infinite alternate linear;
 }
 
+@keyframes move {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
 
 /* 태블릿 사이즈 */
 @media screen and (max-width: 1200px) {
-  .sect7_road iframe {
-    width: 513px;
-    border: none;
-    display: none;
+  .sect7 {
+    height: 80vh;
   }
-  .sect7_people img {
-    top: -1%;
+
+  .sect7_paper_click,
+  .sect7_paper img {
+    display: none;
   }
   .sect7_move img {
-    top: 0;
-    right: 0;
-  }
-  #flag_right {
-    overflow: hidden;
-    width: 1000px;
-  }
-  .sect7 #flag_right::after {
-    display: none;
-  }
-  .sect7 #flag_right {
-    width: 100%;
-    height: 100vh;
-    background-position: 0px 507px, 0px -60px;
-    background-size: 100%, 100%;
-  }
-  .sect7 #flag_road {
-    display: none;
-  }
-  .sect7_wrap { 
-    display: flex;
-  }
-  .comic p img {
-    width: 60px;
-    height: 70px;
-    margin-top: 50px;
-  }
-  
-  .bike_left img {
-    margin-top: 30%;
-  }
-
-  .sect7_people_on {
-    margin-left: 25%;
-    margin-top: 8%;
-    transform: scale(0.2);
-  }
-}
-@media screen and (max-width: 560px) {
-  .sect7 {
-    width: 98%;
-    padding: 10px;
-  }
-  .title {
-    margin-left: 15px;
-  }
-  .title h6 {
-    font-size: 30px !important;
-  }
-  .title h5 {
-    font-size: 50px !important;
-  }
-  .sect7_wrap {
-    height: 1200px;
-  }
-  .sect7 #flag_right {
-    height: 630px;
-    background-size: 100% 30%, 70% 70%;
-    
-  }
-
-  #flag_road:after {
-    display: none;
-  }
-  .sect7_wrap {
-    display: block;
-  }
-
-  .sect7_road iframe {
-    display: none;
-  }
-
-  .sect7_people img {
-    display: none;
-  }
-  .sect7_move {
     width: 100px;
     height: 100px;
-    position: absolute;
-    top: 10px;
-    right: 0;
+
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .sect7 {
+    height: 60vh;
   }
 
-  .sect7_move img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: none;
-  }
-
-  @keyframes bike {
-    0% {
-      margin-left: -770px;
-      transform: rotatey(0deg);
-    }
-
-    49% {
-      margin-left: 650px;
-      transform: rotatey(0deg);
-    }
-
-    50% {
-      margin-left: 650px;
-      transform: rotatey(180deg);
-    }
-
-    99% {
-      margin-left: -770px;
-      transform: rotatey(180deg);
-    }
-
-    100% {
-      transform: rotate(0deg);
-    }
-  }
-
-  @keyframes bike2 {
-    0% {
-      margin-left: -770px;
-      transform: rotatey(0deg);
-    }
-
-    49% {
-      margin-left: 650px;
-      transform: rotatey(0deg);
-    }
-
-    50% {
-      margin-left: 650px;
-      transform: rotatey(180deg);
-    }
-
-    99% {
-      margin-left: -770px;
-      transform: rotatey(180deg);
-    }
-
-    100% {
-      transform: rotate(0deg);
-    }
-  }
 }
