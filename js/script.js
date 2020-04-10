@@ -14,7 +14,7 @@ $(function () {
     } else {
       $("header, .inner h1").css({
         marginTop: "50px",
-        display: "block",
+        display: "none",
       })
     }
   })
