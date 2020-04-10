@@ -189,12 +189,22 @@ $(function () {
 
   var galleryThumbs = new Swiper(".sect5_thumbs", {
     spaceBetween: 15,
-    slidesPerView: 5,
+    slidesPerView: 3,
     loop: true,
     freeMode: true,
     loopedSlides: 5, //looped slides should be the same
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
+    breakpoints: {
+      560: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      1200: {
+        slidesPerView: 5,
+        spaceBetween: 30,
+      },
+    }
   })
   var galleryTop = new Swiper(".sect5_top", {
     spaceBetween: 10,
