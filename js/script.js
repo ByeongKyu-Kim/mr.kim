@@ -29,11 +29,13 @@ $(function () {
       $("header").addClass("on")
       $("header li a").addClass("on")
       $(".mobile_head").css({ "background-image": "url(../img/bar2.jpg)" })
+      $(".mobile_head img").attr("src", "../img/menu2.png")
     } else {
       $(".sect1 h1").css({ position: "absolute", top: 100 })
       $("header").removeClass("on")
       $("header li a").removeClass("on")
       $(".mobile_head").css({ "background-image": "url(../img/bar1.jpg)" })
+      $(".mobile_head img").attr("src", "../img/menu1.png")
     }
 
     // 타이틀 애니메이션 / 메뉴색깔
@@ -95,10 +97,15 @@ $(function () {
   //   sect2
 
   var swiper2 = new Swiper(".sect2 .swiper-container", {
-    slidesPerView: 5,
-    spaceBetween: 10,
+    slidesPerView: 3,
     loop: true,
     centeredSlides: true,
+    breakpoints: {
+      1200: {
+        slidesPerView: 5,
+        spaceBetween: 0,
+      },
+    },
   })
 
   $(".sect2_menu").click(function (e) {
@@ -130,8 +137,7 @@ $(function () {
   //sect4
 
   var swiper4 = new Swiper(".sect4 .swiper-container", {
-    slidesPerView: 2,
-    spaceBetween: 30,
+    slidesPerView: 1,
     loop: true,
     autoplay: {
       delay: 3000,
@@ -140,6 +146,12 @@ $(function () {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+    breakpoints: {
+      560: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
     },
   })
   // var w = $(window).width()
@@ -205,16 +217,21 @@ $(function () {
   //sect6
 
   var swiper = new Swiper(".sect6 .swiper-container", {
-    slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerView: 1,
+    // spaceBetween: 30,
     loop: true,
     centeredSlides: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+      560: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    }
   })
-
   $(".sect6_slide_img").mouseenter(function () {
     $(".sect6_slide_img").removeClass("po")
     $(this).addClass("po")
