@@ -1,29 +1,23 @@
 $(function () {
   //header
 
- 
-
-
-  $(".mobile_head img").click(function(){
-    $("header, .inner h1").stop().css("marginTop","50px").fadeToggle(100)
+  $(".mobile_head img").click(function () {
+    $("header, .inner h1").stop().css("marginTop", "50px").fadeToggle(100)
   })
 
-  $(window).resize(function (){
+  $(window).resize(function () {
     if ($(window).width() >= 560) {
-       $('header, .inner h1').css({
-         "marginTop":"0px",
-         "display":"block"
-        }) 
-    }else{
-      $('header, .inner h1').css({
-        "marginTop":"50px",
-        "display":"block"
-       }) 
+      $("header, .inner h1").css({
+        marginTop: "0px",
+        display: "block",
+      })
+    } else {
+      $("header, .inner h1").css({
+        marginTop: "50px",
+        display: "block",
+      })
     }
-    })
-
-
-      
+  })
 
   // 가운데 로고
   $(document).scroll(function () {
