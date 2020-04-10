@@ -19,6 +19,15 @@ $(function () {
     }
   })
 
+  //  메뉴img 변경조작//  메뉴img 변경조작//  메뉴img 변경조작//  메뉴img 변경조작
+
+  $("header ul li").click(function () {
+    $("header ul li").removeClass("on")
+    $(this).addClass("on")
+  })
+
+  //  스크롤 할 시 섹션마다 메뉴가 체크되는 것
+
   // 가운데 로고
   $(document).scroll(function () {
     var secT = $(this).scrollTop()
@@ -204,7 +213,7 @@ $(function () {
         slidesPerView: 5,
         spaceBetween: 30,
       },
-    }
+    },
   })
   var galleryTop = new Swiper(".sect5_top", {
     spaceBetween: 10,
@@ -240,7 +249,7 @@ $(function () {
         slidesPerView: 3,
         spaceBetween: 30,
       },
-    }
+    },
   })
   $(".sect6_slide_img").mouseenter(function () {
     $(".sect6_slide_img").removeClass("po")
